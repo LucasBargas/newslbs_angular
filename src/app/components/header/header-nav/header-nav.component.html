@@ -5,7 +5,7 @@
         [routerLink]="item.path"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
-        (click)="onClick()"
+        (click)="mobile && onClick()"
       >
         {{item.title}}
       </a>
@@ -13,8 +13,14 @@
 
     <app-header-nav-search></app-header-nav-search>
     <li class="header-wrapper-nav-social">
-      <p>Instagram</p>
-      <p>Facebook</p>
+      <ul>
+        <li>
+          <fa-icon [icon]="faSquareInstagram"></fa-icon>
+        </li>
+        <li>
+          <fa-icon [icon]="faSquareFacebook"></fa-icon>
+        </li>
+      </ul>
     </li>
   </ul>
 </nav>

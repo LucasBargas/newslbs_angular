@@ -55,13 +55,21 @@
       }
 
       &.header-wrapper-nav-social {
-        display: none;
-        justify-content: center;
-        padding-top: 3rem;
+        ul {
+          display: none;
+          justify-content: center;
+          padding-top: 3rem;
 
-        @media (max-width: 834px) {
-          display: flex;
-          gap: 1rem;
+          @media (max-width: 834px) {
+            display: flex;
+            gap: .5rem;
+          }
+
+          fa-icon {
+            color: #555;
+            font-size: 24px;
+            margin-right: 8px;
+          }
         }
       }
     }

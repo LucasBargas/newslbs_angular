@@ -3,6 +3,9 @@ import { Component, Input, Optional, SkipSelf } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderNavSearchComponent } from './header-nav-search/header-nav-search.component';
 import { HeaderComponent } from '../header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faSquareInstagram  } from '@fortawesome/free-brands-svg-icons';
+import { faSquareFacebook  } from '@fortawesome/free-brands-svg-icons';
 
 interface INav {
   title: string;
@@ -12,12 +15,15 @@ interface INav {
 
 @Component({
   selector: 'app-header-nav',
-  imports: [CommonModule, HeaderNavSearchComponent, RouterLink, RouterLinkActive],
+  standalone: true,
+  imports: [CommonModule, HeaderNavSearchComponent, RouterLink, RouterLinkActive, FontAwesomeModule],
   templateUrl: './header-nav.component.html',
   styleUrl: './header-nav.component.scss'
 })
 export class HeaderNavComponent {
   @Input() mobile!: boolean;
+  faSquareInstagram = faSquareInstagram;
+  faSquareFacebook = faSquareFacebook ;
 
   navList: INav[] = [
     { title: 'Home', path: '/home' },
