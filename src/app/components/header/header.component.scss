@@ -1,0 +1,71 @@
+@use '../../styles/variables' as *;
+
+.header {
+  height: 5.5rem;
+  background: $strong-gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    min-height: 5.5rem;
+    max-height: 5.5rem;
+
+    &-logo {
+      a {
+        font-weight: 700;
+        font-size: 1.75rem;
+        color: rgb(34, 34, 34);
+      }
+    }
+
+    &-button {
+      display: none;
+      background: none;
+
+      @media (max-width: 834px) {
+        display: block;
+      }
+
+      span {
+        color: $primary-color;
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+
+        &::after, &::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          margin-top: 5px;
+          transition: .3s;
+          position: relative;
+        }
+      }
+
+      &.active {
+        span {
+          border-top-color: transparent;
+
+          &::before {
+            transform: rotate(135deg);
+          }
+
+          &::after {
+            transform: rotate(-135deg);
+            top: -7px;
+          }
+        }
+      }
+    }
+  }
+}

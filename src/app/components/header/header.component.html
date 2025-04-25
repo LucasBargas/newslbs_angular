@@ -1,0 +1,20 @@
+<header class="header">
+  <app-container>
+    <div class="header-wrapper">
+      <div class="header-wrapper-logo">
+        <a (click)="onClickMobleButton()" routerLink="/home">NewsLBS</a>
+      </div>
+
+      <app-header-nav [mobile]="mobile"></app-header-nav>
+
+      <button
+        (click)="onClickMobleButton()"
+        class="header-wrapper-button"
+        [ngClass]="mobile ? 'active' : ''"
+        type="button"
+      >
+        <span></span>
+      </button>
+    </div>
+  </app-container>
+</header>

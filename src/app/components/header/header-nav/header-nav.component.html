@@ -1,0 +1,20 @@
+<nav class="header-wrapper-nav" [ngClass]="mobile ? 'active' : ''">
+  <ul>
+    <li *ngFor="let item of navList">
+      <a
+        [routerLink]="item.path"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="onClick()"
+      >
+        {{item.title}}
+      </a>
+    </li>
+
+    <app-header-nav-search></app-header-nav-search>
+    <li class="header-wrapper-nav-social">
+      <p>Instagram</p>
+      <p>Facebook</p>
+    </li>
+  </ul>
+</nav>

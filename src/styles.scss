@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'app/styles/variables' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @media (max-width: 414px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 13px;
+  }
+
+  body {
+    background: $light-gray;
+    font-family: $primary-font;
+
+    input, textarea, button {
+      outline: none;
+      border: none;
+      font-family: $primary-font;
+    }
+
+    input, textarea {
+      font-size: .875rem;
+      background: $light-color;
+    }
+
+    button {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $primary-color;
+      cursor: pointer;
+    }
+
+    ul, li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+}

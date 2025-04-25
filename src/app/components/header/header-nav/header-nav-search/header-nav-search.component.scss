@@ -1,0 +1,26 @@
+form {
+  width: 340px;
+  position: relative;
+  margin-left: 3rem;
+
+  @media(max-width: 1024px) {
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 834px) {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: .75rem 4rem .75rem .625rem;
+    border-radius: 6px;
+
+    @media (max-width: 834px) {
+      border-radius: .25rem;
+    }
+  }
+}

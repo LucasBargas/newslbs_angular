@@ -1,0 +1,61 @@
+@use '../../../styles/variables' as *;
+
+.header-wrapper-nav {
+  @media (max-width: 834px) {
+    position: absolute;
+    left: 0;
+    top: 5.5rem;
+    background: $strong-gray;
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: .4s;
+  }
+
+  &.active {
+    @media (max-width: 834px) {
+      display: block;
+      height: calc(100vh - 5.5rem);
+      visibility: visible;
+      overflow-y: auto;
+      transition: .4s;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 834px) {
+      display: block;
+      padding: 0 1rem;
+    }
+
+    li {
+      a {
+        display: block;
+        padding: .75rem 1rem;
+        color: $primary-color;
+
+        &.active {
+          color: $light-color;
+          background: $dark-gray;
+          border-radius: .25rem;
+        }
+      }
+
+      &.header-wrapper-nav-social {
+        display: none;
+        justify-content: center;
+        padding-top: 3rem;
+
+        @media (max-width: 834px) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

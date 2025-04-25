@@ -1,3 +1,31 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { FavoritesNewsComponent } from './pages/favorites-news/favorites-news.component';
+import { RegisterNewsComponent } from './pages/register-news/register-news.component';
+import { SearchComponent } from './pages/search/search.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { EditNewsComponent } from './pages/edit-news/edit-news.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '', redirectTo: 'home', pathMatch: "full",
+  },
+  {
+    path: 'home', component: HomeComponent,
+  },
+  {
+    path: 'noticias-favoritas', component: FavoritesNewsComponent,
+  },
+  {
+    path: 'cadastrar-noticias', component: RegisterNewsComponent,
+  },
+  {
+    path: 'editar-noticia/noticia/:id', component: EditNewsComponent,
+  },
+  {
+    path: 'search', component: SearchComponent,
+  },
+  {
+    path: '**', component: PageNotFoundComponent,
+  }
+];

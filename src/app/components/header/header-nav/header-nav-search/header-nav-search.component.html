@@ -1,0 +1,18 @@
+<li>
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Pesquise por uma notícia"
+      [(ngModel)]="value"
+      name="search"
+      (input)="value.trim() && error = false"
+      (blur)="error = false"
+    >
+
+    <app-error-message
+      *ngIf="error"
+      message="Você precisa procurar por uma notícia."
+    >
+    </app-error-message>
+  </form>
+</li>
