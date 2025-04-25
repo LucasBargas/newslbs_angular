@@ -40,6 +40,13 @@
         padding: .75rem 1rem;
         color: $primary-color;
 
+        &:nth-child(-n+3) { /* three first itens "a" */
+          @media (max-width: 834px) {
+            padding: 1rem;
+            border-bottom: 2px solid $dark-gray;
+          }
+        }
+
         &.active {
           color: $light-color;
           background: $dark-gray;
