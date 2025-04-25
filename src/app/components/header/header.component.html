@@ -2,7 +2,7 @@
   <app-container>
     <div class="header-wrapper">
       <div class="header-wrapper-logo">
-        <a (click)="onClickMobleButton()" routerLink="/home">NewsLBS</a>
+        <a (click)="mobile && mobile = false" routerLink="/home">NewsLBS</a>
       </div>
 
       <app-header-nav [mobile]="mobile"></app-header-nav>
