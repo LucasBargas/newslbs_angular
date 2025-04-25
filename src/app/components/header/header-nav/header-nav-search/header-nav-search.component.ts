@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Optional, SkipSelf } from '@angular/core';
+import { Component, Input, Optional, SkipSelf } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ErrorMessageComponent } from '../../../error-message/error-message.component';
@@ -7,11 +7,13 @@ import { HeaderComponent } from '../../header.component';
 
 @Component({
   selector: 'app-header-nav-search',
+  standalone: true,
   imports: [CommonModule, FormsModule, ErrorMessageComponent],
   templateUrl: './header-nav-search.component.html',
   styleUrl: './header-nav-search.component.scss'
 })
 export class HeaderNavSearchComponent {
+  @Input() mobile!: boolean;
   error: boolean = false;
   value: string = '';
 
@@ -33,7 +35,7 @@ export class HeaderNavSearchComponent {
 
     this.value = '';
     this.error = false;
-    this.header.onClickMobleButton();
+    this.mobile && this.header.onClickMobileButton();
   }
 }
 

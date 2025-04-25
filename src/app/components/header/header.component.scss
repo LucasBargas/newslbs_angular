@@ -29,6 +29,7 @@
     &-button {
       display: none;
       background: none;
+      padding: .625rem 0 .625rem .625rem;
 
       @media (max-width: 834px) {
         display: block;

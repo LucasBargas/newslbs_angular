@@ -36,6 +36,6 @@ export class HeaderNavComponent {
   constructor(@Optional() @SkipSelf() private header: HeaderComponent) {}
 
   onClick() {
-    this.header.onClickMobleButton();
+    this.mobile && this.header.onClickMobileButton();
   }
 }

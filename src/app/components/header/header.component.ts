@@ -11,9 +11,9 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  mobile: boolean = true;
+  mobile: boolean = false;
 
-  onClickMobleButton() {
+  onClickMobileButton() {
     this.mobile = !this.mobile;
   }
 }
