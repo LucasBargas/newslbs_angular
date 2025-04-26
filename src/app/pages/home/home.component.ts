@@ -21,6 +21,10 @@ export class HomeComponent implements OnInit {
   constructor(private newsService: NewsService) {}
 
   ngOnInit() {
+    this.getNewsSerice();
+  }
+
+  getNewsSerice() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
     this.newsService.getNews(this.itensPerPage, this.currentPage).subscribe({
