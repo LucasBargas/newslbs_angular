@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, finalize } from 'rxjs';
+import { BehaviorSubject, finalize, Observable } from 'rxjs';
+import { INews } from '../interfaces/INews';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +12,10 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews() {
+  getNews(): Observable<INews[]> {
     this.isLoading$.next(true);
-    return this.http.get(this.apiUrl).pipe(
+
+    return this.http.get<INews[]>(this.apiUrl).pipe(
       finalize(() => this.isLoading$.next(false)) // desativa loading mesmo com erro
     );
   }

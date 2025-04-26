@@ -1,4 +1,10 @@
-<div>
+<div *ngIf="isLoading">
+  <app-container>
+    <div>Carregando notícias...</div>
+  </app-container>
+</div>
+
+<div *ngIf="!isLoading">
   <app-container>
     <div>Olá</div>
   </app-container>
