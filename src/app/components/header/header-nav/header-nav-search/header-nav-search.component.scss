@@ -1,3 +1,5 @@
+@use '../../../../styles/variables' as *;
+
 form {
   width: 340px;
   position: relative;
@@ -16,12 +18,28 @@ form {
   input {
     display: block;
     width: 100%;
-    padding: .75rem 4rem .75rem .625rem;
+    padding: .75rem 2.5rem .75rem .625rem;
     border-radius: 6px;
 
     @media (max-width: 834px) {
       border-radius: .25rem;
       padding: 1rem 4rem 1rem .75rem;
+    }
+  }
+
+  button {
+    cursor: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    padding: .75rem 0;
+    width: 2.5rem;
+    font-size: 18px;
+
+    fa-icon {
+      color: $primary-color;
     }
   }
 }

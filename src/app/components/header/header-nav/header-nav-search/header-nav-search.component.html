@@ -9,6 +9,10 @@
       (blur)="error = false"
     >
 
+    <button type="button">
+      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </button>
+
     <app-error-message
       *ngIf="error"
       message="Você precisa procurar por uma notícia."
