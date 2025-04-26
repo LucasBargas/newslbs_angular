@@ -6,7 +6,7 @@
       "description": "Após subir no balcão e miar com autoridade, o gato 'Cafézinho' virou gerente honorário. Clientes agora pedem carinho junto com o cappuccino.",
       "category": "Curiosidades",
       "author": "Marina Felina",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
       "description": "Com 78 anos, Dona Lourdes surpreendeu ao vencer um torneio de corrida. Agora ela joga todos os dias e diz que 'a aposentadoria está divertida'.",
       "category": "Tecnologia",
       "author": "Pedro Pixel",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
       "category": "Política",
       "author": "Lúcio Pluma",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "description": "Com vozes caricatas e muito drama, Seu Zé viralizou ao recriar cenas de novelas clássicas com bonecos de pano.",
       "category": "Entretenimento",
       "author": "Lívia Dublê",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 13,
@@ -110,7 +110,7 @@
       "description": "Moradores acharam que ele havia sido roubado, mas câmeras revelaram fuga autônoma. Ele foi encontrado limpando calçada do vizinho.",
       "category": "Tecnologia",
       "author": "Márcio Circuito",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 15,

@@ -6,6 +6,9 @@
 
 <div *ngIf="!isLoading">
   <app-container>
-    <div>Olá</div>
+    <ul>
+      <li *ngFor="let new of news.data">{{new.author}}</li>
+      <div>Você está na pagína {{currentPage}} de {{totalPages}}</div>
+    </ul>
   </app-container>
 </div>

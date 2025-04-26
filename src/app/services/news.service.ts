@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, finalize, Observable } from 'rxjs';
 import { INews } from '../interfaces/INews';
@@ -12,10 +12,18 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(): Observable<INews[]> {
+  getNews(itensPerPage: number, page: number, favorites?: boolean): Observable<INews> {
     this.isLoading$.next(true);
 
-    return this.http.get<INews[]>(this.apiUrl).pipe(
+    let params = new HttpParams()
+    .set("_page", page)
+    .set('_per_page', itensPerPage);
+
+    if (favorites) {
+      params = params.set('favorite', favorites);
+    }
+
+    return this.http.get<INews>(this.apiUrl, { params }).pipe(
       finalize(() => this.isLoading$.next(false)) // desativa loading mesmo com erro
     );
   }
