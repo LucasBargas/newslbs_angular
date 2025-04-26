@@ -1,45 +1,49 @@
 @use '../../styles/variables' as *;
 
 .page-not-found {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: calc(100vh - 5.5rem);
-  text-align: center;
+  padding: 2rem 0;
 
-  * {
-    color: $primary-color;
-  }
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 7.5rem);
+    text-align: center;
 
-  img {
-    width: 100%;
-    max-width: 120px;
-    margin-bottom: 1.5rem;
-  }
+    * {
+      color: $primary-color;
+    }
 
-  h1 {
-    font-size: 3rem;
-  }
+    img {
+      width: 100%;
+      max-width: 120px;
+      margin-bottom: 1.5rem;
+    }
 
-  h2 {
-    margin: .75rem 0 2rem 0;
-    font-weight: 500;
-  }
+    h1 {
+      font-size: 3rem;
+    }
 
-  a {
-    width: 100%;
-    max-width: 450px;
-    border: 3px solid $primary-color;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1rem;
-    transition: .3s;
+    h2 {
+      margin: .75rem 0 2rem 0;
+      font-weight: 500;
+    }
 
-    &:hover {
-      background-color: $primary-color;
-      color: $light-gray;
+    a {
+      width: 100%;
+      max-width: 450px;
+      border: 3px solid $primary-color;
+      border-radius: 6px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem;
+      transition: .3s;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $light-gray;
+      }
     }
   }
 }
