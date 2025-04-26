@@ -12,7 +12,7 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(itensPerPage: number, page: number, favorites?: boolean): Observable<INews> {
+  getNews(itensPerPage: number, page: number, favorites?: boolean, search?: string, author?: string): Observable<INews> {
     this.isLoading$.next(true);
 
     let params = new HttpParams()
@@ -21,6 +21,14 @@ export class NewsService {
 
     if (favorites) {
       params = params.set('favorite', favorites);
+    }
+
+    if (search!.length > 0) {
+      params = params.set('q', search!);
+    }
+
+    if (author!.length > 0) {
+      params = params.set('q', author!);
     }
 
     return this.http.get<INews>(this.apiUrl, { params }).pipe(
