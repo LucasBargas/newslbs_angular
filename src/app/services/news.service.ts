@@ -23,11 +23,11 @@ export class NewsService {
       params = params.set('favorite', favorites);
     }
 
-    if (search!.length > 0) {
+    if (search!) {
       params = params.set('q', search!);
     }
 
-    if (author!.length > 0) {
+    if (author!) {
       params = params.set('q', author!);
     }
 
