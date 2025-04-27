@@ -5,11 +5,12 @@ import { NewsService } from '../../services/news.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HomePaginationComponent } from '../../components/home-pagination/home-pagination.component';
+import { NewsCardComponent } from '../../components/news-card/news-card.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, HomePaginationComponent],
+  imports: [CommonModule, ContainerComponent, HomePaginationComponent, NewsCardComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'] // ✅ corrigido
 })

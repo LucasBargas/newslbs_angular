@@ -35,4 +35,9 @@ export class NewsService {
       finalize(() => this.isLoading$.next(false)) // desativa loading mesmo com erro
     );
   }
+
+  exclude(id: number): Observable<INews> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete<INews>(url);
+  }
 }

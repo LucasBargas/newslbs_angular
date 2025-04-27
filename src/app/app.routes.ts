@@ -23,6 +23,9 @@ export const routes: Routes = [
     path: 'editar-noticia/noticia/:id', component: EditNewsComponent,
   },
   {
+    path: 'noticia/:id', component: EditNewsComponent,
+  },
+  {
     path: 'search', component: SearchComponent,
   },
   {

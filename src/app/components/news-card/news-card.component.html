@@ -1,1 +1,18 @@
-<p>news-card works!</p>
+<div
+  class="news-card-container"
+  *ngFor="let news of news.data"
+>
+  <h3>{{news.title}}</h3>
+  <p>{{news.description}}</p>
+
+  <div>
+    <span><strong>Categoria:</strong> {{news.category}}</span>
+    <span><strong>Autoria:</strong> {{news.author}}</span>
+  </div>
+
+  <div>
+    <a routerLink="/noticia/{{news.id}}">Editar</a>
+    <a routerLink="/noticia/{{news.id}}">Visualizar</a>
+    <button (click)="teste(news.id)">Deletar</button>
+  </div>
+</div>
