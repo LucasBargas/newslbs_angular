@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  padding-top: 3rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    color: $primary-color;
+    font-weight: 500;
+
+    fa-icon {
+      font-size: .875rem;
+    }
+  }
+
+  div {
+    span:nth-of-type(1) {
+      background: $dark-gray;
+      padding: .375rem .5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+  }
+}

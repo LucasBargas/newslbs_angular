@@ -1,0 +1,21 @@
+<div class="pagination-container">
+  <a
+    *ngIf="currentPage > 1 && currentPage <= totalPages"
+    [routerLink]="['/home']"
+    [queryParams]="{ pagina: currentPage - 1 }"
+  >
+    <fa-icon [icon]="faChevronLeft"></fa-icon>
+    <span>Anterior</span>
+  </a>
+  <div>
+    <span>{{currentPage}}</span> de <span>{{totalPages}}</span>
+  </div>
+  <a
+    [routerLink]="['/home']"
+    [queryParams]="{ pagina: ++currentPage + 1 }"
+    *ngIf="currentPage < totalPages"
+  >
+    <span>Próximo</span>
+    <fa-icon [icon]="faChevronRight"></fa-icon>
+  </a>
+</div>

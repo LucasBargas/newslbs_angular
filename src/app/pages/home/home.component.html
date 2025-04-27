@@ -1,14 +1,21 @@
-<div *ngIf="isLoading">
+<section *ngIf="isLoading">
   <app-container>
     <div>Carregando notícias...</div>
   </app-container>
-</div>
+</section>
 
-<div *ngIf="!isLoading">
+<section class="home" *ngIf="!isLoading">
   <app-container>
-    <ul>
-      <li *ngFor="let new of news.data">{{new.author}}</li>
-      <div>Você está na pagína {{currentPage}} de {{totalPages}}</div>
-    </ul>
+    <div class="home-wrapper">
+      <ul>
+        <li *ngFor="let new of news.data">{{new.author}}</li>
+      </ul>
+
+      <app-home-pagination
+        [currentPage]="currentPage"
+        [totalPages]="totalPages"
+      >
+      </app-home-pagination>
+    </div>
   </app-container>
-</div>
+</section>
