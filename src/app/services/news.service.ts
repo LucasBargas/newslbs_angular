@@ -36,8 +36,9 @@ export class NewsService {
     );
   }
 
-  exclude(id: number): Observable<INews> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.delete<INews>(url);
+  exclude(id: number) {
+    const url = `${this.apiUrl}/${id}`;  // A URL correta para o seu recurso
+    console.log(url)
+    return this.http.delete(url);  // Usar 'url' em vez de '/news/api/${id}'
   }
 }
