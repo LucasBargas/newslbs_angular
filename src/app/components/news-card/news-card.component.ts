@@ -16,7 +16,7 @@ export class NewsCardComponent {
 
   constructor(private newsService: NewsService) {}
 
-  teste(id: number) {
+  onDeleteClick(id: number) {
     const newsCopy = [...this.news.data];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 

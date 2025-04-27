@@ -13,6 +13,10 @@
   <div>
     <a routerLink="/noticia/{{news.id}}">Editar</a>
     <a routerLink="/noticia/{{news.id}}">Visualizar</a>
-    <button (click)="teste(news.id)">Deletar</button>
+    <button
+      (click)="onDeleteClick(news.id)"
+    >
+      Deletar
+    </button>
   </div>
 </div>
