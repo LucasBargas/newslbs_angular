@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "id": "3",
+      "title": "Prefeitura instala balanço para adultos e fila dobra no parque",
+      "description": "Iniciativa de 'diversão para todos' colocou adultos para brincar como crianças. Resultado: risadas, vídeos virais e um pai que não queria descer.",
+      "category": "Lazer",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "4",
+      "title": "Vaca escapa de fazenda e passa a manhã em academia local",
+      "description": "Animal fugiu do curral e foi visto na área de esteiras. Dono da academia elogia: 'ela tem mais frequência que muito cliente'.",
+      "category": "Inusitado",
+      "author": "Diego Oliveira",
+      "favorite": false
+    },
+    {
       "id": "5",
       "title": "Cachorro aprende a tocar campainha para pedir petiscos",
       "description": "Tutor treinou o pet para não latir e agora ele toca a campainha com o focinho. Vizinhos acham fofo, mas o entregador se confunde todo.",

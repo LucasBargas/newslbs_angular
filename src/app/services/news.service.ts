@@ -32,13 +32,12 @@ export class NewsService {
     }
 
     return this.http.get<INews>(this.apiUrl, { params }).pipe(
-      finalize(() => this.isLoading$.next(false)) // desativa loading mesmo com erro
+      finalize(() => this.isLoading$.next(false))
     );
   }
 
   exclude(id: number) {
-    const url = `${this.apiUrl}/${id}`;  // A URL correta para o seu recurso
-    console.log(url)
-    return this.http.delete(url);  // Usar 'url' em vez de '/news/api/${id}'
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete(url);
   }
 }

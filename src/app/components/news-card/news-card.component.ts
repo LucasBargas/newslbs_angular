@@ -16,7 +16,7 @@ export class NewsCardComponent {
 
   constructor(private newsService: NewsService) {}
 
-  teste(id: number) {
+  onDeleteClick(id: number) {
     const newsCopy = [...this.news.data];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 
@@ -29,6 +29,6 @@ export class NewsCardComponent {
     this.news = obj;
 
     this.newsService.exclude(id).subscribe();
-    // window.location.reload();
+    window.location.reload();
   }
 }
