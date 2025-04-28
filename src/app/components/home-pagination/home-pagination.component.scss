@@ -15,6 +15,12 @@
 
     fa-icon {
       font-size: .875rem;
+      transition: .4s;
+    }
+
+    &:hover {
+      color: #000;
+      font-weight: 500;
     }
   }
 
