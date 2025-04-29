@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    ".vscode": true,
+    ".angular": true,
+    ".git": true,
+    "node_modules": true,
+    ".editorconfig": true,
+    "package-lock.json": true,
+    "package.json": true,
+    ".gitignore": true,
+    "README.md": true,
+    "favicon.ico": true,
+    ".browserslistrc": true,
+    "karma.conf.js": true,
+    "tsconfig.json": true,
+    "tsconfig.app.json": true,
+    "tsconfig.spec.json": true
+  }
+}
