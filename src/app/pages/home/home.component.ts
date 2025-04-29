@@ -18,28 +18,30 @@ export class HomeComponent implements OnInit {
   news!: INews;
   isLoading = false;
   currentPage: number = 1;
-  itensPerPage: number = 6;
   totalPages: number = 0;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
 
   ngOnInit() {
+    this.getQueryParams();
+  }
+
+  getQueryParams() {
     this.route.queryParams.subscribe(params => {
       const page = params['pagina'];
       this.currentPage = page !== undefined ? page : 1;
       this.getNewsSerice();
     });
-
   }
 
   getNewsSerice() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getNews(this.itensPerPage, this.currentPage).subscribe({
+    this.newsService.getNews(this.currentPage).subscribe({
       next: (news) => {
         this.news = news,
         this.totalPages = news.pages;
-        console.log(this.news.data);
+        console.log(this.news);
       },
       error: (err) => console.error('Erro ao carregar notícias', err)
     });

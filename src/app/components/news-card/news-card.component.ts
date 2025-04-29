@@ -29,6 +29,6 @@ export class NewsCardComponent {
     this.news = obj;
 
     this.newsService.exclude(id).subscribe();
-    window.location.reload();
+    // window.location.reload();
   }
 }

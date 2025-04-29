@@ -12,12 +12,13 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(itensPerPage: number, page: number, favorites?: boolean, search?: string, author?: string): Observable<INews> {
+  getNews(page: number, favorites?: boolean, search?: string, author?: string): Observable<INews> {
     this.isLoading$.next(true);
+    const limit = 9;
 
     let params = new HttpParams()
     .set("_page", page)
-    .set('_per_page', itensPerPage);
+    .set('_per_page', limit);
 
     if (favorites) {
       params = params.set('favorite', favorites);

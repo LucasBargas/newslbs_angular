@@ -1,44 +1,12 @@
 {
   "news": [
     {
-      "id": "3",
-      "title": "Prefeitura instala balanço para adultos e fila dobra no parque",
-      "description": "Iniciativa de 'diversão para todos' colocou adultos para brincar como crianças. Resultado: risadas, vídeos virais e um pai que não queria descer.",
-      "category": "Lazer",
-      "author": "Carla Mendes",
-      "favorite": false
-    },
-    {
-      "id": "5",
-      "title": "Cachorro aprende a tocar campainha para pedir petiscos",
-      "description": "Tutor treinou o pet para não latir e agora ele toca a campainha com o focinho. Vizinhos acham fofo, mas o entregador se confunde todo.",
-      "category": "Animais",
-      "author": "Ana Silva",
-      "favorite": false
-    },
-    {
-      "id": "6",
-      "title": "Senhora vence campeonato de videogame e desafia netos",
-      "description": "Com 78 anos, Dona Lourdes surpreendeu ao vencer um torneio de corrida. Agora ela joga todos os dias e diz que 'a aposentadoria está divertida'.",
-      "category": "Tecnologia",
-      "author": "Bruno Souza",
-      "favorite": true
-    },
-    {
       "id": "7",
       "title": "Pombo vira celebridade local após 'invadir' reunião de prefeitura",
       "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
       "category": "Política",
       "author": "Carla Mendes",
       "favorite": true
-    },
-    {
-      "id": "8",
-      "title": "Padaria lança pão em formato de emoji e viraliza",
-      "description": "A ideia surgiu como brincadeira, mas os pães em forma de coração e carinha feliz estão esgotando antes do meio-dia.",
-      "category": "Gastronomia",
-      "author": "Diego Oliveira",
-      "favorite": false
     },
     {
       "id": "9",
