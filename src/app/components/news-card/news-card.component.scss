@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.news-card-container {
+.news-card {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1.25rem 1rem;
@@ -15,7 +15,7 @@
     flex: 1 1 0%;
   }
 
-  div {
+  &-details {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -23,10 +23,22 @@
     font-size: .875rem;
   }
 
-  a, button {
-    background: none;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
+  &-action {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    gap: .25rem;
+
+    a, button {
+      background: none;
+      display: inline-block;
+      text-align: center;
+      padding: .5rem;
+
+      fa-icon {
+        font-size: 1.25rem;
+        color: $primary-color;
+      }
+    }
   }
 }

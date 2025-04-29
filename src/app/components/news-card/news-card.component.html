@@ -1,18 +1,26 @@
 <div
-  class="news-card-container"
+  class="news-card"
   *ngFor="let news of news.data"
 >
   <h3>{{news.title}}</h3>
   <p>{{news.description}}</p>
 
-  <div>
+  <div class="news-card-details">
     <span><strong>Categoria:</strong> {{news.category}}</span>
     <span><strong>Autoria:</strong> {{news.author}}</span>
   </div>
 
-  <div>
-    <a routerLink="/noticia/{{news.id}}">Editar</a>
-    <a routerLink="/noticia/{{news.id}}">Visualizar</a>
-    <button (click)="onDeleteClick(news.id)">Deletar</button>
+  <div class="news-card-action">
+    <a routerLink="/noticia/{{news.id}}">
+      <fa-icon [icon]="faPenToSquare"></fa-icon>
+    </a>
+
+    <a routerLink="/noticia/{{news.id}}">
+      <fa-icon [icon]="faEye"></fa-icon>
+    </a>
+
+    <button title="Deletar notícia" (click)="onDeleteClick(news.id)">
+      <fa-icon [icon]="faTrash"></fa-icon>
+    </button>
   </div>
 </div>
