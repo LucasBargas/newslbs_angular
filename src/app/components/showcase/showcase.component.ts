@@ -3,21 +3,19 @@ import { ContainerComponent } from '../container/container.component';
 import { CommonModule } from '@angular/common';
 import { INews } from '../../interfaces/INews';
 import { NewsCardComponent } from '../news-card/news-card.component';
-import { PaginationComponent } from '../pagination/pagination.component';
 import { NewsService } from '../../services/news.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, NewsCardComponent, PaginationComponent],
+  imports: [CommonModule, ContainerComponent, NewsCardComponent],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
 })
 export class ShowcaseComponent implements OnInit {
-  news!: INews;
+  news!: INews[];
   currentPage: number = 1;
-  totalPages: number = 0;
   isLoading = false;
   @Input() favorites!: boolean;
 
@@ -40,8 +38,8 @@ export class ShowcaseComponent implements OnInit {
 
     this.newsService.getNews(this.currentPage, this.favorites).subscribe({
       next: (news) => {
-        this.news = news,
-        this.totalPages = news.pages;
+        this.news = news;
+        console.log(news)
       },
       error: (err) => console.error('Erro ao carregar notícias', err)
     });

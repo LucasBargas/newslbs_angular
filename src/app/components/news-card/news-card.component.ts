@@ -16,7 +16,7 @@ import { faTrash  } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './news-card.component.scss'
 })
 export class NewsCardComponent {
-  @Input() news!: INews;
+  @Input() news!: INews[];
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
@@ -24,16 +24,10 @@ export class NewsCardComponent {
   constructor(private newsService: NewsService) {}
 
   onDeleteClick(id: number) {
-    const newsCopy = [...this.news.data];
+    const newsCopy = [...this.news];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 
-    const obj = {
-      data: newsCopyFilter,
-      pages: this.news.pages,
-      items: this.news.items,
-    }
-
-    this.news = obj;
+    this.news = newsCopyFilter;
 
     this.newsService.exclude(id).subscribe();
     // window.location.reload();

@@ -12,27 +12,23 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(page: number, favorites?: boolean, search?: string, author?: string): Observable<INews> {
+  getNews(page: number, favorites?: boolean, author?: string): Observable<INews[]> {
     this.isLoading$.next(true);
     const limit = 9;
 
     let params = new HttpParams()
     .set("_page", page)
-    .set('_per_page', limit);
+    .set('_limit', limit);
 
     if (favorites) {
       params = params.set('favorite', favorites);
-    }
-
-    if (search!) {
-      params = params.set('q', search!);
     }
 
     if (author!) {
       params = params.set('q', author!);
     }
 
-    return this.http.get<INews>(this.apiUrl, { params }).pipe(
+    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
       finalize(() => this.isLoading$.next(false))
     );
   }

@@ -1,25 +1,25 @@
 <div
   class="news-card"
-  *ngFor="let news of news.data"
+  *ngFor="let item of news"
 >
-  <h3>{{news.title}}</h3>
-  <p>{{news.description}}</p>
+  <h3>{{item.title}}</h3>
+  <p>{{item.description}}</p>
 
   <div class="news-card-details">
-    <span><strong>Categoria:</strong> {{news.category}}</span>
-    <span><strong>Autoria:</strong> {{news.author}}</span>
+    <span><strong>Categoria:</strong> {{item.category}}</span>
+    <span><strong>Autoria:</strong> {{item.author}}</span>
   </div>
 
   <div class="news-card-action">
-    <a routerLink="/noticia/{{news.id}}">
+    <a routerLink="/noticia/{{item.id}}">
       <fa-icon [icon]="faPenToSquare"></fa-icon>
     </a>
 
-    <a routerLink="/noticia/{{news.id}}">
+    <a routerLink="/noticia/{{item.id}}">
       <fa-icon [icon]="faEye"></fa-icon>
     </a>
 
-    <button title="Deletar notícia" (click)="onDeleteClick(news.id)">
+    <button title="Deletar notícia" (click)="onDeleteClick(item.id)">
       <fa-icon [icon]="faTrash"></fa-icon>
     </button>
   </div>
