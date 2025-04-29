@@ -1,0 +1,23 @@
+<section class="showcase">
+  <div *ngIf="isLoading">
+    <app-container>
+      <div>Carregando notícias...</div>
+    </app-container>
+  </div>
+  <app-container>
+    <div class="showcase-wrapper">
+      <app-news-card
+        *ngIf="!isLoading"
+        class="showcase-wrapper-showcase"
+        [news]="news"
+      >
+      </app-news-card>
+
+      <app-pagination
+        [currentPage]="currentPage"
+        [totalPages]="totalPages"
+      >
+      </app-pagination>
+    </div>
+  </app-container>
+</section>

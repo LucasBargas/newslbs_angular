@@ -1,11 +1,43 @@
 {
   "news": [
     {
+<<<<<<< HEAD
       "id": "9",
       "title": "Criança troca dente de leite por batata para testar fada do dente",
       "description": "A experiência científica terminou com uma moeda e uma nota: 'Por hoje, passa. Mas não abuse'. Fada do dente responde com humor e criatividade.",
       "category": "Infantil",
       "author": "Ana Silva",
+=======
+      "id": "4",
+      "title": "Vaca escapa de fazenda e passa a manhã em academia local",
+      "description": "Animal fugiu do curral e foi visto na área de esteiras. Dono da academia elogia: 'ela tem mais frequência que muito cliente'.",
+      "category": "Inusitado",
+      "author": "Diego Oliveira",
+      "favorite": false
+    },
+    {
+      "id": "6",
+      "title": "Senhora vence campeonato de videogame e desafia netos",
+      "description": "Com 78 anos, Dona Lourdes surpreendeu ao vencer um torneio de corrida. Agora ela joga todos os dias e diz que 'a aposentadoria está divertida'.",
+      "category": "Tecnologia",
+      "author": "Bruno Souza",
+      "favorite": true
+    },
+    {
+      "id": "7",
+      "title": "Pombo vira celebridade local após 'invadir' reunião de prefeitura",
+      "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
+      "category": "Política",
+      "author": "Carla Mendes",
+      "favorite": true
+    },
+    {
+      "id": "8",
+      "title": "Padaria lança pão em formato de emoji e viraliza",
+      "description": "A ideia surgiu como brincadeira, mas os pães em forma de coração e carinha feliz estão esgotando antes do meio-dia.",
+      "category": "Gastronomia",
+      "author": "Diego Oliveira",
+>>>>>>> news-showcase
       "favorite": false
     },
     {

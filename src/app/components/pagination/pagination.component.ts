@@ -6,13 +6,13 @@ import { faChevronRight  } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home-pagination',
+  selector: 'app-pagination',
   standalone: true,
   imports: [CommonModule, FontAwesomeModule, RouterLink],
-  templateUrl: './home-pagination.component.html',
-  styleUrl: './home-pagination.component.scss'
+  templateUrl: './pagination.component.html',
+  styleUrl: './pagination.component.scss'
 })
-export class HomePaginationComponent {
+export class PaginationComponent {
   @Input() currentPage!: number;
   @Input() totalPages!: number;
 

@@ -1,49 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { ContainerComponent } from "../../components/container/container.component";
-import { INews } from '../../interfaces/INews';
-import { NewsService } from '../../services/news.service';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
-import { HomePaginationComponent } from '../../components/home-pagination/home-pagination.component';
-import { NewsCardComponent } from '../../components/news-card/news-card.component';
+import { ShowcaseComponent } from '../../components/showcase/showcase.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, HomePaginationComponent, NewsCardComponent],
+  imports: [CommonModule, ShowcaseComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'] // ✅ corrigido
 })
-export class HomeComponent implements OnInit {
-  news!: INews;
-  isLoading = false;
-  currentPage: number = 1;
-  totalPages: number = 0;
+export class HomeComponent {
 
-  constructor(private newsService: NewsService, private route: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.getQueryParams();
-  }
-
-  getQueryParams() {
-    this.route.queryParams.subscribe(params => {
-      const page = params['pagina'];
-      this.currentPage = page !== undefined ? page : 1;
-      this.getNewsSerice();
-    });
-  }
-
-  getNewsSerice() {
-    this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
-
-    this.newsService.getNews(this.currentPage).subscribe({
-      next: (news) => {
-        this.news = news,
-        this.totalPages = news.pages;
-        console.log(this.news);
-      },
-      error: (err) => console.error('Erro ao carregar notícias', err)
-    });
-  }
 }
