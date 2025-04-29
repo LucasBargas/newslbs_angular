@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Backend
-backend/node_modules
+/backend/

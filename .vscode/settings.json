@@ -7,7 +7,7 @@
     ".editorconfig": true,
     "package-lock.json": true,
     "package.json": true,
-    ".gitignore": true,
+    // ".gitignore": true,
     "README.md": true,
     "favicon.ico": true,
     ".browserslistrc": true,
