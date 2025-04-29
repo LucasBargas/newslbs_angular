@@ -1,372 +1,1044 @@
 {
   "news": [
     {
-      "id": "11",
-      "title": "Homem faz serenata para planta e ela floresce no mesmo dia",
-      "description": "Apaixonado por jardinagem, ele canta para suas plantas todos os dias. A rosa respondeu florescendo e ganhando o nome de 'Julieta'.",
+      "id": "1",
+      "title": "Gato impressiona vizinhos com canal de games",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Esportes Inusitados",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "2",
+      "title": "Professor descobre segredo de balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "3",
+      "title": "Inventor impressiona vizinhos com futebol de sabão",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Animais Radicais",
+      "author": "Fernanda Lima",
+      "favorite": true
+    },
+    {
+      "id": "4",
+      "title": "Inventor vence campeonato de futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
       "category": "Romance Botânico",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
+      "id": "5",
+      "title": "Artista impressiona vizinhos com plantação de árvores",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Política Felina",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "6",
+      "title": "Criança faz sucesso com canal de games",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Culinária Criativa",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "7",
+      "title": "Cantor vence campeonato de canal de games",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Tecnologia Improvisada",
       "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "8",
+      "title": "Inventor descobre segredo de plantação de árvores",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Fernanda Lima",
+      "favorite": true
+    },
+    {
+      "id": "9",
+      "title": "Idoso transforma bairro com bicicleta aquática",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Animais Radicais",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "10",
+      "title": "Criança impressiona vizinhos com balonismo artesanal",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Arte Urbana",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "11",
+      "title": "Idoso inventa técnica de canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Esportes Inusitados",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "12",
+      "title": "Artista impressiona vizinhos com museu improvisado",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Mundo Geek",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "13",
-      "title": "Papagaio começa a imitar celular e prega peças na família",
-      "description": "Sempre que alguém ouve um toque, não é ligação — é o Louro fazendo graça. Já confundiu até o técnico da operadora.",
-      "category": "Animais",
-      "author": "Ana Silva",
+      "title": "Inventor faz sucesso com balonismo artesanal",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Lucas Prado",
       "favorite": false
     },
     {
+      "id": "14",
+      "title": "Cantor faz sucesso com bicicleta aquática",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Mistérios Cotidianos",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
       "id": "15",
-      "title": "Idosa ganha campeonato de dança de TikTok no asilo",
-      "description": "Com passos sincronizados e muito carisma, Dona Tereza levou o troféu e a fama. Agora, todos os domingos são de dança e ring light.",
-      "category": "Diversão",
-      "author": "Carla Mendes",
+      "title": "Artista inventa técnica de canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mistérios Cotidianos",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "16",
+      "title": "Jardineiro descobre segredo de plantação de árvores",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Fernanda Lima",
       "favorite": false
     },
     {
       "id": "17",
-      "title": "Homem tenta cozinhar ovo no asfalto e atrai plateia",
-      "description": "Temperatura em plena tarde levou o morador a fazer um experimento culinário urbano. Resultado: ovo frito, fama no bairro e um pouco de fumaça.",
-      "category": "Cotidiano",
-      "author": "Ana Silva",
+      "title": "Gato vence campeonato de museu improvisado",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Animais Radicais",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "18",
-      "title": "Prefeitura instala balanço para adultos e fila dobra no parque",
-      "description": "Iniciativa de 'diversão para todos' colocou adultos para brincar como crianças. Resultado: risadas, vídeos virais e um pai que não queria descer.",
-      "category": "Lazer",
-      "author": "Bruno Souza",
+      "title": "Professor vence campeonato de balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Lucas Prado",
       "favorite": false
     },
     {
       "id": "19",
-      "title": "Vaca escapa de fazenda e passa a manhã em academia local",
-      "description": "Animal fugiu do curral e foi visto na área de esteiras. Dono da academia elogia: 'ela tem mais frequência que muito cliente'.",
-      "category": "Inusitado",
-      "author": "Carla Mendes",
-      "favorite": false
+      "title": "Gato descobre segredo de futebol de sabão",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
+      "favorite": true
     },
     {
       "id": "20",
-      "title": "Cachorro aprende a tocar campainha para pedir petiscos",
-      "description": "Tutor treinou o pet para não latir e agora ele toca a campainha com o focinho. Vizinhos acham fofo, mas o entregador se confunde todo.",
-      "category": "Animais",
-      "author": "Diego Oliveira",
+      "title": "Professor vence campeonato de futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Culinária Criativa",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "21",
+      "title": "Cachorro transforma bairro com futebol de sabão",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Mundo Geek",
+      "author": "Carla Mendes",
       "favorite": false
     },
     {
       "id": "22",
-      "title": "Pombo vira celebridade local após 'invadir' reunião de prefeitura",
-      "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
-      "category": "Política",
-      "author": "Bruno Souza",
-      "favorite": true
+      "title": "Cachorro transforma bairro com canal de games",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mundo Geek",
+      "author": "Bruno Martins",
+      "favorite": false
     },
     {
       "id": "23",
-      "title": "Padaria lança pão em formato de emoji e viraliza",
-      "description": "A ideia surgiu como brincadeira, mas os pães em forma de coração e carinha feliz estão esgotando antes do meio-dia.",
-      "category": "Gastronomia",
-      "author": "Carla Mendes",
+      "title": "Artista descobre segredo de bicicleta aquática",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Ricardo Alves",
       "favorite": false
     },
     {
       "id": "24",
-      "title": "Criança troca dente de leite por batata para testar fada do dente",
-      "description": "A experiência científica terminou com uma moeda e uma nota: 'Por hoje, passa. Mas não abuse'. Fada do dente responde com humor e criatividade.",
-      "category": "Infantil",
-      "author": "Diego Oliveira",
+      "title": "Artista transforma bairro com balonismo artesanal",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "25",
-      "title": "Coruja entra em biblioteca e 'lê' por duas horas",
-      "description": "Funcionários relatam que o animal ficou observando os livros com muita atenção. Internautas juram que era um estudante de Hogwarts perdido.",
-      "category": "Natureza",
-      "author": "Ana Silva",
+      "title": "Professor inventa técnica de bicicleta aquática",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Esportes Inusitados",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "26",
-      "title": "Homem faz serenata para planta e ela floresce no mesmo dia",
-      "description": "Apaixonado por jardinagem, ele canta para suas plantas todos os dias. A rosa respondeu florescendo e ganhando o nome de 'Julieta'.",
-      "category": "Romance Botânico",
-      "author": "Bruno Souza",
+      "title": "Artista descobre segredo de bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "27",
-      "title": "Vovô cria canal de dublagens de novelas e vira sensação online",
-      "description": "Com vozes caricatas e muito drama, Seu Zé viralizou ao recriar cenas de novelas clássicas com bonecos de pano.",
-      "category": "Entretenimento",
-      "author": "Carla Mendes",
-      "favorite": true
-    },
-    {
-      "id": "28",
-      "title": "Papagaio começa a imitar celular e prega peças na família",
-      "description": "Sempre que alguém ouve um toque, não é ligação — é o Louro fazendo graça. Já confundiu até o técnico da operadora.",
-      "category": "Animais",
-      "author": "Diego Oliveira",
+      "title": "Atleta impressiona vizinhos com balonismo artesanal",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Romance Botânico",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
-      "id": "29",
-      "title": "Robô aspirador se revolta e foge de casa pela porta aberta",
-      "description": "Moradores acharam que ele havia sido roubado, mas câmeras revelaram fuga autônoma. Ele foi encontrado limpando calçada do vizinho.",
-      "category": "Tecnologia",
-      "author": "Ana Silva",
+      "id": "28",
+      "title": "Artista vence campeonato de balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Animais Radicais",
+      "author": "Lucas Prado",
       "favorite": true
     },
     {
+      "id": "29",
+      "title": "Idoso faz sucesso com balonismo artesanal",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Esportes Inusitados",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
       "id": "30",
-      "title": "Idosa ganha campeonato de dança de TikTok no asilo",
-      "description": "Com passos sincronizados e muito carisma, Dona Tereza levou o troféu e a fama. Agora, todos os domingos são de dança e ring light.",
-      "category": "Diversão",
-      "author": "Bruno Souza",
+      "title": "Inventor transforma bairro com museu improvisado",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mundo Geek",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "31",
-      "title": "Gato assume comando de cafeteria e aumenta vendas em 300%",
-      "description": "Após subir no balcão e miar com autoridade, o gato 'Cafézinho' virou gerente honorário. Clientes agora pedem carinho junto com o cappuccino.",
-      "category": "Curiosidades",
-      "author": "Carla Mendes",
+      "title": "Cantor transforma bairro com plantação de árvores",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Mistérios Cotidianos",
+      "author": "Fernanda Lima",
       "favorite": true
     },
     {
       "id": "32",
-      "title": "Homem tenta cozinhar ovo no asfalto e atrai plateia",
-      "description": "Temperatura em plena tarde levou o morador a fazer um experimento culinário urbano. Resultado: ovo frito, fama no bairro e um pouco de fumaça.",
-      "category": "Cotidiano",
-      "author": "Diego Oliveira",
+      "title": "Artista vence campeonato de bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Tecnologia Improvisada",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "33",
-      "title": "Prefeitura instala balanço para adultos e fila dobra no parque",
-      "description": "Iniciativa de 'diversão para todos' colocou adultos para brincar como crianças. Resultado: risadas, vídeos virais e um pai que não queria descer.",
-      "category": "Lazer",
-      "author": "Ana Silva",
+      "title": "Idoso impressiona vizinhos com balonismo artesanal",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Invenções Malucas",
+      "author": "Ricardo Alves",
       "favorite": false
     },
     {
       "id": "34",
-      "title": "Vaca escapa de fazenda e passa a manhã em academia local",
-      "description": "Animal fugiu do curral e foi visto na área de esteiras. Dono da academia elogia: 'ela tem mais frequência que muito cliente'.",
-      "category": "Inusitado",
-      "author": "Bruno Souza",
+      "title": "Gato descobre segredo de museu improvisado",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Carla Mendes",
       "favorite": false
     },
     {
       "id": "35",
-      "title": "Cachorro aprende a tocar campainha para pedir petiscos",
-      "description": "Tutor treinou o pet para não latir e agora ele toca a campainha com o focinho. Vizinhos acham fofo, mas o entregador se confunde todo.",
-      "category": "Animais",
+      "title": "Gato vence campeonato de plantação de árvores",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mundo Geek",
       "author": "Carla Mendes",
       "favorite": false
     },
     {
       "id": "36",
-      "title": "Senhora vence campeonato de videogame e desafia netos",
-      "description": "Com 78 anos, Dona Lourdes surpreendeu ao vencer um torneio de corrida. Agora ela joga todos os dias e diz que 'a aposentadoria está divertida'.",
-      "category": "Tecnologia",
-      "author": "Diego Oliveira",
-      "favorite": true
+      "title": "Artista impressiona vizinhos com bicicleta aquática",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Política Felina",
+      "author": "Ricardo Alves",
+      "favorite": false
     },
     {
       "id": "37",
-      "title": "Pombo vira celebridade local após 'invadir' reunião de prefeitura",
-      "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
-      "category": "Política",
-      "author": "Ana Silva",
-      "favorite": true
+      "title": "Criança faz sucesso com museu improvisado",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Carla Mendes",
+      "favorite": false
     },
     {
       "id": "38",
-      "title": "Padaria lança pão em formato de emoji e viraliza",
-      "description": "A ideia surgiu como brincadeira, mas os pães em forma de coração e carinha feliz estão esgotando antes do meio-dia.",
-      "category": "Gastronomia",
-      "author": "Bruno Souza",
+      "title": "Atleta inventa técnica de balonismo artesanal",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "39",
-      "title": "Criança troca dente de leite por batata para testar fada do dente",
-      "description": "A experiência científica terminou com uma moeda e uma nota: 'Por hoje, passa. Mas não abuse'. Fada do dente responde com humor e criatividade.",
-      "category": "Infantil",
-      "author": "Carla Mendes",
+      "title": "Professor faz sucesso com plantação de árvores",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Tecnologia Improvisada",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "40",
-      "title": "Coruja entra em biblioteca e 'lê' por duas horas",
-      "description": "Funcionários relatam que o animal ficou observando os livros com muita atenção. Internautas juram que era um estudante de Hogwarts perdido.",
-      "category": "Natureza",
-      "author": "Diego Oliveira",
+      "title": "Professor descobre segredo de canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mistérios Cotidianos",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "41",
-      "title": "Homem faz serenata para planta e ela floresce no mesmo dia",
-      "description": "Apaixonado por jardinagem, ele canta para suas plantas todos os dias. A rosa respondeu florescendo e ganhando o nome de 'Julieta'.",
-      "category": "Romance Botânico",
-      "author": "Ana Silva",
+      "title": "Inventor transforma bairro com futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "42",
-      "title": "Vovô cria canal de dublagens de novelas e vira sensação online",
-      "description": "Com vozes caricatas e muito drama, Seu Zé viralizou ao recriar cenas de novelas clássicas com bonecos de pano.",
-      "category": "Entretenimento",
-      "author": "Bruno Souza",
+      "title": "Artista transforma bairro com museu improvisado",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Política Felina",
+      "author": "Fernanda Lima",
       "favorite": true
     },
     {
       "id": "43",
-      "title": "Papagaio começa a imitar celular e prega peças na família",
-      "description": "Sempre que alguém ouve um toque, não é ligação — é o Louro fazendo graça. Já confundiu até o técnico da operadora.",
-      "category": "Animais",
-      "author": "Carla Mendes",
+      "title": "Jardineiro vence campeonato de balonismo artesanal",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Mistérios Cotidianos",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "44",
-      "title": "Robô aspirador se revolta e foge de casa pela porta aberta",
-      "description": "Moradores acharam que ele havia sido roubado, mas câmeras revelaram fuga autônoma. Ele foi encontrado limpando calçada do vizinho.",
-      "category": "Tecnologia",
-      "author": "Diego Oliveira",
-      "favorite": true
+      "title": "Criança vence campeonato de futebol de sabão",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Mundo Geek",
+      "author": "Carla Mendes",
+      "favorite": false
     },
     {
       "id": "45",
-      "title": "Idosa ganha campeonato de dança de TikTok no asilo",
-      "description": "Com passos sincronizados e muito carisma, Dona Tereza levou o troféu e a fama. Agora, todos os domingos são de dança e ring light.",
-      "category": "Diversão",
-      "author": "Ana Silva",
+      "title": "Artista vence campeonato de canal de games",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Carla Mendes",
       "favorite": false
     },
     {
       "id": "46",
-      "title": "Gato assume comando de cafeteria e aumenta vendas em 300%",
-      "description": "Após subir no balcão e miar com autoridade, o gato 'Cafézinho' virou gerente honorário. Clientes agora pedem carinho junto com o cappuccino.",
-      "category": "Curiosidades",
-      "author": "Bruno Souza",
-      "favorite": true
+      "title": "Criança impressiona vizinhos com bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Patrícia Souza",
+      "favorite": false
     },
     {
       "id": "47",
-      "title": "Homem tenta cozinhar ovo no asfalto e atrai plateia",
-      "description": "Temperatura em plena tarde levou o morador a fazer um experimento culinário urbano. Resultado: ovo frito, fama no bairro e um pouco de fumaça.",
-      "category": "Cotidiano",
-      "author": "Carla Mendes",
+      "title": "Criança impressiona vizinhos com bicicleta aquática",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Tecnologia Improvisada",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "48",
-      "title": "Prefeitura instala balanço para adultos e fila dobra no parque",
-      "description": "Iniciativa de 'diversão para todos' colocou adultos para brincar como crianças. Resultado: risadas, vídeos virais e um pai que não queria descer.",
-      "category": "Lazer",
-      "author": "Diego Oliveira",
-      "favorite": false
+      "title": "Jardineiro faz sucesso com museu improvisado",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Romance Botânico",
+      "author": "Fernanda Lima",
+      "favorite": true
     },
     {
       "id": "49",
-      "title": "Vaca escapa de fazenda e passa a manhã em academia local",
-      "description": "Animal fugiu do curral e foi visto na área de esteiras. Dono da academia elogia: 'ela tem mais frequência que muito cliente'.",
-      "category": "Inusitado",
-      "author": "Ana Silva",
+      "title": "Idoso descobre segredo de bicicleta aquática",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Política Felina",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "50",
-      "title": "Cachorro aprende a tocar campainha para pedir petiscos",
-      "description": "Tutor treinou o pet para não latir e agora ele toca a campainha com o focinho. Vizinhos acham fofo, mas o entregador se confunde todo.",
-      "category": "Animais",
-      "author": "Bruno Souza",
-      "favorite": false
+      "title": "Artista impressiona vizinhos com balonismo artesanal",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Esportes Inusitados",
+      "author": "Carla Mendes",
+      "favorite": true
     },
     {
       "id": "51",
-      "title": "Senhora vence campeonato de videogame e desafia netos",
-      "description": "Com 78 anos, Dona Lourdes surpreendeu ao vencer um torneio de corrida. Agora ela joga todos os dias e diz que 'a aposentadoria está divertida'.",
-      "category": "Tecnologia",
-      "author": "Carla Mendes",
+      "title": "Idoso descobre segredo de canal de games",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Tecnologia Improvisada",
+      "author": "Patrícia Souza",
       "favorite": true
     },
     {
       "id": "52",
-      "title": "Pombo vira celebridade local após 'invadir' reunião de prefeitura",
-      "description": "O pássaro pousou em cima do microfone e interrompeu a sessão com um arrulho dramático. Internautas dizem que foi a melhor fala da reunião.",
-      "category": "Política",
-      "author": "Diego Oliveira",
+      "title": "Inventor vence campeonato de bicicleta aquática",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Animais Radicais",
+      "author": "Fernanda Lima",
       "favorite": true
     },
     {
       "id": "53",
-      "title": "Padaria lança pão em formato de emoji e viraliza",
-      "description": "A ideia surgiu como brincadeira, mas os pães em forma de coração e carinha feliz estão esgotando antes do meio-dia.",
-      "category": "Gastronomia",
-      "author": "Ana Silva",
+      "title": "Artista impressiona vizinhos com museu improvisado",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Romance Botânico",
+      "author": "Bruno Martins",
       "favorite": false
     },
     {
       "id": "54",
-      "title": "Criança troca dente de leite por batata para testar fada do dente",
-      "description": "A experiência científica terminou com uma moeda e uma nota: 'Por hoje, passa. Mas não abuse'. Fada do dente responde com humor e criatividade.",
-      "category": "Infantil",
-      "author": "Bruno Souza",
+      "title": "Criança impressiona vizinhos com plantação de árvores",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Culinária Criativa",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "55",
-      "title": "Coruja entra em biblioteca e 'lê' por duas horas",
-      "description": "Funcionários relatam que o animal ficou observando os livros com muita atenção. Internautas juram que era um estudante de Hogwarts perdido.",
-      "category": "Natureza",
-      "author": "Carla Mendes",
+      "title": "Artista impressiona vizinhos com bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "56",
-      "title": "Homem faz serenata para planta e ela floresce no mesmo dia",
-      "description": "Apaixonado por jardinagem, ele canta para suas plantas todos os dias. A rosa respondeu florescendo e ganhando o nome de 'Julieta'.",
-      "category": "Romance Botânico",
-      "author": "Diego Oliveira",
-      "favorite": false
-    },
-    {
-      "id": "57",
-      "title": "Vovô cria canal de dublagens de novelas e vira sensação online",
-      "description": "Com vozes caricatas e muito drama, Seu Zé viralizou ao recriar cenas de novelas clássicas com bonecos de pano.",
-      "category": "Entretenimento",
-      "author": "Ana Silva",
+      "title": "Cantor inventa técnica de bicicleta aquática",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Bruno Martins",
       "favorite": true
     },
     {
+      "id": "57",
+      "title": "Gato transforma bairro com canal de games",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Mundo Geek",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
       "id": "58",
-      "title": "Papagaio começa a imitar celular e prega peças na família",
-      "description": "Sempre que alguém ouve um toque, não é ligação — é o Louro fazendo graça. Já confundiu até o técnico da operadora.",
-      "category": "Animais",
-      "author": "Bruno Souza",
+      "title": "Jardineiro transforma bairro com bicicleta aquática",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
       "favorite": false
     },
     {
       "id": "59",
-      "title": "Robô aspirador se revolta e foge de casa pela porta aberta",
-      "description": "Moradores acharam que ele havia sido roubado, mas câmeras revelaram fuga autônoma. Ele foi encontrado limpando calçada do vizinho.",
-      "category": "Tecnologia",
+      "title": "Cantor inventa técnica de futebol de sabão",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "60",
+      "title": "Atleta impressiona vizinhos com canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Animais Radicais",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "61",
+      "title": "Criança transforma bairro com bicicleta aquática",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
+      "favorite": true
+    },
+    {
+      "id": "62",
+      "title": "Cantor transforma bairro com canal de games",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Mundo Geek",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "63",
+      "title": "Criança faz sucesso com canal de games",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Culinária Criativa",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "64",
+      "title": "Inventor transforma bairro com futebol de sabão",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Política Felina",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "65",
+      "title": "Cachorro impressiona vizinhos com canal de games",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Esportes Inusitados",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "66",
+      "title": "Professor descobre segredo de museu improvisado",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Política Felina",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "67",
+      "title": "Atleta faz sucesso com canal de games",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Arte Urbana",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "68",
+      "title": "Criança vence campeonato de plantação de árvores",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "69",
+      "title": "Jardineiro inventa técnica de plantação de árvores",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Mistérios Cotidianos",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "70",
+      "title": "Inventor inventa técnica de bicicleta aquática",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "71",
+      "title": "Professor descobre segredo de bicicleta aquática",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "72",
+      "title": "Atleta vence campeonato de balonismo artesanal",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Política Felina",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "73",
+      "title": "Cantor impressiona vizinhos com museu improvisado",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Esportes Inusitados",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "74",
+      "title": "Inventor descobre segredo de plantação de árvores",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Arte Urbana",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "75",
+      "title": "Idoso descobre segredo de museu improvisado",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Culinária Criativa",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "76",
+      "title": "Cantor descobre segredo de balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Culinária Criativa",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "77",
+      "title": "Idoso faz sucesso com museu improvisado",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "78",
+      "title": "Artista vence campeonato de canal de games",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Invenções Malucas",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "79",
+      "title": "Cantor descobre segredo de balonismo artesanal",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "80",
+      "title": "Cachorro transforma bairro com museu improvisado",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Prado",
+      "favorite": true
+    },
+    {
+      "id": "81",
+      "title": "Gato descobre segredo de canal de games",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Esportes Inusitados",
+      "author": "Fernanda Lima",
+      "favorite": true
+    },
+    {
+      "id": "82",
+      "title": "Cachorro transforma bairro com museu improvisado",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "83",
+      "title": "Artista transforma bairro com futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Romance Botânico",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "84",
+      "title": "Atleta impressiona vizinhos com museu improvisado",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Animais Radicais",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "85",
+      "title": "Idoso faz sucesso com canal de games",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Romance Botânico",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "86",
+      "title": "Cachorro inventa técnica de futebol de sabão",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Esportes Inusitados",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "87",
+      "title": "Inventor inventa técnica de futebol de sabão",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Arte Urbana",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "88",
+      "title": "Cachorro descobre segredo de museu improvisado",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
       "author": "Carla Mendes",
       "favorite": true
     },
     {
-      "id": "60",
-      "title": "Idosa ganha campeonato de dança de TikTok no asilo",
-      "description": "Com passos sincronizados e muito carisma, Dona Tereza levou o troféu e a fama. Agora, todos os domingos são de dança e ring light.",
-      "category": "Diversão",
-      "author": "Diego Oliveira",
+      "id": "89",
+      "title": "Criança vence campeonato de canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mundo Geek",
+      "author": "Bruno Martins",
       "favorite": false
+    },
+    {
+      "id": "90",
+      "title": "Jardineiro descobre segredo de canal de games",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Invenções Malucas",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "91",
+      "title": "Idoso impressiona vizinhos com plantação de árvores",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "92",
+      "title": "Gato faz sucesso com canal de games",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Culinária Criativa",
+      "author": "Fernanda Lima",
+      "favorite": true
+    },
+    {
+      "id": "93",
+      "title": "Criança inventa técnica de plantação de árvores",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Política Felina",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
+      "id": "94",
+      "title": "Artista impressiona vizinhos com bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Tecnologia Improvisada",
+      "author": "Patrícia Souza",
+      "favorite": true
+    },
+    {
+      "id": "95",
+      "title": "Idoso faz sucesso com futebol de sabão",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Esportes Inusitados",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "96",
+      "title": "Cantor impressiona vizinhos com museu improvisado",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Romance Botânico",
+      "author": "Lucas Prado",
+      "favorite": true
+    },
+    {
+      "id": "97",
+      "title": "Idoso vence campeonato de museu improvisado",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
+      "author": "Fernanda Lima",
+      "favorite": true
+    },
+    {
+      "id": "98",
+      "title": "Idoso inventa técnica de canal de games",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Tecnologia Improvisada",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "99",
+      "title": "Artista faz sucesso com bicicleta aquática",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "100",
+      "title": "Inventor faz sucesso com balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Culinária Criativa",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "101",
+      "title": "Professor inventa técnica de balonismo artesanal",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Mundo Geek",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "102",
+      "title": "Cantor descobre segredo de futebol de sabão",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Esportes Inusitados",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "103",
+      "title": "Criança inventa técnica de balonismo artesanal",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Invenções Malucas",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "104",
+      "title": "Gato vence campeonato de plantação de árvores",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Animais Radicais",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "105",
+      "title": "Idoso descobre segredo de canal de games",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Romance Botânico",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
+      "id": "106",
+      "title": "Idoso inventa técnica de balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Esportes Inusitados",
+      "author": "Bruno Martins",
+      "favorite": true
+    },
+    {
+      "id": "107",
+      "title": "Artista impressiona vizinhos com plantação de árvores",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Animais Radicais",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "108",
+      "title": "Atleta impressiona vizinhos com balonismo artesanal",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Esportes Inusitados",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "109",
+      "title": "Atleta descobre segredo de balonismo artesanal",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Invenções Malucas",
+      "author": "Patrícia Souza",
+      "favorite": false
+    },
+    {
+      "id": "110",
+      "title": "Cachorro faz sucesso com plantação de árvores",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mundo Geek",
+      "author": "Carla Mendes",
+      "favorite": true
+    },
+    {
+      "id": "111",
+      "title": "Gato transforma bairro com balonismo artesanal",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Arte Urbana",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "112",
+      "title": "Cachorro inventa técnica de plantação de árvores",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Invenções Malucas",
+      "author": "Bruno Martins",
+      "favorite": true
+    },
+    {
+      "id": "113",
+      "title": "Cachorro inventa técnica de bicicleta aquática",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Romance Botânico",
+      "author": "Lucas Prado",
+      "favorite": true
+    },
+    {
+      "id": "114",
+      "title": "Inventor descobre segredo de balonismo artesanal",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Animais Radicais",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "115",
+      "title": "Idoso faz sucesso com museu improvisado",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "116",
+      "title": "Jardineiro vence campeonato de museu improvisado",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Prado",
+      "favorite": false
+    },
+    {
+      "id": "117",
+      "title": "Jardineiro faz sucesso com balonismo artesanal",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Arte Urbana",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "118",
+      "title": "Criança impressiona vizinhos com futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Mistérios Cotidianos",
+      "author": "Patrícia Souza",
+      "favorite": true
+    },
+    {
+      "id": "119",
+      "title": "Gato descobre segredo de plantação de árvores",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Mistérios Cotidianos",
+      "author": "Fernanda Lima",
+      "favorite": false
+    },
+    {
+      "id": "120",
+      "title": "Criança transforma bairro com balonismo artesanal",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Política Felina",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "121",
+      "title": "Artista inventa técnica de museu improvisado",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Política Felina",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
+      "id": "122",
+      "title": "Atleta descobre segredo de bicicleta aquática",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Invenções Malucas",
+      "author": "Ricardo Alves",
+      "favorite": true
+    },
+    {
+      "id": "123",
+      "title": "Atleta transforma bairro com plantação de árvores",
+      "description": "O projeto virou assunto na escola local, onde professores passaram a usar como exemplo de inovação.",
+      "category": "Esportes Inusitados",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "124",
+      "title": "Artista transforma bairro com balonismo artesanal",
+      "description": "A cidade planeja homenageá-lo com uma festa pública repleta de música, comidas típicas e alegria.",
+      "category": "Tecnologia Improvisada",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "125",
+      "title": "Jardineiro vence campeonato de balonismo artesanal",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Romance Botânico",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "126",
+      "title": "Atleta descobre segredo de canal de games",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Mistérios Cotidianos",
+      "author": "Ricardo Alves",
+      "favorite": false
+    },
+    {
+      "id": "127",
+      "title": "Cantor transforma bairro com futebol de sabão",
+      "description": "A história emocionou a todos que ouviram, mostrando que criatividade e dedicação podem transformar realidades.",
+      "category": "Animais Radicais",
+      "author": "Carla Mendes",
+      "favorite": false
+    },
+    {
+      "id": "128",
+      "title": "Gato inventa técnica de museu improvisado",
+      "description": "A iniciativa inspirou outros a fazer o mesmo, gerando uma onda de projetos semelhantes pela cidade.",
+      "category": "Mundo Geek",
+      "author": "Carla Mendes",
+      "favorite": true
+    },
+    {
+      "id": "129",
+      "title": "Criança transforma bairro com futebol de sabão",
+      "description": "O feito foi parar nas redes sociais rapidamente, conquistando milhares de curtidas e comentários positivos.",
+      "category": "Esportes Inusitados",
+      "author": "Bruno Martins",
+      "favorite": false
+    },
+    {
+      "id": "130",
+      "title": "Artista faz sucesso com museu improvisado",
+      "description": "A comunidade aplaudiu de pé a criatividade e logo a história ganhou destaque nos jornais locais.",
+      "category": "Esportes Inusitados",
+      "author": "Lucas Prado",
+      "favorite": true
     }
   ]
 }
