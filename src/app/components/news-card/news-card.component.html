@@ -6,7 +6,15 @@
   <p>{{item.description}}</p>
 
   <div class="news-card-details">
-    <span><strong>Categoria:</strong> {{item.category}}</span>
+    <span>
+      <strong>Categoria:</strong>
+      <a
+      routerLink="/search"
+      [queryParams]="{ q: item.category}"
+    >
+      {{item.category}}
+    </a>
+    </span>
     <span>
       <strong>Autoria:</strong>
       <a
