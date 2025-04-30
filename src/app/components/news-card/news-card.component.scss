@@ -21,6 +21,10 @@
     align-items: flex-end;
     padding-top: 1rem;
     font-size: .875rem;
+
+    a {
+      color: $primary-color
+    }
   }
 
   &-action {
