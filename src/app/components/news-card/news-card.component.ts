@@ -7,6 +7,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEye  } from '@fortawesome/free-solid-svg-icons';
 import { faPenToSquare  } from '@fortawesome/free-solid-svg-icons';
 import { faTrash  } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-news-card',
@@ -20,6 +22,9 @@ export class NewsCardComponent {
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
+  isFavorited = false;
+  notFavorited = faHeartRegular;
+  favorited = faHeart;
 
   constructor(private newsService: NewsService) {}
 

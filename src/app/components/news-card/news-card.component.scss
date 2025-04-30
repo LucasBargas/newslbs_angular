@@ -49,12 +49,11 @@
     &-favorite {
       z-index: 2;
       position: absolute;
-      right: 0;
+      right: .75rem;
       bottom: .5rem;
-      background: black;
 
       button {
-        color: red;
+        color: $primary-color
       }
     }
 

@@ -34,7 +34,10 @@
     </div>
 
     <div class="news-card-action-favorite">
-      <button>Fav</button>
+      <button>
+        <fa-icon *ngIf="item.favorite" [icon]="favorited"></fa-icon>
+        <fa-icon *ngIf="!item.favorite" [icon]="notFavorited"></fa-icon>
+      </button>
     </div>
   </div>
 </div>
