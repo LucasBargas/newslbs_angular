@@ -4,11 +4,23 @@
       <div>Carregando notícias...</div>
     </app-container>
   </div>
+
   <app-container>
     <div class="showcase-wrapper">
+      <div *ngIf="searchPage" class="showcase-wrapper-count">
+        <h2>
+          {{searchResultCount}} notícias encontradas com: {{searchValue}}
+        </h2>
+      </div>
+
+      <div *ngIf="searchPage && searchResultCount === 0" class="showcase-wrapper-call">
+        <h3>Deseja adicionar uma notícia sobre: {{searchValue}}?</h3>
+        <a routerLink="/cadastrar-noticias">Basta clicar aqui</a>
+      </div>
+
       <app-news-card
         *ngIf="!isLoading"
-        class="showcase-wrapper-showcase"
+        class="showcase-wrapper-cards"
         [news]="news"
       >
       </app-news-card>

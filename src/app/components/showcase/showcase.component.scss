@@ -1,12 +1,53 @@
+@use '../../styles/variables' as *;
+
 .showcase-wrapper {
   width: 90%;
   margin: 0 auto;
+
+  * {
+    color: $primary-color;
+  }
 
   @media(max-width: 1024px) {
     width: 100%;
   }
 
-  &-showcase {
+  &-count {
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  &-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 1rem;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      width: 100%;
+      max-width: 180px;
+      border: 3px solid $primary-color;
+      border-radius: 6px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      padding: .85rem;
+      text-align: center;
+      transition: .3s;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;

@@ -33,6 +33,15 @@ export class NewsService {
     );
   }
 
+  getNewsBySearch(search: string) {
+    let params = new HttpParams()
+    .set("q", search);
+
+    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
+      finalize(() => this.isLoading$.next(false))
+    );
+  }
+
   exclude(id: number) {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);

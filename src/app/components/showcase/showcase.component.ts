@@ -4,12 +4,12 @@ import { CommonModule } from '@angular/common';
 import { INews } from '../../interfaces/INews';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NewsService } from '../../services/news.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, NewsCardComponent],
+  imports: [CommonModule, ContainerComponent, NewsCardComponent, RouterLink],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
 })
@@ -20,6 +20,7 @@ export class ShowcaseComponent implements OnInit {
   @Input() favorites!: boolean;
   @Input() searchPage!: boolean;
   searchValue!: string;
+  searchResultCount: number = 0;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
 
@@ -33,7 +34,14 @@ export class ShowcaseComponent implements OnInit {
       const search = params['q'];
       this.currentPage = page !== undefined ? page : 1;
 
-      if (this.searchPage && search) this.searchValue = search;
+      if (this.searchPage && search) {
+        this.searchValue = search;
+        this.newsService.getNewsBySearch(this.searchValue)
+        .subscribe((news) => {
+          console.log(news.length);
+          this.searchResultCount = news.length;
+        });
+      }
 
       this.getNewsService();
     });
@@ -43,8 +51,6 @@ export class ShowcaseComponent implements OnInit {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
     this.newsService.getNews(this.searchValue, this.currentPage, this.favorites)
-    .subscribe({
-      next: (news) => this.news = news
-    });
+    .subscribe((news) => this.news = news);
   }
 }
