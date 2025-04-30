@@ -12,7 +12,7 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(page: number, favorites?: boolean, author?: string): Observable<INews[]> {
+  getNews(search: string | undefined, page: number, favorites?: boolean): Observable<INews[]> {
     this.isLoading$.next(true);
     const limit = 9;
 
@@ -24,8 +24,8 @@ export class NewsService {
       params = params.set('favorite', favorites);
     }
 
-    if (author!) {
-      params = params.set('q', author!);
+    if (search!) {
+      params = params.set('q', search!);
     }
 
     return this.http.get<INews[]>(this.apiUrl, { params }).pipe(

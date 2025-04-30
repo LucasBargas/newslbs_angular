@@ -36,7 +36,7 @@ export class ShowcaseComponent implements OnInit {
   getNewsSerice() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getNews(this.currentPage, this.favorites).subscribe({
+    this.newsService.getNews(undefined, this.currentPage, this.favorites).subscribe({
       next: (news) => {
         this.news = news;
         console.log(news)
