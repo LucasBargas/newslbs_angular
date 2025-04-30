@@ -19,6 +19,7 @@ import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 })
 export class NewsCardComponent {
   @Input() news!: INews[];
+  @Input() favorites!: boolean;
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
@@ -40,6 +41,6 @@ export class NewsCardComponent {
   onFavoriteButtonClick(item: INews) {
     item.favorite = !item.favorite;
     this.newsService.changeFavorite(item).subscribe();
-    window.location.reload();
+    if (this.favorites) window.location.reload();
   }
 }
