@@ -16,6 +16,7 @@ import { NewsCardComponent } from "../../components/news-card/news-card.componen
 export class NewsSingleComponent implements OnInit {
   news!: INews[];
   favorites!: boolean;
+  viewNews = false;
 
   constructor (private newsService: NewsService, private route: ActivatedRoute) {}
 

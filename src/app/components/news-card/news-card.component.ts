@@ -22,6 +22,7 @@ import { DatePipe } from '@angular/common';
 export class NewsCardComponent {
   @Input() news!: INews[];
   @Input() favorites!: boolean;
+  @Input() viewNews!: boolean;
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
@@ -37,7 +38,10 @@ export class NewsCardComponent {
     this.news = newsCopyFilter;
 
     this.newsService.exclude(id).subscribe();
-    window.location.reload();
+
+    if (!this.viewNews) {
+      window.location.reload();
+    }
   }
 
   onFavoriteButtonClick(item: INews) {

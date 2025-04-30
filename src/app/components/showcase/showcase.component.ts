@@ -20,6 +20,7 @@ export class ShowcaseComponent implements OnInit {
   isLoading = false;
   @Input() favorites!: boolean;
   @Input() searchPage!: boolean;
+  viewNews: boolean = true;
   searchValue!: string;
   searchResultCount: number = 0;
 

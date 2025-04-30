@@ -28,11 +28,11 @@
 
   <div class="news-card-action">
     <div>
-      <a routerLink="/noticia/{{item.id}}">
+      <a routerLink="/editar-noticia/noticia/{{item.id}}">
         <fa-icon [icon]="faPenToSquare"></fa-icon>
       </a>
 
-      <a routerLink="/noticia/{{item.id}}">
+      <a *ngIf="viewNews" routerLink="/noticia/{{item.id}}">
         <fa-icon [icon]="faEye"></fa-icon>
       </a>
 
