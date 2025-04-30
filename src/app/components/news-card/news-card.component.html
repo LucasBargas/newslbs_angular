@@ -34,7 +34,7 @@
     </div>
 
     <div class="news-card-action-favorite">
-      <button>
+      <button (click)="onFavoriteButtonClick(item)">
         <fa-icon *ngIf="item.favorite" [icon]="favorited"></fa-icon>
         <fa-icon *ngIf="!item.favorite" [icon]="notFavorited"></fa-icon>
       </button>

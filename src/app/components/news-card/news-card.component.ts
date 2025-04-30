@@ -22,7 +22,6 @@ export class NewsCardComponent {
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
-  isFavorited = false;
   notFavorited = faHeartRegular;
   favorited = faHeart;
 
@@ -35,6 +34,12 @@ export class NewsCardComponent {
     this.news = newsCopyFilter;
 
     this.newsService.exclude(id).subscribe();
-    // window.location.reload();
+    window.location.reload();
+  }
+
+  onFavoriteButtonClick(item: INews) {
+    item.favorite = !item.favorite;
+    this.newsService.changeFavorite(item).subscribe();
+    window.location.reload();
   }
 }

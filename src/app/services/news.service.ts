@@ -42,6 +42,11 @@ export class NewsService {
     );
   }
 
+  changeFavorite(news: INews): Observable<INews> {
+    const url = `${this.apiUrl}/${news.id}`;
+    return this.http.put<INews>(url, news);
+  }
+
   exclude(id: number) {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
