@@ -5,11 +5,12 @@ import { INews } from '../../interfaces/INews';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NewsService } from '../../services/news.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { LoadingComponent } from "../loading/loading.component";
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, NewsCardComponent, RouterLink],
+  imports: [CommonModule, ContainerComponent, NewsCardComponent, RouterLink, LoadingComponent],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
 })
