@@ -18,6 +18,8 @@ export class ShowcaseComponent implements OnInit {
   currentPage: number = 1;
   isLoading = false;
   @Input() favorites!: boolean;
+  @Input() searchPage!: boolean;
+  searchValue!: string;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
 
@@ -28,20 +30,21 @@ export class ShowcaseComponent implements OnInit {
   getQueryParams() {
     this.route.queryParams.subscribe(params => {
       const page = params['pagina'];
+      const search = params['q'];
       this.currentPage = page !== undefined ? page : 1;
-      this.getNewsSerice();
+
+      if (this.searchPage && search) this.searchValue = search;
+
+      this.getNewsService();
     });
   }
 
-  getNewsSerice() {
+  getNewsService() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getNews(undefined, this.currentPage, this.favorites).subscribe({
-      next: (news) => {
-        this.news = news;
-        console.log(news)
-      },
-      error: (err) => console.error('Erro ao carregar notícias', err)
+    this.newsService.getNews(this.searchValue, this.currentPage, this.favorites)
+    .subscribe({
+      next: (news) => this.news = news
     });
   }
 }
