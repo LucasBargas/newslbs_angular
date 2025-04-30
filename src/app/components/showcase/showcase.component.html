@@ -5,7 +5,7 @@
     </app-container>
   </div>
 
-  <app-container>
+  <app-container *ngIf="!isLoading">
     <div class="showcase-wrapper">
       <div *ngIf="searchPage" class="showcase-wrapper-count">
         <h2>
@@ -19,7 +19,6 @@
       </div>
 
       <app-news-card
-        *ngIf="!isLoading"
         class="showcase-wrapper-cards"
         [news]="news"
       >
