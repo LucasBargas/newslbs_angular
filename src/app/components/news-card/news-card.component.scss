@@ -11,6 +11,17 @@
   box-shadow: $shadow;
   position: relative;
 
+  a:first-child {
+    font-size: 1.125rem;
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
   p {
     margin-top: .5rem;
     flex: 1 1 0%;
