@@ -38,7 +38,6 @@ export class ShowcaseComponent implements OnInit {
         this.searchValue = search;
         this.newsService.getNewsBySearch(this.searchValue)
         .subscribe((news) => {
-          console.log(news.length);
           this.searchResultCount = news.length;
         });
       }
