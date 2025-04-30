@@ -9,6 +9,7 @@
   border-radius: 6px;
   background: $light-color;
   box-shadow: $shadow;
+  position: relative;
 
   p {
     margin-top: .5rem;
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 1rem;
+    margin-bottom: .75rem;
     font-size: .875rem;
     gap: .25rem;
 
@@ -29,10 +30,33 @@
   }
 
   &-action {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 21fr 1fr;
     padding-top: 1.5rem;
     gap: .25rem;
+
+    div:nth-of-type(1) {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: .5rem;
+
+    }
+
+    &-favorite {
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      bottom: .5rem;
+      background: black;
+
+      button {
+        color: red;
+      }
+    }
 
     a, button {
       background: none;

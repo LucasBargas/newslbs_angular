@@ -19,16 +19,22 @@
   </div>
 
   <div class="news-card-action">
-    <a routerLink="/noticia/{{item.id}}">
-      <fa-icon [icon]="faPenToSquare"></fa-icon>
-    </a>
+    <div>
+      <a routerLink="/noticia/{{item.id}}">
+        <fa-icon [icon]="faPenToSquare"></fa-icon>
+      </a>
 
-    <a routerLink="/noticia/{{item.id}}">
-      <fa-icon [icon]="faEye"></fa-icon>
-    </a>
+      <a routerLink="/noticia/{{item.id}}">
+        <fa-icon [icon]="faEye"></fa-icon>
+      </a>
 
-    <button title="Deletar notícia" (click)="onDeleteClick(item.id)">
-      <fa-icon [icon]="faTrash"></fa-icon>
-    </button>
+      <button title="Deletar notícia" (click)="onDeleteClick(item.id)">
+        <fa-icon [icon]="faTrash"></fa-icon>
+      </button>
+    </div>
+
+    <div class="news-card-action-favorite">
+      <button>Fav</button>
+    </div>
   </div>
 </div>
