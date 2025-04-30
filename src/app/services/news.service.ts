@@ -33,6 +33,16 @@ export class NewsService {
     );
   }
 
+  getNewsById(id: number): Observable<INews> {
+    this.isLoading$.next(true);
+
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.get<INews>(url).pipe(
+      finalize(() => this.isLoading$.next(false))
+    );
+  }
+
   getNewsBySearch(search: string) {
     let params = new HttpParams()
     .set("q", search);

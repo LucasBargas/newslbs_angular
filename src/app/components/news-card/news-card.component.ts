@@ -31,7 +31,7 @@ export class NewsCardComponent {
   constructor(private newsService: NewsService, private datePipe: DatePipe) {}
 
   onDeleteClick(id: number) {
-    const newsCopy = [...this.news];
+    const newsCopy = Array.isArray(this.news) ? [...this.news] : [this.news];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 
     this.news = newsCopyFilter;

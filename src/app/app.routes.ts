@@ -5,6 +5,7 @@ import { RegisterNewsComponent } from './pages/register-news/register-news.compo
 import { SearchComponent } from './pages/search/search.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { EditNewsComponent } from './pages/edit-news/edit-news.component';
+import { NewsSingleComponent } from './pages/news-single/news-single.component';
 
 export const routes: Routes = [
   {
@@ -23,7 +24,7 @@ export const routes: Routes = [
     path: 'editar-noticia/noticia/:id', component: EditNewsComponent,
   },
   {
-    path: 'noticia/:id', component: EditNewsComponent,
+    path: 'noticia/:id', component: NewsSingleComponent,
   },
   {
     path: 'search', component: SearchComponent,
