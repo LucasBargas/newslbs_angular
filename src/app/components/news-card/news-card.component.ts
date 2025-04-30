@@ -9,13 +9,15 @@ import { faPenToSquare  } from '@fortawesome/free-solid-svg-icons';
 import { faTrash  } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-news-card',
   standalone: true,
   imports: [CommonModule, RouterLink, FontAwesomeModule],
   templateUrl: './news-card.component.html',
-  styleUrl: './news-card.component.scss'
+  styleUrl: './news-card.component.scss',
+  providers: [DatePipe]
 })
 export class NewsCardComponent {
   @Input() news!: INews[];
@@ -26,7 +28,7 @@ export class NewsCardComponent {
   notFavorited = faHeartRegular;
   favorited = faHeart;
 
-  constructor(private newsService: NewsService) {}
+  constructor(private newsService: NewsService, private datePipe: DatePipe) {}
 
   onDeleteClick(id: number) {
     const newsCopy = [...this.news];
@@ -42,5 +44,10 @@ export class NewsCardComponent {
     item.favorite = !item.favorite;
     this.newsService.changeFavorite(item).subscribe();
     if (this.favorites) window.location.reload();
+  }
+
+  handleWithDateAndHour(date: string) {
+    const formattedDate = this.datePipe.transform(date, 'dd/MM/yyyy HH:mm', 'UTC');
+    return formattedDate;
   }
 }
