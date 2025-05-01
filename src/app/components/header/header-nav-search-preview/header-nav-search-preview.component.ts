@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, Optional, SimpleChanges, SkipSelf } from '@angular/core';
 import { NewsService } from '../../../services/news.service';
 import { INews } from '../../../interfaces/INews';
 import { RouterLink } from '@angular/router';
+import { HeaderNavSearchComponent } from '../header-nav-search/header-nav-search.component';
 
 @Component({
   selector: 'app-header-nav-search-preview',
@@ -17,7 +18,10 @@ export class HeaderNavSearchPreviewComponent implements OnChanges {
   news!: INews[];
   isLoading = false;
 
-  constructor(private newsService: NewsService) {}
+  constructor(
+    private newsService: NewsService,
+    @Optional() @SkipSelf() private header: HeaderNavSearchComponent
+  ) {}
 
   ngOnChanges(changes: SimpleChanges) {
     const change = changes['value'];
@@ -29,5 +33,9 @@ export class HeaderNavSearchPreviewComponent implements OnChanges {
         this.news = data;
       });
     }
+  }
+
+  onClick() {
+    this.header.onClickClearButton();
   }
 }

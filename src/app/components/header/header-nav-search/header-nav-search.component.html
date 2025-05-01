@@ -3,11 +3,12 @@
     <input
       #input
       type="text"
+      name="search"
       placeholder="Pesquise por uma notícia"
       [(ngModel)]="value"
-      name="search"
       (input)="value.trim() && error = false"
       (blur)="error = false"
+      (keydown.escape)="onClickClearButton()"
     >
 
     <button

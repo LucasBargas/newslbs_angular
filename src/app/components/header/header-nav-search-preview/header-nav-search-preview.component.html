@@ -6,11 +6,12 @@
 
 <ul *ngIf="!isLoading && news.length > 0">
   <li *ngFor="let item of news.slice(0, 4)">
-    <a routerLink="/noticia/{{item.id}}">{{item.title}}</a>
+    <a (click)="onClick()" routerLink="/noticia/{{item.id}}">{{item.title}}</a>
   </li>
 
   <li *ngIf="news.length > 4">
     <a
+      (click)="onClick()"
       routerLink="/search"
       [queryParams]="{ q: value}"
       class="show-more"
