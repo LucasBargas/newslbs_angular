@@ -20,7 +20,7 @@
     </app-error-message>
 
     <app-header-nav-search-preview
-      *ngIf="value.length > 2"
+      *ngIf="value.trim() && value.length > 2"
       class="search-preview"
       [value]="value"
     >

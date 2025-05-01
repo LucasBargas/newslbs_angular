@@ -48,7 +48,7 @@ export class NewsService {
     this.searchLoading$.next(true);
 
     let params = new HttpParams()
-    .set("q", search);
+    .set("q", search.replace(/^\s+/, ''));
 
     return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
       finalize(() => this.searchLoading$.next(false))
