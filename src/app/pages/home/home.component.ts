@@ -7,7 +7,7 @@ import { ShowcaseComponent } from '../../components/showcase/showcase.component'
   standalone: true,
   imports: [CommonModule, ShowcaseComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'] // ✅ corrigido
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
 
