@@ -18,5 +18,12 @@
       message="Você precisa procurar por uma notícia."
     >
     </app-error-message>
+
+    <app-header-nav-search-preview
+      *ngIf="value.length > 2"
+      class="search-preview"
+      [value]="value"
+    >
+    </app-header-nav-search-preview>
   </form>
 </li>

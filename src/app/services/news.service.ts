@@ -9,6 +9,7 @@ import { INews } from '../interfaces/INews';
 export class NewsService {
   private apiUrl = 'http://localhost:3000/news';
   public isLoading$ = new BehaviorSubject<boolean>(false);
+  public searchLoading$ = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient) { }
 
@@ -44,12 +45,14 @@ export class NewsService {
   }
 
   getNewsBySearch(search: string) {
+    this.searchLoading$.next(true);
+
     let params = new HttpParams()
     .set("q", search);
 
     return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
-      finalize(() => this.isLoading$.next(false))
-    );
+      finalize(() => this.searchLoading$.next(false))
+    );;
   }
 
   changeFavorite(news: INews): Observable<INews> {

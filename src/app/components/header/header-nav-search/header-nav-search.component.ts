@@ -6,11 +6,12 @@ import { ErrorMessageComponent } from '../../error-message/error-message.compone
 import { HeaderComponent } from '../header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
+import { HeaderNavSearchPreviewComponent } from "../header-nav-search-preview/header-nav-search-preview.component";
 
 @Component({
   selector: 'app-header-nav-search',
   standalone: true,
-  imports: [CommonModule, FormsModule, ErrorMessageComponent, FontAwesomeModule],
+  imports: [CommonModule, FormsModule, ErrorMessageComponent, FontAwesomeModule, HeaderNavSearchPreviewComponent],
   templateUrl: './header-nav-search.component.html',
   styleUrl: './header-nav-search.component.scss'
 })

@@ -1,0 +1,17 @@
+@use '../../../styles/variables' as *;
+
+ul {
+  a {
+    display: block;
+    color: $primary-color;
+    padding: .5rem 1rem;
+  }
+
+  .show-more {
+    font-weight: 600;
+  }
+
+  .not-news {
+    padding: .5rem 1rem;
+  }
+}

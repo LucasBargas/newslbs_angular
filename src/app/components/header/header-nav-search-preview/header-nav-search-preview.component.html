@@ -1,0 +1,27 @@
+<ul *ngIf="isLoading">
+  <li class="not-news">
+    Carregando...
+  </li>
+</ul>
+
+<ul *ngIf="!isLoading && news.length > 0">
+  <li *ngFor="let item of news.slice(0, 4)">
+    <a routerLink="/noticia/{{item.id}}">{{item.title}}</a>
+  </li>
+
+  <li *ngIf="news.length > 4">
+    <a
+      routerLink="/search"
+      [queryParams]="{ q: value}"
+      class="show-more"
+    >
+      Clique aqui para ver mais
+    </a>
+  </li>
+</ul>
+
+<ul *ngIf="!isLoading && news.length === 0">
+  <li class="not-news">
+    Nenhuma notícia encontrada com: {{ value }}
+  </li>
+</ul>

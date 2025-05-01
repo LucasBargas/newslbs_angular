@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Optional, SkipSelf } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { HeaderNavSearchComponent } from './header-nav-search/header-nav-search.component';
 import { HeaderComponent } from '../header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faSquareInstagram  } from '@fortawesome/free-brands-svg-icons';
 import { faSquareFacebook  } from '@fortawesome/free-brands-svg-icons';
+import { HeaderNavSearchComponent } from '../header-nav-search/header-nav-search.component';
 
 interface INav {
   title: string;

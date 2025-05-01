@@ -1,4 +1,4 @@
-@use '../../../../styles/variables' as *;
+@use '../../../styles/variables' as *;
 
 form {
   width: 340px;
@@ -41,5 +41,17 @@ form {
     fa-icon {
       color: $primary-color;
     }
+  }
+
+  .search-preview {
+    position: absolute;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    background: rgb(250, 250, 250);
+    border-radius: 4px;
+    padding: .5rem 0;
+    font-size: 0.875rem;
+    box-shadow: rgba(34, 34, 34, 0.37) -2px 1px 23px -1px;
   }
 }
