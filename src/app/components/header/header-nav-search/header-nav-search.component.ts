@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, Optional, SkipSelf } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ErrorMessageComponent } from '../../../error-message/error-message.component';
-import { HeaderComponent } from '../../header.component';
+import { ErrorMessageComponent } from '../../error-message/error-message.component';
+import { HeaderComponent } from '../header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
 
