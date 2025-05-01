@@ -1,6 +1,7 @@
 <li>
   <form (ngSubmit)="onSubmit()">
     <input
+      #input
       type="text"
       placeholder="Pesquise por uma notícia"
       [(ngModel)]="value"
@@ -9,7 +10,16 @@
       (blur)="error = false"
     >
 
-    <button type="button">
+    <button
+      type="button"
+      *ngIf="value.trim() && value.length > 2"
+      (click)="onClickClearButton()"
+      class="search-clear"
+    >
+      <fa-icon [icon]="faXmark"></fa-icon>
+    </button>
+
+    <button type="button" (click)="inputRef.nativeElement.focus()">
       <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
     </button>
 
