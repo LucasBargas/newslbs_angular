@@ -6,11 +6,13 @@ import { NewsCardComponent } from '../news-card/news-card.component';
 import { NewsService } from '../../services/news.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LoadingComponent } from "../loading/loading.component";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faChevronDown  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [CommonModule, ContainerComponent, NewsCardComponent, RouterLink, LoadingComponent],
+  imports: [CommonModule, FontAwesomeModule, ContainerComponent, NewsCardComponent, RouterLink, LoadingComponent],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
 })
@@ -23,6 +25,9 @@ export class ShowcaseComponent implements OnInit {
   viewNews: boolean = true;
   searchValue!: string;
   searchResultCount: number = 0;
+  faChevronDown = faChevronDown;
+  showControllers = false;
+  controllerMode = 'Aleatórias';
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
 

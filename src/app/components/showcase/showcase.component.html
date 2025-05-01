@@ -7,9 +7,36 @@
 
   <app-container *ngIf="!isLoading">
     <div class="showcase-wrapper">
+      <div *ngIf="news.length > 1" class="showcase-wrapper-controller">
+        <p>Ordernar por:</p>
+        <button
+          (click)="showControllers = !showControllers"
+          type="button"
+          [ngClass]="showControllers ? 'active' : ''"
+        >
+          {{controllerMode}}
+          <fa-icon [icon]="faChevronDown"></fa-icon>
+        </button>
+
+        <ul class="showcase-wrapper-controller-options {{showControllers ? 'active' : ''}}">
+          <li
+            (click)="controllerMode = 'Aleatórias'; showControllers = false"
+            [ngClass]="controllerMode === 'Aleatórias' ? 'active' : ''"
+          >
+            Aleatória
+          </li>
+          <li
+            (click)="controllerMode = 'Mais recentes'; showControllers = false"
+            [ngClass]="controllerMode === 'Mais recentes' ? 'active' : ''"
+          >
+            Mais recentes
+          </li>
+        </ul>
+      </div>
+
       <div *ngIf="searchPage" class="showcase-wrapper-count">
         <h2>
-          {{searchResultCount}} notícias encontradas com: "{{searchValue}}"
+          {{searchResultCount}} {{searchResultCount !== 1 ? 'notícias' : 'notícia'}} encontradas com: "{{searchValue}}"
         </h2>
       </div>
 

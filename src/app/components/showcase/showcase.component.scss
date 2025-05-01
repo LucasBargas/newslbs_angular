@@ -12,6 +12,98 @@
     width: 100%;
   }
 
+  &-controller {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    font-size: .875rem;
+    gap: .325rem;
+    position: relative;
+
+    button {
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+      transition: .2s;
+      background: transparent;
+      color: #676966;
+      font-weight: normal;
+      font-size: .875rem;
+      transition: .2s;
+      gap: .125rem;
+
+      &:hover {
+        color: $primary-color;
+
+        fa-icon {
+          color: $primary-color;
+        }
+      }
+
+      &.active {
+        color: $primary-color;
+
+        fa-icon {
+          transform: rotate(180deg);
+          transition: transform 0.3s ease;
+          color: $primary-color;
+        }
+      }
+
+      fa-icon {
+        display: inline-block;
+        color: #676966;
+        font-size: .75rem;
+        transition: transform .3s ease;
+      }
+    }
+
+    &-options {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s;
+      position: absolute;
+      top: 1.5rem;
+      right: -1.25rem;
+      z-index: 500;
+      background: $light-color;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      box-shadow: rgba(34, 34, 34, 0.37) -2px 1px 23px -1px;
+
+      @media (max-width: 834px) {
+        right: 0;
+      }
+
+      &.active {
+        pointer-events: all;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      li {
+        color: #676966;
+        font-size: .75rem;
+        cursor: pointer;
+        padding: .75rem .9325rem;
+        transition: .2s;
+
+        &:nth-of-type(1) {
+          border-bottom: 1px solid #676966;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
   &-count {
     padding-bottom: 1.5rem;
     font-size: 1rem;
