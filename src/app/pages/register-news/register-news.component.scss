@@ -12,18 +12,49 @@
       text-align: center;
     }
 
+    p {
+      margin-top: .5rem;
+    }
+
     form {
+      padding-top: 1rem;
+
       .form-input-single {
         display: flex;
         flex-direction: column;
+        padding-bottom: .75rem;
+
+        label {
+          margin-bottom: .325rem;
+        }
 
         input, textarea {
           border: 1px solid black;
+          display: block;
+          padding: 0.625rem;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid rgb(148, 148, 148);
         }
 
         textarea {
           resize: none;
+          padding: 0.625rem;
+          height: 102px;
         }
+
+        span{
+          color: red;
+          font-size: .875rem;
+          margin-top: .25rem;
+        }
+      }
+
+      button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

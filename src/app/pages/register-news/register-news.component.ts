@@ -26,17 +26,23 @@ export class RegisterNewsComponent implements OnInit {
     this.form = this.formBuilder.group({
       title: ['', Validators.compose([
         Validators.required, // required field
-        Validators.pattern(/(.|\s)*\S(.|\s)*/) // field not to be empty
+        Validators.pattern(/^\s*\S.*$/), // field not to be empty or spaces
+        Validators.minLength(5)
       ])],
       description: ['', Validators.compose([
         Validators.required, // required field
-        Validators.minLength(3)
+        Validators.pattern(/^\s*\S.*$/),
+        Validators.minLength(100)
       ])],
       category: [this.categoryValue, Validators.compose([
         Validators.required, // required field
+        Validators.pattern(/^\s*\S.*$/),
+        Validators.minLength(5)
       ])],
       author: ['', Validators.compose([
         Validators.required, // required field
+        Validators.pattern(/^\s*\S.*$/),
+        Validators.minLength(5)
       ])],
       favorite: [false],
       created_at: [new Date().toISOString().split('.')[0] + 'Z'],

@@ -15,12 +15,24 @@
             formControlName="title"
             autofocus
           >
-          <div
+          <span
             *ngIf="hasError('title', 'required')"
             class="error_message"
           >
             O Título deve ser preenchido.
-          </div>
+          </span>
+          <span
+            *ngIf="hasError('title', 'pattern')"
+            class="error_message"
+          >
+            O Título não pode conter apenas espaços.
+          </span>
+          <span
+            *ngIf="hasError('title', 'minlength')"
+            class="error_message"
+          >
+            O Título deve conter pelo menos 5 caracteres.
+          </span>
         </div>
 
         <div class="form-input-single">
@@ -29,16 +41,28 @@
             type="text"
             name="description"
             id="description"
-            placeholder="description"
+            placeholder="Defina o texto da notícia"
             formControlName="description"
           >
           </textarea>
-          <div
+          <span
             *ngIf="hasError('description', 'required')"
             class="error_message"
           >
-            A Descrição deve ser preenchida.
-          </div>
+            A Nitícia deve ser preenchida.
+          </span>
+          <span
+            *ngIf="hasError('description', 'pattern')"
+            class="error_message"
+          >
+            A Notícia não pode conter apenas espaços.
+          </span>
+          <span
+            *ngIf="hasError('description', 'minlength')"
+            class="error_message"
+          >
+            A Notícia deve conter pelo menos 100 caracteres.
+          </span>
         </div>
 
         <div class="form-input-single">
@@ -47,15 +71,27 @@
             type="text"
             name="category"
             id="category"
-            placeholder="category"
+            placeholder="Digite a categoria ou escolha uma das existentes"
             formControlName="category"
           >
-          <div
+          <span
             *ngIf="hasError('category', 'required')"
-            class="error_message"
+            class="form-input-single-error"
           >
             A Categoria deve ser escolhida ou criada.
-          </div>
+          </span>
+          <span
+          *ngIf="hasError('category', 'pattern')"
+          class="error_message"
+          >
+          A Categoria não pode conter apenas espaços.
+          </span>
+          <span
+            *ngIf="hasError('category', 'minlength')"
+            class="error_message"
+          >
+          A Categoria deve conter pelo menos 5 caracteres.
+          </span>
         </div>
 
         <div class="form-input-single">
@@ -64,15 +100,27 @@
             type="text"
             name="author"
             id="author"
-            placeholder="author"
+            placeholder="Defina o autor da notícia"
             formControlName="author"
           >
-          <div
+          <span
             *ngIf="hasError('author', 'required')"
             class="error_message"
           >
             O Autor deve ser preenchido.
-          </div>
+          </span>
+          <span
+          *ngIf="hasError('author', 'pattern')"
+          class="error_message"
+          >
+          O Autor não pode conter apenas espaços.
+          </span>
+          <span
+            *ngIf="hasError('author', 'minlength')"
+            class="error_message"
+          >
+          O Autor deve conter pelo menos 5 caracteres.
+          </span>
         </div>
 
         <button type="submit">Enviar</button>
