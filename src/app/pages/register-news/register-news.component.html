@@ -13,7 +13,6 @@
             id="title"
             placeholder="Defina o título da notícia"
             formControlName="title"
-            autofocus
           >
           <span
             *ngIf="hasError('title', 'required')"
@@ -49,7 +48,7 @@
             *ngIf="hasError('description', 'required')"
             class="error_message"
           >
-            A Nitícia deve ser preenchida.
+            A Notícia deve ser preenchida.
           </span>
           <span
             *ngIf="hasError('description', 'pattern')"
