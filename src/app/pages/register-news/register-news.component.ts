@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ContainerComponent } from "../../components/container/container.component";
 import { CommonModule } from '@angular/common';
 import { NewsService } from '../../services/news.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-register-news',
   standalone: true,
@@ -14,7 +16,11 @@ export class RegisterNewsComponent implements OnInit {
   form!: FormGroup;
   categoryValue: string = '';
 
-  constructor(private formBuilder: FormBuilder, private newsService: NewsService) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private newsService: NewsService
+  ) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -45,6 +51,7 @@ export class RegisterNewsComponent implements OnInit {
 
     console.log('Form enviado:', this.form.value);
     this.form.reset();
+    this.router.navigate(['/home'])
 
     // const titleValue = this.form.get('title')?.value;
     // console.log('Título:', titleValue);
