@@ -7,6 +7,24 @@
     max-width: 650px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
-    text-align: center;
+
+    h2, p {
+      text-align: center;
+    }
+
+    form {
+      .form-input-single {
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          border: 1px solid black;
+        }
+
+        textarea {
+          resize: none;
+        }
+      }
+    }
   }
 }

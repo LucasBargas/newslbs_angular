@@ -2,10 +2,80 @@
   <app-container>
     <div class="register-news-wrapper">
       <h2>Cadastre uma notícia</h2>
-      Após o cadastro, a notícia estará disponível para outras pessoas verem.
+      <p>Após o cadastro, a notícia estará disponível para outras pessoas verem.</p>
 
-      <form>
+      <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <div class="form-input-single">
+          <label for="title">Título:</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Defina o título da notícia"
+            formControlName="title"
+            autofocus
+          >
+          <div
+            *ngIf="hasError('title', 'required')"
+            class="error_message"
+          >
+            O Título deve ser preenchido.
+          </div>
+        </div>
 
+        <div class="form-input-single">
+          <label for="description">Descrição:</label>
+          <textarea
+            type="text"
+            name="description"
+            id="description"
+            placeholder="description"
+            formControlName="description"
+          >
+          </textarea>
+          <div
+            *ngIf="hasError('description', 'required')"
+            class="error_message"
+          >
+            A Descrição deve ser preenchida.
+          </div>
+        </div>
+
+        <div class="form-input-single">
+          <label for="category">Categoria:</label>
+          <input
+            type="text"
+            name="category"
+            id="category"
+            placeholder="category"
+            formControlName="category"
+          >
+          <div
+            *ngIf="hasError('category', 'required')"
+            class="error_message"
+          >
+            A Categoria deve ser escolhida ou criada.
+          </div>
+        </div>
+
+        <div class="form-input-single">
+          <label for="author">Autor:</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="author"
+            formControlName="author"
+          >
+          <div
+            *ngIf="hasError('author', 'required')"
+            class="error_message"
+          >
+            O Autor deve ser preenchido.
+          </div>
+        </div>
+
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </app-container>

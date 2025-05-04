@@ -60,6 +60,10 @@ export class NewsService {
     return this.http.put<INews>(url, news);
   }
 
+  register(news: INews): Observable<INews> {
+    return this.http.post<INews>(this.apiUrl, news);
+  }
+
   exclude(id: number) {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
