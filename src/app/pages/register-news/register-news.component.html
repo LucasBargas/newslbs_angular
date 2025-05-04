@@ -62,6 +62,11 @@
           >
             A Notícia deve conter pelo menos 100 caracteres.
           </span>
+          <small
+            *ngIf="hasError('description', 'minlength')" class="desctiption-counter"
+          >
+            Caracteres: {{this.form.get('description')?.value.length}}
+          </small>
         </div>
 
         <div class="form-input-single">
