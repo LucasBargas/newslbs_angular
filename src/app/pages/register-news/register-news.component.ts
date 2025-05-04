@@ -57,7 +57,7 @@ export class RegisterNewsComponent implements OnInit {
 
     console.log('Form enviado:', this.form.value);
     this.form.reset();
-    this.router.navigate(['/home'])
+    this.router.navigate(['/home']);
 
     // const titleValue = this.form.get('title')?.value;
     // console.log('Título:', titleValue);
