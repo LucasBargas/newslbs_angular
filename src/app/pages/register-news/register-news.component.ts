@@ -30,17 +30,17 @@ export class RegisterNewsComponent implements OnInit {
         Validators.minLength(5)
       ])],
       description: ['', Validators.compose([
-        Validators.required, // required field
+        Validators.required,
         Validators.pattern(/^\s*\S.*$/),
         Validators.minLength(100)
       ])],
       category: [this.categoryValue, Validators.compose([
-        Validators.required, // required field
+        Validators.required,
         Validators.pattern(/^\s*\S.*$/),
         Validators.minLength(5)
       ])],
       author: ['', Validators.compose([
-        Validators.required, // required field
+        Validators.required,
         Validators.pattern(/^\s*\S.*$/),
         Validators.minLength(5)
       ])],
