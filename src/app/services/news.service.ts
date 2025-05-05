@@ -68,6 +68,11 @@ export class NewsService {
     return this.http.post<INews>(this.apiUrl, news);
   }
 
+  edit(news: INews): Observable<INews> {
+    const url = `${this.apiUrl}/${news.id}`;
+    return this.http.put<INews>(url, news);
+  }
+
   exclude(id: number) {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
