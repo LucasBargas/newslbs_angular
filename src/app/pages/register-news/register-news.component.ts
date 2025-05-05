@@ -63,7 +63,7 @@ export class RegisterNewsComponent implements OnInit {
 
   onSubmit() {
     if (this.form.invalid) {
-      this.form.markAllAsTouched(); // Força exibir erros
+      this.form.markAllAsTouched(); // Show all the errors when forms is submitted
       return;
     }
 
