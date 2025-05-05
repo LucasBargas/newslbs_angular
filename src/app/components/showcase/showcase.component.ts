@@ -26,8 +26,6 @@ export class ShowcaseComponent implements OnInit {
   searchValue!: string;
   searchResultCount: number = 0;
   faChevronDown = faChevronDown;
-  showControllers = false;
-  controllerMode = 'Aleatórias';
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
 
@@ -57,6 +55,9 @@ export class ShowcaseComponent implements OnInit {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
     this.newsService.getNews(this.searchValue, this.currentPage, this.favorites)
-    .subscribe((news) => this.news = news);
+      .subscribe((news) => {
+        console.log('Notícias recebidas do service:', news);
+        this.news = news;
+      });
   }
 }
