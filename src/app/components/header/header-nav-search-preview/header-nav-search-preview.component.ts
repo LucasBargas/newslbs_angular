@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnChanges, Optional, SimpleChanges, SkipSelf } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnChanges, Optional, SimpleChanges, SkipSelf, ViewChild } from '@angular/core';
 import { NewsService } from '../../../services/news.service';
 import { INews } from '../../../interfaces/INews';
 import { RouterLink } from '@angular/router';
 import { HeaderNavSearchComponent } from '../header-nav-search/header-nav-search.component';
+import { HeaderComponent } from '../header.component';
 
 @Component({
   selector: 'app-header-nav-search-preview',
@@ -13,6 +14,7 @@ import { HeaderNavSearchComponent } from '../header-nav-search/header-nav-search
   styleUrl: './header-nav-search-preview.component.scss'
 })
 export class HeaderNavSearchPreviewComponent implements OnChanges {
+  @ViewChild('previewRef') previewRef!: ElementRef;
   @Input() value!: string;
   @Input() error!: boolean;
   news!: INews[];
@@ -20,7 +22,8 @@ export class HeaderNavSearchPreviewComponent implements OnChanges {
 
   constructor(
     private newsService: NewsService,
-    @Optional() @SkipSelf() private header: HeaderNavSearchComponent
+    @Optional() @SkipSelf() private headerNavSearchComponent: HeaderNavSearchComponent,
+    @Optional() @SkipSelf() private headerComponent: HeaderComponent
   ) {}
 
   ngOnChanges(changes: SimpleChanges) {
@@ -36,6 +39,14 @@ export class HeaderNavSearchPreviewComponent implements OnChanges {
   }
 
   onClick() {
-    this.header.onClickClearButton();
+    this.headerNavSearchComponent.onClickClearButton();
+    this.headerComponent.onClickMobileButton();
+  }
+
+  // Listen to all clicks in the document
+  @HostListener('document:click', ['$event'])
+  outsideClick(event: MouseEvent) {
+    const clickedInside = this.previewRef?.nativeElement.contains(event.target);
+    if (!clickedInside) this.onClick();
   }
 }
