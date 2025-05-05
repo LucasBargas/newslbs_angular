@@ -34,6 +34,10 @@ export class NewsService {
     );
   }
 
+  getAllNews(): Observable<INews[]> {
+    return this.http.get<INews[]>(this.apiUrl);
+  }
+
   getNewsById(id: number): Observable<INews> {
     this.isLoading$.next(true);
 

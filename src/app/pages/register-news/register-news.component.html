@@ -16,19 +16,19 @@
           >
           <span
             *ngIf="hasError('title', 'required')"
-            class="error_message"
+
           >
             O Título deve ser preenchido.
           </span>
           <span
             *ngIf="hasError('title', 'pattern')"
-            class="error_message"
+
           >
             O Título não pode conter apenas espaços.
           </span>
           <span
             *ngIf="hasError('title', 'minlength')"
-            class="error_message"
+
           >
             O Título deve conter pelo menos 5 caracteres.
           </span>
@@ -46,19 +46,19 @@
           </textarea>
           <span
             *ngIf="hasError('description', 'required')"
-            class="error_message"
+
           >
             A Notícia deve ser preenchida.
           </span>
           <span
             *ngIf="hasError('description', 'pattern')"
-            class="error_message"
+
           >
             A Notícia não pode conter apenas espaços ou quebra de linha.
           </span>
           <span
             *ngIf="hasError('description', 'minlength')"
-            class="error_message"
+
           >
             A Notícia deve conter pelo menos 100 caracteres.
           </span>
@@ -71,13 +71,31 @@
 
         <div class="form-input-single">
           <label for="category">Categoria:</label>
-          <input
-            type="text"
-            name="category"
-            id="category"
-            placeholder="Digite a categoria ou escolha uma das existentes"
-            formControlName="category"
-          >
+          <div>
+            <input
+              type="text"
+              name="category"
+              id="category"
+              placeholder="Digite a categoria ou escolha uma das existentes"
+              formControlName="category"
+            >
+            <button
+              (click)="showCategoriesList = !showCategoriesList; $event.stopPropagation()"
+              type="button"
+              class="icon"
+            >
+              <fa-icon [icon]="faChevronDown"></fa-icon>
+            </button>
+
+            <ul [ngClass]="showCategoriesList ? 'active' : ''" #categoriesListRef>
+              <li
+              *ngFor="let item of categoriesList"
+              (click)="onClick(item, $event)"
+            >
+              {{ item.category }}
+            </li>
+            </ul>
+          </div>
           <span
             *ngIf="hasError('category', 'required')"
             class="form-input-single-error"
@@ -86,13 +104,12 @@
           </span>
           <span
           *ngIf="hasError('category', 'pattern')"
-          class="error_message"
           >
           A Categoria não pode conter apenas espaços.
           </span>
           <span
             *ngIf="hasError('category', 'minlength')"
-            class="error_message"
+
           >
           A Categoria deve conter pelo menos 5 caracteres.
           </span>
@@ -109,19 +126,18 @@
           >
           <span
             *ngIf="hasError('author', 'required')"
-            class="error_message"
+
           >
             O Autor deve ser preenchido.
           </span>
           <span
           *ngIf="hasError('author', 'pattern')"
-          class="error_message"
           >
           O Autor não pode conter apenas espaços.
           </span>
           <span
             *ngIf="hasError('author', 'minlength')"
-            class="error_message"
+
           >
           O Autor deve conter pelo menos 5 caracteres.
           </span>

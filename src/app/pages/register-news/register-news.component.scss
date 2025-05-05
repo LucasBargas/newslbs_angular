@@ -45,10 +45,77 @@
           height: 102px;
         }
 
+        input {
+          height: 40px;
+        }
+
         span{
           color: $error-color;
           font-size: .875rem;
           margin-top: .25rem;
+        }
+
+        div {
+          position: relative;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translate3d(-100%, -50%, 0);
+            cursor: pointer;
+            background: transparent;
+            color: $primary-color;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            position: absolute;
+            right: 0;
+            margin-top: .5rem;
+            border-radius: 5px;
+            padding: .5rem;
+            background: $light-color;
+            z-index: 50;
+            width: 100%;
+            border: 1px solid $dark-gray;
+            overflow-y: auto;
+            height: 110px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: .2s;
+
+            &.active {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: all;
+            }
+
+            li {
+              cursor: pointer;
+              padding: .25rem 0;
+              font-size: .875rem;
+              opacity: .7;
+              transition: .2s;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        #category {
+          padding-right: 30px;
         }
 
         .desctiption-counter {
