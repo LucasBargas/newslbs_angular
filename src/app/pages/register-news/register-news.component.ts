@@ -31,7 +31,15 @@ export class RegisterNewsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.form = this.formBuilder.group({
+    this.form = this.handleFormBuilder();
+
+    this.categoriesService.getCaregories().subscribe((categories) => {
+      this.categoriesList = categories;
+    });
+  }
+
+  handleFormBuilder() {
+    return this.formBuilder.group({
       title: ['', Validators.compose([
         Validators.required, // required field
         Validators.pattern(/^\s*\S.*$/), // field not to be empty or spaces
@@ -55,10 +63,6 @@ export class RegisterNewsComponent implements OnInit {
       favorite: [false],
       created_at: [new Date().toISOString().split('.')[0] + 'Z'],
     })
-
-    this.categoriesService.getCaregories().subscribe((categories) => {
-      this.categoriesList = categories;
-    });
   }
 
   onSubmit() {
@@ -67,7 +71,6 @@ export class RegisterNewsComponent implements OnInit {
       return;
     }
 
-    console.log('Form enviado:', this.form.value);
     this.newsService.register(this.form.value).subscribe();
     this.form.reset();
     this.router.navigate(['/home']);
@@ -79,7 +82,6 @@ export class RegisterNewsComponent implements OnInit {
   }
 
   onClick(item: ICategories, event: MouseEvent) {
-    event.stopPropagation(); // Prevents the click from reaching the HostListener
     this.form.get('category')?.setValue(item.category);
     this.showCategoriesList = false;
   }
