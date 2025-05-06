@@ -5,5 +5,5 @@ export interface INews {
   category: string;
   author: string;
   favorite: boolean;
-  created_at: string;
+  createdAt: string;
 }

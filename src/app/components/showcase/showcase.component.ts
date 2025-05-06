@@ -38,7 +38,7 @@ export class ShowcaseComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       const search = params['q'];
 
-      this.newsService.getAllNews(search, this.favorites).subscribe((news) => {
+      this.newsService.getAllNews(search).subscribe((news) => {
         this.totalPages = Math.ceil(news.length / 9);
       });
     });
@@ -66,7 +66,7 @@ export class ShowcaseComponent implements OnInit {
   getNewsService() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getNews(this.searchValue, this.currentPage, this.favorites)
+    this.newsService.getNews(this.searchValue, this.currentPage)
       .subscribe((news) => {
         this.news = news;
       });

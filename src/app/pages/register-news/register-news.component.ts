@@ -61,7 +61,7 @@ export class RegisterNewsComponent implements OnInit {
         Validators.minLength(5)
       ])],
       favorite: [false],
-      created_at: [new Date().toISOString().split('.')[0] + 'Z'],
+      createdAt: [new Date().toISOString().split('.')[0] + 'Z'],
     })
   }
 

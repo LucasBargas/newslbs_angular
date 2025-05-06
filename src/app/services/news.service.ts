@@ -13,17 +13,13 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(search: string | undefined, page: number, favorites?: boolean): Observable<INews[]> {
+  getNews(search: string | undefined, page: number): Observable<INews[]> {
     this.isLoading$.next(true);
     const limit = 9;
 
     let params = new HttpParams()
     .set("_page", page)
     .set('_limit', limit);
-
-    if (favorites) {
-      params = params.set('favorite', favorites);
-    }
 
     if (search!) {
       params = params.set('q', search!);
@@ -33,16 +29,21 @@ export class NewsService {
       finalize(() => this.isLoading$.next(false))
     );
   }
+  getFavoritesNews(): Observable<INews[]> {
+    this.isLoading$.next(true);
 
-  getAllNews(search?: string | undefined, favorites?: boolean): Observable<INews[]> {
+    let params = new HttpParams().set("favorite", true)
+
+    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
+      finalize(() => this.isLoading$.next(false))
+    );
+  }
+
+  getAllNews(search?: string | undefined): Observable<INews[]> {
     let params = new HttpParams();
 
     if (search!) {
       params = params.set('q', search!);
-    }
-
-    if (favorites) {
-      params = params.set('favorite', favorites);
     }
 
     return this.http.get<INews[]>(this.apiUrl, { params });

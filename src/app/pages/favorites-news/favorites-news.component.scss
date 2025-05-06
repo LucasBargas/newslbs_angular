@@ -1,24 +1,65 @@
 @use '../../styles/variables' as *;
 
-.favorites-news-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.favorites-news {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  p {
-    margin-top: .425rem;
+    p {
+      margin-top: .425rem;
+    }
+
+    a {
+      padding: .75rem 1rem;
+      border-radius: 4px;
+      color: $light-color;
+      background: $primary-color;
+      opacity: .9;
+      transition: .3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
-  a {
-    padding: .75rem 1rem;
-    border-radius: 4px;
-    color: $light-color;
-    background: $primary-color;
-    opacity: .9;
-    transition: .3s;
+  &-wrapper {
+    padding-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    &:hover {
-      opacity: 1;
+    a {
+      color: $primary-color;
+    }
+
+    &-single {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 1.25rem;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $primary-color;
+      }
+
+      .news-title {
+        display: block;
+        font-weight: 700;
+        font-size: 1.25rem;
+        width: 100%;
+        max-width: 600px;
+
+        @media (max-width: 834px) {
+          max-width: none;
+        }
+      }
+
+      span {
+        display: block;
+        margin-top: .25rem;
+        font-size: .875rem;
+      }
     }
   }
 }

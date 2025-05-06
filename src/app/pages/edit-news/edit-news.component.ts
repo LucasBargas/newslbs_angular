@@ -67,7 +67,7 @@ export class EditNewsComponent implements OnInit {
         Validators.minLength(5)
       ])],
       favorite: [favorite],
-      created_at: [new Date().toISOString().split('.')[0] + 'Z'],
+      createdAt: [new Date().toISOString().split('.')[0] + 'Z'],
     })
   }
 

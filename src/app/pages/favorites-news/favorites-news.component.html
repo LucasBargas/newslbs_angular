@@ -1,4 +1,10 @@
 <section class="favorites-news">
+  <div *ngIf="isLoading">
+    <app-container>
+      <app-loading></app-loading>
+    </app-container>
+  </div>
+
   <app-container>
     <header class="favorites-news-header">
       <div>
@@ -8,5 +14,34 @@
 
       <a routerLink="/cadastrar-noticias" >Cadastrar notícia</a>
     </header>
+
+    <div class="favorites-news-wrapper">
+      <div *ngFor="let item of news?.slice(0, 3)" class="favorites-news-wrapper-single">
+        <div>
+          <a class="news-title" routerLink="/noticia/{{item.id}}">{{item.title}}</a>
+          <span>
+            <strong>Autor:</strong>
+            <a
+            routerLink="/search"
+            [queryParams]="{ q: item.author}"
+          >
+            {{item.author}}
+          </a>
+          </span>
+          <span>
+            <strong>Categoria:</strong>
+            <a
+            routerLink="/search"
+            [queryParams]="{ q: item.category}"
+          >
+            {{item.category}}
+          </a>
+          </span>
+          <span><strong>Postado em:</strong> {{handleWithDateAndHour(item.createdAt)}}</span>
+        </div>
+
+        <div>Ações</div>
+      </div>
+    </div>
   </app-container>
 </section>
