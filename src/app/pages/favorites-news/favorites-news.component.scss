@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.favorites-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin-top: .425rem;
+  }
+
+  a {
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    color: $light-color;
+    background: $primary-color;
+    opacity: .9;
+    transition: .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
