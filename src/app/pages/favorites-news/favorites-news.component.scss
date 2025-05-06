@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     p {
       margin-top: .425rem;
@@ -38,6 +39,7 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 1.25rem;
+      flex-wrap: wrap;
 
       &:not(:last-of-type) {
         border-bottom: 1px solid $primary-color;
@@ -59,6 +61,12 @@
         display: block;
         margin-top: .25rem;
         font-size: .875rem;
+      }
+
+      div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
   }
