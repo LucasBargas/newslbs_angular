@@ -10,5 +10,5 @@ import { ShowcaseComponent } from '../../components/showcase/showcase.component'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  currentRoute: string = '/home';
 }

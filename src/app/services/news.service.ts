@@ -34,8 +34,18 @@ export class NewsService {
     );
   }
 
-  getAllNews(): Observable<INews[]> {
-    return this.http.get<INews[]>(this.apiUrl);
+  getAllNews(search?: string | undefined, favorites?: boolean): Observable<INews[]> {
+    let params = new HttpParams();
+
+    if (search!) {
+      params = params.set('q', search!);
+    }
+
+    if (favorites) {
+      params = params.set('favorite', favorites);
+    }
+
+    return this.http.get<INews[]>(this.apiUrl, { params });
   }
 
   getNewsById(id: number): Observable<INews> {

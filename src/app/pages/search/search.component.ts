@@ -12,4 +12,5 @@ import { ShowcaseComponent } from '../../components/showcase/showcase.component'
 export class SearchComponent {
   favorites!: boolean;
   searchPage = true;
+  currentRoute = "/search";
 }

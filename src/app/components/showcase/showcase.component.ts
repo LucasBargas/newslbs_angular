@@ -8,17 +8,20 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LoadingComponent } from "../loading/loading.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronDown  } from '@fortawesome/free-solid-svg-icons';
+import { PaginationComponent } from "../pagination/pagination.component";
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule, ContainerComponent, NewsCardComponent, RouterLink, LoadingComponent],
+  imports: [CommonModule, FontAwesomeModule, ContainerComponent, NewsCardComponent, RouterLink, LoadingComponent, PaginationComponent],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
 })
 export class ShowcaseComponent implements OnInit {
   news!: INews[];
   currentPage: number = 1;
+  totalPages!: number;
+  @Input() currentRoute!: string;
   isLoading = false;
   @Input() favorites!: boolean;
   @Input() searchPage!: boolean;
@@ -31,13 +34,22 @@ export class ShowcaseComponent implements OnInit {
 
   ngOnInit() {
     this.getQueryParams();
+
+    this.route.queryParams.subscribe(params => {
+      const search = params['q'];
+
+      this.newsService.getAllNews(search, this.favorites).subscribe((news) => {
+        this.totalPages = Math.ceil(news.length / 9);
+      });
+    });
+
   }
 
   getQueryParams() {
     this.route.queryParams.subscribe(params => {
       const page = params['pagina'];
       const search = params['q'];
-      this.currentPage = page !== undefined ? page : 1;
+      this.currentPage = page !== undefined ? Number(page) : 1;
 
       if (this.searchPage && search) {
         this.searchValue = search;
@@ -56,7 +68,6 @@ export class ShowcaseComponent implements OnInit {
 
     this.newsService.getNews(this.searchValue, this.currentPage, this.favorites)
       .subscribe((news) => {
-        console.log('Notícias recebidas do service:', news);
         this.news = news;
       });
   }

@@ -11,4 +11,5 @@ import { ShowcaseComponent } from '../../components/showcase/showcase.component'
 })
 export class FavoritesNewsComponent {
   favorites: boolean = true;
+  currentRoute: string = '/noticias-favoritas';
 }
