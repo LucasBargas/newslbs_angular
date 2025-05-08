@@ -213,123 +213,6 @@
       "createdAt": "2024-08-27T07:09:07Z"
     },
     {
-      "id": 184,
-      "title": "O prazer de inovar mais facilmente",
-      "description": "Para quem busca equilíbrio e motivação, O prazer de inovar mais facilmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
-      "category": "Curiosidades Urbanas",
-      "author": "João Oliveira",
-      "favorite": false,
-      "createdAt": "2024-08-19T20:03:08Z"
-    },
-    {
-      "id": 185,
-      "title": "O prazer de conseguir com força total",
-      "description": "Com foco em bem-estar e praticidade, O prazer de conseguir com força total a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
-      "category": "Notícias Surreais",
-      "author": "Lucas Ferraz",
-      "favorite": true,
-      "createdAt": "2025-03-02T11:54:18Z"
-    },
-    {
-      "id": 186,
-      "title": "A possibilidade de concretizar seus projetos mais facilmente",
-      "description": "Com foco em bem-estar e praticidade, A possibilidade de concretizar seus projetos mais facilmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
-      "category": "Notícias Surreais",
-      "author": "João Oliveira",
-      "favorite": true,
-      "createdAt": "2024-10-24T23:29:21Z"
-    },
-    {
-      "id": 187,
-      "title": "O direito de atingir seus objetivos simplesmente",
-      "description": "Com um olhar leve e inspirador, O direito de atingir seus objetivos simplesmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
-      "category": "Notícias Surreais",
-      "author": "Lucas Ferraz",
-      "favorite": true,
-      "createdAt": "2024-12-01T05:30:40Z"
-    },
-    {
-      "id": 188,
-      "title": "A arte de avançar mais facilmente",
-      "description": "Em tempos de transformação constante, A arte de avançar mais facilmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
-      "category": "Curiosidades Urbanas",
-      "author": "Lucas Ferraz",
-      "favorite": false,
-      "createdAt": "2025-02-08T09:05:24Z"
-    },
-    {
-      "id": 189,
-      "title": "A segurança de realizar seus sonhos naturalmente",
-      "description": "Para quem busca equilíbrio e motivação, A segurança de realizar seus sonhos naturalmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
-      "category": "Notícias Surreais",
-      "author": "Carla Mendes",
-      "favorite": true,
-      "createdAt": "2024-08-28T19:34:49Z"
-    },
-    {
-      "id": 190,
-      "title": "A simplicidade de evoluir sem preocupação",
-      "description": "Para quem busca equilíbrio e motivação, A simplicidade de evoluir sem preocupação entender esse conceito é essencial para evoluir sem complicações.",
-      "category": "Curiosidades Urbanas",
-      "author": "Marina Duarte",
-      "favorite": true,
-      "createdAt": "2025-02-18T05:56:19Z"
-    },
-    {
-      "id": 191,
-      "title": "O poder de conseguir simplesmente",
-      "description": "Com foco em bem-estar e praticidade, O poder de conseguir simplesmente entender esse conceito é essencial para evoluir sem complicações.",
-      "category": "Tecnologia Improvisada",
-      "author": "João Oliveira",
-      "favorite": false,
-      "createdAt": "2025-04-12T00:40:07Z"
-    },
-    {
-      "id": 192,
-      "title": "O direito de avançar de maneira eficaz",
-      "description": "Com foco em bem-estar e praticidade, O direito de avançar de maneira eficaz entender esse conceito é essencial para evoluir sem complicações.",
-      "category": "Invenções Malucas",
-      "author": "João Oliveira",
-      "favorite": false,
-      "createdAt": "2025-03-05T11:46:00Z"
-    },
-    {
-      "id": 193,
-      "title": "A simplicidade de avançar em estado puro",
-      "description": "Em um mundo que pede simplicidade, A simplicidade de avançar em estado puro refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
-      "category": "Tecnologia Improvisada",
-      "author": "Marina Duarte",
-      "favorite": false,
-      "createdAt": "2025-01-04T07:50:43Z"
-    },
-    {
-      "id": 194,
-      "title": "A vantagem de ganhar antes de tudo",
-      "description": "Com um olhar leve e inspirador, A vantagem de ganhar antes de tudo a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
-      "category": "Invenções Malucas",
-      "author": "Lucas Ferraz",
-      "favorite": false,
-      "createdAt": "2024-09-07T20:00:45Z"
-    },
-    {
-      "id": 195,
-      "title": "A arte de atingir seus objetivos mais facilmente",
-      "description": "Com um olhar leve e inspirador, A arte de atingir seus objetivos mais facilmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
-      "category": "Tecnologia Improvisada",
-      "author": "Marina Duarte",
-      "favorite": false,
-      "createdAt": "2024-09-22T19:32:19Z"
-    },
-    {
-      "id": 196,
-      "title": "A possibilidade de avançar naturalmente",
-      "description": "Em tempos de transformação constante, A possibilidade de avançar naturalmente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
-      "category": "Notícias Surreais",
-      "author": "João Oliveira",
-      "favorite": false,
-      "createdAt": "2025-02-04T08:57:25Z"
-    },
-    {
       "id": 197,
       "title": "A possibilidade de inovar de maneira eficaz",
       "description": "Com foco em bem-estar e praticidade, A possibilidade de inovar de maneira eficaz este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
@@ -634,15 +517,6 @@
       "author": "Marina Duarte",
       "favorite": true,
       "createdAt": "2024-09-20T08:25:04Z"
-    },
-    {
-      "id": 234,
-      "title": "A vantagem de ganhar mais rapidamente",
-      "description": "Cada vez mais presente no nosso cotidiano, A vantagem de ganhar mais rapidamente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
-      "category": "Tecnologia Improvisada",
-      "author": "Lucas Ferraz",
-      "favorite": false,
-      "createdAt": "2024-07-09T15:09:00Z"
     },
     {
       "id": 235,

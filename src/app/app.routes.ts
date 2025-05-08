@@ -12,24 +12,35 @@ export const routes: Routes = [
     path: '', redirectTo: 'home', pathMatch: "full",
   },
   {
-    path: 'home', component: HomeComponent,
+    path: 'home',
+    component: HomeComponent,
+    title: 'NewsLBS'
   },
   {
-    path: 'noticias-favoritas', component: FavoritesNewsComponent,
+    path: 'noticias-favoritas',
+    component: FavoritesNewsComponent,
+    title: 'NewsLBS - Notícias favoritas'
   },
   {
-    path: 'cadastrar-noticia', component: RegisterNewsComponent,
+    path: 'cadastrar-noticia',
+    component: RegisterNewsComponent,
+    title: 'NewsLBS - Cadastrar notícia'
   },
   {
-    path: 'editar-noticia/:id', component: EditNewsComponent,
+    path: 'editar-noticia/:id',
+    component: EditNewsComponent,
+    title: 'NewsLBS - Editar notícia'
   },
   {
-    path: 'noticia/:id', component: NewsSingleComponent,
+    path: 'noticia/:id',
+    component: NewsSingleComponent,
   },
   {
-    path: 'search', component: SearchComponent,
+    path: 'search',
+    component: SearchComponent,
   },
   {
-    path: '**', component: PageNotFoundComponent,
+    path: '**',
+    component: PageNotFoundComponent,
   }
 ];

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Optional, SkipSelf } from '@angular/core';
+import { Component, EventEmitter, Input, Optional, Output, SkipSelf } from '@angular/core';
 import { INews } from '../../interfaces/INews';
 import { RouterLink } from '@angular/router';
 import { NewsService } from '../../services/news.service';
@@ -21,9 +21,11 @@ import { ShowcaseComponent } from '../showcase/showcase.component';
   providers: [DatePipe]
 })
 export class NewsCardComponent {
-  @Input() news!: INews[];
   @Input() favorites!: boolean;
   @Input() viewNews!: boolean;
+  @Input() news!: INews[];
+
+  @Output() newsChange = new EventEmitter<INews[]>();
 
   faEye = faEye;
   faPenToSquare = faPenToSquare;
@@ -41,7 +43,7 @@ export class NewsCardComponent {
     const newsCopy = Array.isArray(this.news) ? [...this.news] : [this.news];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 
-    this.news = newsCopyFilter;
+    this.newsChange.emit(newsCopyFilter)
 
     this.newsService.exclude(id).subscribe();
 
@@ -54,8 +56,8 @@ export class NewsCardComponent {
     if (this.favorites) window.location.reload();
   }
 
-  handleWithDateAndHour(date: string) {
-    const formattedDate = this.datePipe.transform(date, 'dd/MM/yyyy HH:mm', 'UTC');
+  formatDate(date: string) {
+    const formattedDate = this.datePipe.transform(date, 'dd/MM/yyyy', 'UTC');
     return formattedDate;
   }
 }
