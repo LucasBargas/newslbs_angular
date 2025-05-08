@@ -18,16 +18,19 @@ import { PaginationComponent } from "../pagination/pagination.component";
   styleUrl: './showcase.component.scss'
 })
 export class ShowcaseComponent implements OnInit {
+  @Input() currentRoute!: string;
+  @Input() favorites!: boolean;
+  @Input() searchPage!: boolean;
+
+  isLoading = false;
   news!: INews[];
   currentPage: number = 1;
   totalPages!: number;
-  @Input() currentRoute!: string;
-  isLoading = false;
-  @Input() favorites!: boolean;
-  @Input() searchPage!: boolean;
   viewNews: boolean = true;
   searchValue!: string;
   searchResultCount: number = 0;
+  order: string = '';
+
   faChevronDown = faChevronDown;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute) {}
@@ -66,7 +69,7 @@ export class ShowcaseComponent implements OnInit {
   getNewsService() {
     this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getNews(this.searchValue, this.currentPage)
+    this.newsService.getNews(this.searchValue, this.currentPage, this.order)
       .subscribe((news) => {
         this.news = news;
       });
