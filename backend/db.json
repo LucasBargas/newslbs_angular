@@ -1,0 +1,1197 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "category": "Curiosidades Urbanas"
+    },
+    {
+      "id": 2,
+      "category": "Invenções Malucas"
+    },
+    {
+      "id": 3,
+      "category": "Notícias Surreais"
+    },
+    {
+      "id": 4,
+      "category": "Tecnologia Improvisada"
+    },
+    {
+      "id": 5,
+      "category": "Ciência Inusitada"
+    },
+    {
+      "id": 6,
+      "category": "Mistérios Cotidianos"
+    },
+    {
+      "id": 7,
+      "category": "Engenhocas Criativas"
+    },
+    {
+      "id": 8,
+      "category": "Fatos Desconhecidos"
+    },
+    {
+      "id": 9,
+      "category": "Ideias Brilhantes"
+    },
+    {
+      "id": 10,
+      "category": "Realidade Absurda"
+    },
+    {
+      "id": 11,
+      "category": "Soluções Improváveis"
+    },
+    {
+      "id": 12,
+      "category": "Histórias Estranhas"
+    }
+  ],
+  "news": [
+    {
+      "id": 165,
+      "title": "A segurança de avançar de maneira eficaz",
+      "description": "Em tempos de transformação constante, A segurança de avançar de maneira eficaz entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-05-16T03:30:40Z"
+    },
+    {
+      "id": 167,
+      "title": "O prazer de evoluir com toda a tranquilidade",
+      "description": "Com um olhar leve e inspirador, O prazer de evoluir com toda a tranquilidade entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-01-06T08:03:22Z"
+    },
+    {
+      "id": 168,
+      "title": "O poder de realizar seus sonhos com toda a tranquilidade",
+      "description": "Em tempos de transformação constante, O poder de realizar seus sonhos com toda a tranquilidade o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Curiosidades Urbanas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-12-19T03:26:17Z"
+    },
+    {
+      "id": 169,
+      "title": "A arte de ganhar antes de tudo",
+      "description": "Com um olhar leve e inspirador, A arte de ganhar antes de tudo a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-10-24T15:07:53Z"
+    },
+    {
+      "id": 170,
+      "title": "A simplicidade de concretizar seus projetos com toda a tranquilidade",
+      "description": "Para quem busca equilíbrio e motivação, A simplicidade de concretizar seus projetos com toda a tranquilidade o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-12-19T08:54:01Z"
+    },
+    {
+      "id": 171,
+      "title": "A possibilidade de conseguir antes de tudo",
+      "description": "Em um mundo que pede simplicidade, A possibilidade de conseguir antes de tudo refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-06-26T00:10:04Z"
+    },
+    {
+      "id": 172,
+      "title": "A certeza de inovar com força total",
+      "description": "Em um mundo que pede simplicidade, A certeza de inovar com força total a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-05-17T20:14:17Z"
+    },
+    {
+      "id": 173,
+      "title": "A certeza de ganhar antes de tudo",
+      "description": "Com um olhar leve e inspirador, A certeza de ganhar antes de tudo entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-08-04T03:00:40Z"
+    },
+    {
+      "id": 174,
+      "title": "A certeza de ganhar com força total",
+      "description": "Para quem busca equilíbrio e motivação, A certeza de ganhar com força total a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-06-01T09:26:27Z"
+    },
+    {
+      "id": 175,
+      "title": "O poder de evoluir sem preocupação",
+      "description": "Com foco em bem-estar e praticidade, O poder de evoluir sem preocupação a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2025-01-02T19:01:37Z"
+    },
+    {
+      "id": 176,
+      "title": "O prazer de realizar seus sonhos sem preocupação",
+      "description": "Com foco em bem-estar e praticidade, O prazer de realizar seus sonhos sem preocupação este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-01-21T19:10:43Z"
+    },
+    {
+      "id": 177,
+      "title": "O poder de mudar mais facilmente",
+      "description": "Cada vez mais presente no nosso cotidiano, O poder de mudar mais facilmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-09-08T13:51:48Z"
+    },
+    {
+      "id": 178,
+      "title": "O poder de atingir seus objetivos com força total",
+      "description": "Para quem busca equilíbrio e motivação, O poder de atingir seus objetivos com força total a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-10-08T07:02:42Z"
+    },
+    {
+      "id": 179,
+      "title": "A possibilidade de realizar seus sonhos simplesmente",
+      "description": "Em um mundo que pede simplicidade, A possibilidade de realizar seus sonhos simplesmente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Invenções Malucas",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-08-13T11:11:09Z"
+    },
+    {
+      "id": 180,
+      "title": "A segurança de conseguir mais facilmente",
+      "description": "Cada vez mais presente no nosso cotidiano, A segurança de conseguir mais facilmente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2025-01-08T11:36:28Z"
+    },
+    {
+      "id": 181,
+      "title": "O direito de concretizar seus projetos mais rapidamente",
+      "description": "Cada vez mais presente no nosso cotidiano, O direito de concretizar seus projetos mais rapidamente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-11-09T01:36:48Z"
+    },
+    {
+      "id": 182,
+      "title": "A possibilidade de avançar antes de tudo",
+      "description": "Em um mundo que pede simplicidade, A possibilidade de avançar antes de tudo refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-08-24T18:49:10Z"
+    },
+    {
+      "id": 183,
+      "title": "O prazer de atingir seus objetivos antes de tudo",
+      "description": "Em tempos de transformação constante, O prazer de atingir seus objetivos antes de tudo a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-08-27T07:09:07Z"
+    },
+    {
+      "id": 184,
+      "title": "O prazer de inovar mais facilmente",
+      "description": "Para quem busca equilíbrio e motivação, O prazer de inovar mais facilmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-08-19T20:03:08Z"
+    },
+    {
+      "id": 185,
+      "title": "O prazer de conseguir com força total",
+      "description": "Com foco em bem-estar e praticidade, O prazer de conseguir com força total a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2025-03-02T11:54:18Z"
+    },
+    {
+      "id": 186,
+      "title": "A possibilidade de concretizar seus projetos mais facilmente",
+      "description": "Com foco em bem-estar e praticidade, A possibilidade de concretizar seus projetos mais facilmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-10-24T23:29:21Z"
+    },
+    {
+      "id": 187,
+      "title": "O direito de atingir seus objetivos simplesmente",
+      "description": "Com um olhar leve e inspirador, O direito de atingir seus objetivos simplesmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-12-01T05:30:40Z"
+    },
+    {
+      "id": 188,
+      "title": "A arte de avançar mais facilmente",
+      "description": "Em tempos de transformação constante, A arte de avançar mais facilmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2025-02-08T09:05:24Z"
+    },
+    {
+      "id": 189,
+      "title": "A segurança de realizar seus sonhos naturalmente",
+      "description": "Para quem busca equilíbrio e motivação, A segurança de realizar seus sonhos naturalmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-08-28T19:34:49Z"
+    },
+    {
+      "id": 190,
+      "title": "A simplicidade de evoluir sem preocupação",
+      "description": "Para quem busca equilíbrio e motivação, A simplicidade de evoluir sem preocupação entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Curiosidades Urbanas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2025-02-18T05:56:19Z"
+    },
+    {
+      "id": 191,
+      "title": "O poder de conseguir simplesmente",
+      "description": "Com foco em bem-estar e praticidade, O poder de conseguir simplesmente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-04-12T00:40:07Z"
+    },
+    {
+      "id": 192,
+      "title": "O direito de avançar de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, O direito de avançar de maneira eficaz entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-03-05T11:46:00Z"
+    },
+    {
+      "id": 193,
+      "title": "A simplicidade de avançar em estado puro",
+      "description": "Em um mundo que pede simplicidade, A simplicidade de avançar em estado puro refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2025-01-04T07:50:43Z"
+    },
+    {
+      "id": 194,
+      "title": "A vantagem de ganhar antes de tudo",
+      "description": "Com um olhar leve e inspirador, A vantagem de ganhar antes de tudo a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Invenções Malucas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-09-07T20:00:45Z"
+    },
+    {
+      "id": 195,
+      "title": "A arte de atingir seus objetivos mais facilmente",
+      "description": "Com um olhar leve e inspirador, A arte de atingir seus objetivos mais facilmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-09-22T19:32:19Z"
+    },
+    {
+      "id": 196,
+      "title": "A possibilidade de avançar naturalmente",
+      "description": "Em tempos de transformação constante, A possibilidade de avançar naturalmente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-02-04T08:57:25Z"
+    },
+    {
+      "id": 197,
+      "title": "A possibilidade de inovar de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, A possibilidade de inovar de maneira eficaz este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-11-17T15:31:28Z"
+    },
+    {
+      "id": 198,
+      "title": "O direito de conseguir de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, O direito de conseguir de maneira eficaz a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-08-31T06:49:22Z"
+    },
+    {
+      "id": 199,
+      "title": "A arte de concretizar seus projetos mais rapidamente",
+      "description": "Cada vez mais presente no nosso cotidiano, A arte de concretizar seus projetos mais rapidamente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-08-16T04:52:28Z"
+    },
+    {
+      "id": 200,
+      "title": "A arte de conseguir antes de tudo",
+      "description": "Cada vez mais presente no nosso cotidiano, A arte de conseguir antes de tudo o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2025-02-06T00:02:23Z"
+    },
+    {
+      "id": 202,
+      "title": "A vantagem de atingir seus objetivos com força total",
+      "description": "Com foco em bem-estar e praticidade, A vantagem de atingir seus objetivos com força total entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-10-27T02:12:10Z"
+    },
+    {
+      "id": 203,
+      "title": "A possibilidade de conseguir com confiança",
+      "description": "Para quem busca equilíbrio e motivação, A possibilidade de conseguir com confiança este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-12-16T07:57:27Z"
+    },
+    {
+      "id": 204,
+      "title": "A certeza de concretizar seus projetos direto da fonte",
+      "description": "Com foco em bem-estar e praticidade, A certeza de concretizar seus projetos direto da fonte a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-10-08T03:59:21Z"
+    },
+    {
+      "id": 205,
+      "title": "O conforto de conseguir com força total",
+      "description": "Em tempos de transformação constante, O conforto de conseguir com força total a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-09-09T03:20:21Z"
+    },
+    {
+      "id": 206,
+      "title": "A certeza de concretizar seus projetos mais facilmente",
+      "description": "Em um mundo que pede simplicidade, A certeza de concretizar seus projetos mais facilmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2025-02-07T03:08:51Z"
+    },
+    {
+      "id": 207,
+      "title": "A certeza de evoluir mais facilmente",
+      "description": "Para quem busca equilíbrio e motivação, A certeza de evoluir mais facilmente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-06-05T05:12:05Z"
+    },
+    {
+      "id": 208,
+      "title": "A certeza de realizar seus sonhos antes de tudo",
+      "description": "Em um mundo que pede simplicidade, A certeza de realizar seus sonhos antes de tudo a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2025-01-03T03:47:51Z"
+    },
+    {
+      "id": 209,
+      "title": "O prazer de inovar antes de tudo",
+      "description": "Cada vez mais presente no nosso cotidiano, O prazer de inovar antes de tudo este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-10-26T06:52:00Z"
+    },
+    {
+      "id": 210,
+      "title": "O direito de avançar mais rapidamente",
+      "description": "Com um olhar leve e inspirador, O direito de avançar mais rapidamente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-07-10T17:19:14Z"
+    },
+    {
+      "id": 211,
+      "title": "A simplicidade de inovar simplesmente",
+      "description": "Em um mundo que pede simplicidade, A simplicidade de inovar simplesmente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-12-09T12:02:30Z"
+    },
+    {
+      "id": 212,
+      "title": "A arte de realizar seus sonhos de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, A arte de realizar seus sonhos de maneira eficaz a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Curiosidades Urbanas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2025-04-11T08:12:22Z"
+    },
+    {
+      "id": 213,
+      "title": "O conforto de mudar naturalmente",
+      "description": "Com foco em bem-estar e praticidade, O conforto de mudar naturalmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2025-02-01T00:09:56Z"
+    },
+    {
+      "id": 214,
+      "title": "O prazer de ganhar mais rapidamente",
+      "description": "Com foco em bem-estar e praticidade, O prazer de ganhar mais rapidamente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-05-23T16:45:37Z"
+    },
+    {
+      "id": 215,
+      "title": "A arte de avançar sem preocupação",
+      "description": "Com um olhar leve e inspirador, A arte de avançar sem preocupação o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2025-01-25T08:50:27Z"
+    },
+    {
+      "id": 216,
+      "title": "A possibilidade de ganhar sem preocupação",
+      "description": "Cada vez mais presente no nosso cotidiano, A possibilidade de ganhar sem preocupação entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-09-03T16:24:39Z"
+    },
+    {
+      "id": 217,
+      "title": "O poder de conseguir com confiança",
+      "description": "Para quem busca equilíbrio e motivação, O poder de conseguir com confiança refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2025-04-05T09:19:36Z"
+    },
+    {
+      "id": 218,
+      "title": "O prazer de ganhar com força total",
+      "description": "Com um olhar leve e inspirador, O prazer de ganhar com força total a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-12-03T00:48:59Z"
+    },
+    {
+      "id": 219,
+      "title": "O prazer de avançar mais rapidamente",
+      "description": "Com um olhar leve e inspirador, O prazer de avançar mais rapidamente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-01-08T10:53:07Z"
+    },
+    {
+      "id": 221,
+      "title": "O conforto de atingir seus objetivos naturalmente",
+      "description": "Com um olhar leve e inspirador, O conforto de atingir seus objetivos naturalmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-07-10T00:58:55Z"
+    },
+    {
+      "id": 222,
+      "title": "A vantagem de conseguir de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, A vantagem de conseguir de maneira eficaz refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Curiosidades Urbanas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-10-25T14:24:38Z"
+    },
+    {
+      "id": 223,
+      "title": "O conforto de atingir seus objetivos com toda a tranquilidade",
+      "description": "Em tempos de transformação constante, O conforto de atingir seus objetivos com toda a tranquilidade este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-07-21T05:00:10Z"
+    },
+    {
+      "id": 225,
+      "title": "O conforto de mudar mais rapidamente",
+      "description": "Cada vez mais presente no nosso cotidiano, O conforto de mudar mais rapidamente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-08-13T00:56:33Z"
+    },
+    {
+      "id": 226,
+      "title": "O conforto de concretizar seus projetos naturalmente",
+      "description": "Em um mundo que pede simplicidade, O conforto de concretizar seus projetos naturalmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-09-07T14:09:29Z"
+    },
+    {
+      "id": 227,
+      "title": "O conforto de conseguir antes de tudo",
+      "description": "Cada vez mais presente no nosso cotidiano, O conforto de conseguir antes de tudo a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-12-12T00:40:17Z"
+    },
+    {
+      "id": 228,
+      "title": "A possibilidade de inovar em estado puro",
+      "description": "Para quem busca equilíbrio e motivação, A possibilidade de inovar em estado puro o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-03-06T14:27:10Z"
+    },
+    {
+      "id": 229,
+      "title": "O conforto de avançar mais rapidamente",
+      "description": "Em um mundo que pede simplicidade, O conforto de avançar mais rapidamente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-02-15T15:17:40Z"
+    },
+    {
+      "id": 230,
+      "title": "O direito de inovar com força total",
+      "description": "Cada vez mais presente no nosso cotidiano, O direito de inovar com força total entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-10-23T16:28:18Z"
+    },
+    {
+      "id": 231,
+      "title": "A arte de atingir seus objetivos com confiança",
+      "description": "Com um olhar leve e inspirador, A arte de atingir seus objetivos com confiança este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-12-15T21:35:13Z"
+    },
+    {
+      "id": 232,
+      "title": "O direito de inovar direto da fonte",
+      "description": "Cada vez mais presente no nosso cotidiano, O direito de inovar direto da fonte o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-05-01T14:21:45Z"
+    },
+    {
+      "id": 233,
+      "title": "A simplicidade de atingir seus objetivos antes de tudo",
+      "description": "Em tempos de transformação constante, A simplicidade de atingir seus objetivos antes de tudo o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-09-20T08:25:04Z"
+    },
+    {
+      "id": 234,
+      "title": "A vantagem de ganhar mais rapidamente",
+      "description": "Cada vez mais presente no nosso cotidiano, A vantagem de ganhar mais rapidamente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-07-09T15:09:00Z"
+    },
+    {
+      "id": 235,
+      "title": "A possibilidade de realizar seus sonhos mais rapidamente",
+      "description": "Para quem busca equilíbrio e motivação, A possibilidade de realizar seus sonhos mais rapidamente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-08-29T03:14:01Z"
+    },
+    {
+      "id": 236,
+      "title": "A simplicidade de atingir seus objetivos de maneira eficaz",
+      "description": "Em tempos de transformação constante, A simplicidade de atingir seus objetivos de maneira eficaz entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-06-18T22:10:27Z"
+    },
+    {
+      "id": 237,
+      "title": "A segurança de mudar sem preocupação",
+      "description": "Cada vez mais presente no nosso cotidiano, A segurança de mudar sem preocupação refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-07-13T14:57:59Z"
+    },
+    {
+      "id": 238,
+      "title": "A arte de ganhar com confiança",
+      "description": "Em um mundo que pede simplicidade, A arte de ganhar com confiança entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-05-16T08:21:50Z"
+    },
+    {
+      "id": 239,
+      "title": "A arte de realizar seus sonhos em estado puro",
+      "description": "Com foco em bem-estar e praticidade, A arte de realizar seus sonhos em estado puro a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-02-16T09:19:53Z"
+    },
+    {
+      "id": 240,
+      "title": "O prazer de mudar com toda a tranquilidade",
+      "description": "Em um mundo que pede simplicidade, O prazer de mudar com toda a tranquilidade o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-06-09T04:07:27Z"
+    },
+    {
+      "id": 241,
+      "title": "O prazer de realizar seus sonhos antes de tudo",
+      "description": "Em tempos de transformação constante, O prazer de realizar seus sonhos antes de tudo este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-02-17T01:01:13Z"
+    },
+    {
+      "id": 242,
+      "title": "A vantagem de evoluir mais facilmente",
+      "description": "Para quem busca equilíbrio e motivação, A vantagem de evoluir mais facilmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2025-03-24T07:23:33Z"
+    },
+    {
+      "id": 243,
+      "title": "A possibilidade de inovar direto da fonte",
+      "description": "Cada vez mais presente no nosso cotidiano, A possibilidade de inovar direto da fonte refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-01-28T12:11:32Z"
+    },
+    {
+      "id": 245,
+      "title": "A certeza de realizar seus sonhos naturalmente",
+      "description": "Com um olhar leve e inspirador, A certeza de realizar seus sonhos naturalmente entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-06-09T22:44:30Z"
+    },
+    {
+      "id": 246,
+      "title": "A certeza de realizar seus sonhos mais rapidamente",
+      "description": "Cada vez mais presente no nosso cotidiano, A certeza de realizar seus sonhos mais rapidamente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-03-13T19:33:34Z"
+    },
+    {
+      "id": 247,
+      "title": "O direito de realizar seus sonhos com confiança",
+      "description": "Em tempos de transformação constante, O direito de realizar seus sonhos com confiança entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Notícias Surreais",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2025-03-16T01:32:14Z"
+    },
+    {
+      "id": 248,
+      "title": "A possibilidade de concretizar seus projetos em estado puro",
+      "description": "Cada vez mais presente no nosso cotidiano, A possibilidade de concretizar seus projetos em estado puro a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-01-07T20:14:03Z"
+    },
+    {
+      "id": 249,
+      "title": "O poder de atingir seus objetivos antes de tudo",
+      "description": "Em um mundo que pede simplicidade, O poder de atingir seus objetivos antes de tudo este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-03-27T23:49:18Z"
+    },
+    {
+      "id": 250,
+      "title": "O poder de evoluir mais rapidamente",
+      "description": "Para quem busca equilíbrio e motivação, O poder de evoluir mais rapidamente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-06-22T08:50:41Z"
+    },
+    {
+      "id": 251,
+      "title": "A possibilidade de avançar mais facilmente",
+      "description": "Para quem busca equilíbrio e motivação, A possibilidade de avançar mais facilmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-07-14T23:41:58Z"
+    },
+    {
+      "id": 252,
+      "title": "O prazer de evoluir sem preocupação",
+      "description": "Com um olhar leve e inspirador, O prazer de evoluir sem preocupação refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-11-09T05:10:10Z"
+    },
+    {
+      "id": 253,
+      "title": "A certeza de realizar seus sonhos com toda a tranquilidade",
+      "description": "Para quem busca equilíbrio e motivação, A certeza de realizar seus sonhos com toda a tranquilidade a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-08-21T09:34:48Z"
+    },
+    {
+      "id": 254,
+      "title": "A segurança de realizar seus sonhos com confiança",
+      "description": "Com um olhar leve e inspirador, A segurança de realizar seus sonhos com confiança refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-08-27T08:09:30Z"
+    },
+    {
+      "id": 255,
+      "title": "A possibilidade de conseguir naturalmente",
+      "description": "Para quem busca equilíbrio e motivação, A possibilidade de conseguir naturalmente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2025-04-18T22:35:05Z"
+    },
+    {
+      "id": 256,
+      "title": "A simplicidade de concretizar seus projetos com confiança",
+      "description": "Em tempos de transformação constante, A simplicidade de concretizar seus projetos com confiança a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-11-03T10:51:37Z"
+    },
+    {
+      "id": 257,
+      "title": "A certeza de atingir seus objetivos com toda a tranquilidade",
+      "description": "Em tempos de transformação constante, A certeza de atingir seus objetivos com toda a tranquilidade este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-03-18T02:03:57Z"
+    },
+    {
+      "id": 258,
+      "title": "O conforto de avançar com toda a tranquilidade",
+      "description": "Para quem busca equilíbrio e motivação, O conforto de avançar com toda a tranquilidade a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-07-25T20:44:51Z"
+    },
+    {
+      "id": 259,
+      "title": "A arte de mudar simplesmente",
+      "description": "Cada vez mais presente no nosso cotidiano, A arte de mudar simplesmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Notícias Surreais",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-07-05T08:01:16Z"
+    },
+    {
+      "id": 261,
+      "title": "A arte de concretizar seus projetos em estado puro",
+      "description": "Com foco em bem-estar e praticidade, A arte de concretizar seus projetos em estado puro este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Curiosidades Urbanas",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-05-19T09:15:47Z"
+    },
+    {
+      "id": 262,
+      "title": "A vantagem de realizar seus sonhos de maneira eficaz",
+      "description": "Em um mundo que pede simplicidade, A vantagem de realizar seus sonhos de maneira eficaz o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Curiosidades Urbanas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-11-18T06:29:45Z"
+    },
+    {
+      "id": 263,
+      "title": "A simplicidade de concretizar seus projetos em estado puro",
+      "description": "Em tempos de transformação constante, A simplicidade de concretizar seus projetos em estado puro entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-07-20T04:14:26Z"
+    },
+    {
+      "id": 264,
+      "title": "O poder de realizar seus sonhos sem preocupação",
+      "description": "Cada vez mais presente no nosso cotidiano, O poder de realizar seus sonhos sem preocupação entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-04-05T18:08:32Z"
+    },
+    {
+      "id": 265,
+      "title": "O poder de avançar simplesmente",
+      "description": "Em um mundo que pede simplicidade, O poder de avançar simplesmente a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-03-14T14:39:51Z"
+    },
+    {
+      "id": 266,
+      "title": "O direito de realizar seus sonhos de maneira eficaz",
+      "description": "Em tempos de transformação constante, O direito de realizar seus sonhos de maneira eficaz o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2025-03-09T15:54:53Z"
+    },
+    {
+      "id": 267,
+      "title": "O poder de concretizar seus projetos simplesmente",
+      "description": "Em um mundo que pede simplicidade, O poder de concretizar seus projetos simplesmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-06-24T18:13:04Z"
+    },
+    {
+      "id": 268,
+      "title": "O prazer de mudar direto da fonte",
+      "description": "Com um olhar leve e inspirador, O prazer de mudar direto da fonte este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-11-13T03:50:39Z"
+    },
+    {
+      "id": 270,
+      "title": "O conforto de concretizar seus projetos em estado puro",
+      "description": "Em tempos de transformação constante, O conforto de concretizar seus projetos em estado puro o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2024-09-06T04:13:26Z"
+    },
+    {
+      "id": 271,
+      "title": "O conforto de mudar em estado puro",
+      "description": "Com foco em bem-estar e praticidade, O conforto de mudar em estado puro entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-07-30T12:40:17Z"
+    },
+    {
+      "id": 272,
+      "title": "A possibilidade de avançar mais rapidamente",
+      "description": "Com foco em bem-estar e praticidade, A possibilidade de avançar mais rapidamente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-06-14T19:00:43Z"
+    },
+    {
+      "id": 273,
+      "title": "A segurança de concretizar seus projetos mais facilmente",
+      "description": "Em um mundo que pede simplicidade, A segurança de concretizar seus projetos mais facilmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-11-21T03:15:55Z"
+    },
+    {
+      "id": 274,
+      "title": "A certeza de inovar naturalmente",
+      "description": "Em um mundo que pede simplicidade, A certeza de inovar naturalmente refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-02-13T13:32:10Z"
+    },
+    {
+      "id": 275,
+      "title": "A certeza de inovar mais rapidamente",
+      "description": "Com foco em bem-estar e praticidade, A certeza de inovar mais rapidamente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-12-16T22:32:44Z"
+    },
+    {
+      "id": 276,
+      "title": "A possibilidade de ganhar naturalmente",
+      "description": "Com foco em bem-estar e praticidade, A possibilidade de ganhar naturalmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2025-03-12T08:41:36Z"
+    },
+    {
+      "id": 278,
+      "title": "A simplicidade de mudar com força total",
+      "description": "Com um olhar leve e inspirador, A simplicidade de mudar com força total entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-09-25T22:24:56Z"
+    },
+    {
+      "id": 279,
+      "title": "O conforto de inovar simplesmente",
+      "description": "Em tempos de transformação constante, O conforto de inovar simplesmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-07-15T09:39:22Z"
+    },
+    {
+      "id": 280,
+      "title": "O prazer de ganhar com confiança",
+      "description": "Cada vez mais presente no nosso cotidiano, O prazer de ganhar com confiança este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2024-09-25T22:29:15Z"
+    },
+    {
+      "id": 281,
+      "title": "O direito de atingir seus objetivos direto da fonte",
+      "description": "Em tempos de transformação constante, O direito de atingir seus objetivos direto da fonte a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Notícias Surreais",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-06-20T07:30:13Z"
+    },
+    {
+      "id": 282,
+      "title": "O poder de evoluir de maneira eficaz",
+      "description": "Cada vez mais presente no nosso cotidiano, O poder de evoluir de maneira eficaz refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Notícias Surreais",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-01-02T00:40:33Z"
+    },
+    {
+      "id": 283,
+      "title": "A segurança de conseguir com toda a tranquilidade",
+      "description": "Para quem busca equilíbrio e motivação, A segurança de conseguir com toda a tranquilidade a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Curiosidades Urbanas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2025-01-12T19:59:57Z"
+    },
+    {
+      "id": 284,
+      "title": "O prazer de realizar seus sonhos de maneira eficaz",
+      "description": "Em um mundo que pede simplicidade, O prazer de realizar seus sonhos de maneira eficaz a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": true,
+      "createdAt": "2024-06-21T22:05:06Z"
+    },
+    {
+      "id": 285,
+      "title": "A possibilidade de realizar seus sonhos direto da fonte",
+      "description": "Com foco em bem-estar e praticidade, A possibilidade de realizar seus sonhos direto da fonte este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-04-12T14:44:45Z"
+    },
+    {
+      "id": 286,
+      "title": "O conforto de inovar mais rapidamente",
+      "description": "Com um olhar leve e inspirador, O conforto de inovar mais rapidamente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2024-09-29T04:05:46Z"
+    },
+    {
+      "id": 287,
+      "title": "A certeza de conseguir mais rapidamente",
+      "description": "Para quem busca equilíbrio e motivação, A certeza de conseguir mais rapidamente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Curiosidades Urbanas",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-08-12T11:53:17Z"
+    },
+    {
+      "id": 288,
+      "title": "A certeza de ganhar com toda a tranquilidade",
+      "description": "Em um mundo que pede simplicidade, A certeza de ganhar com toda a tranquilidade entender esse conceito é essencial para evoluir sem complicações.",
+      "category": "Invenções Malucas",
+      "author": "João Oliveira",
+      "favorite": false,
+      "createdAt": "2025-03-05T05:16:24Z"
+    },
+    {
+      "id": 289,
+      "title": "O prazer de atingir seus objetivos com toda a tranquilidade",
+      "description": "Com um olhar leve e inspirador, O prazer de atingir seus objetivos com toda a tranquilidade a ideia aqui é explorar possibilidades com clareza e objetividade.",
+      "category": "Curiosidades Urbanas",
+      "author": "Marina Duarte",
+      "favorite": true,
+      "createdAt": "2024-10-19T21:24:56Z"
+    },
+    {
+      "id": 290,
+      "title": "O prazer de mudar com força total",
+      "description": "Com foco em bem-estar e praticidade, O prazer de mudar com força total este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2025-02-19T05:56:19Z"
+    },
+    {
+      "id": 291,
+      "title": "A simplicidade de avançar direto da fonte",
+      "description": "Com foco em bem-estar e praticidade, A simplicidade de avançar direto da fonte este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-08-21T05:45:30Z"
+    },
+    {
+      "id": 292,
+      "title": "O direito de concretizar seus projetos direto da fonte",
+      "description": "Com um olhar leve e inspirador, O direito de concretizar seus projetos direto da fonte refletir sobre esse assunto pode abrir caminhos mais leves e eficazes.",
+      "category": "Tecnologia Improvisada",
+      "author": "Lucas Ferraz",
+      "favorite": false,
+      "createdAt": "2024-09-26T02:35:57Z"
+    },
+    {
+      "id": 293,
+      "title": "O poder de avançar naturalmente",
+      "description": "Com um olhar leve e inspirador, O poder de avançar naturalmente a proposta deste conteúdo é trazer novas perspectivas com uma abordagem acessível.",
+      "category": "Invenções Malucas",
+      "author": "Carla Mendes",
+      "favorite": false,
+      "createdAt": "2024-11-02T19:00:08Z"
+    },
+    {
+      "id": 296,
+      "title": "O poder de inovar com confiança",
+      "description": "Com foco em bem-estar e praticidade, O poder de inovar com confiança este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Curiosidades Urbanas",
+      "author": "Carla Mendes",
+      "favorite": true,
+      "createdAt": "2025-01-28T16:42:26Z"
+    },
+    {
+      "id": 297,
+      "title": "O conforto de ganhar naturalmente",
+      "description": "Cada vez mais presente no nosso cotidiano, O conforto de ganhar naturalmente este tema mostra como pequenas atitudes podem trazer grandes mudanças.",
+      "category": "Tecnologia Improvisada",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-03-04T11:49:14Z"
+    },
+    {
+      "id": 298,
+      "title": "A simplicidade de evoluir naturalmente",
+      "description": "Em tempos de transformação constante, A simplicidade de evoluir naturalmente o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Notícias Surreais",
+      "author": "Marina Duarte",
+      "favorite": false,
+      "createdAt": "2024-07-31T15:19:04Z"
+    },
+    {
+      "id": 299,
+      "title": "A vantagem de inovar de maneira eficaz",
+      "description": "Com foco em bem-estar e praticidade, A vantagem de inovar de maneira eficaz o conteúdo destaca caminhos práticos para colocar sonhos em ação.",
+      "category": "Curiosidades Urbanas",
+      "author": "João Oliveira",
+      "favorite": true,
+      "createdAt": "2025-01-21T14:46:06Z"
+    },
+    {
+      "id": 301,
+      "title": "O ratinho fugiu do seu dono",
+      "description": "Na tarde desta terça-feira, moradores da Vila Esperança foram surpreendidos por uma cena inusitada: um ratinho de estimação, chamado Zig, escapou da gaiola e deu início a uma verdadeira aventura urbana!",
+      "category": "Notícias Surreais",
+      "author": "Lucas Bargas",
+      "favorite": false,
+      "createdAt": "2025-04-30T23:27:25Z"
+    },
+    {
+      "title": "teste",
+      "description": "Testando se consigo fazer algo direito nesta minha vida que considero ser totalmente miserável, meu deus!",
+      "category": "Invenções Malucas",
+      "author": "Lucas",
+      "favorite": false,
+      "createdAt": "2025-05-05T19:33:34Z",
+      "id": 302
+    }
+  ]
+}
