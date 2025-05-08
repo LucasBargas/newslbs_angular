@@ -10,13 +10,11 @@
 }
 
 .loading {
-  padding: 2rem 0;
+  padding: 3rem 0;
 
   &-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     min-height: calc(100vh - 12.5rem);
 
     .loader {
