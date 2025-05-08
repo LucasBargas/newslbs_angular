@@ -1,0 +1,28 @@
+    <div *ngIf="news.length > 1" class="showcase-wrapper-order">
+      <p>Ordernar por:
+        <ng-container *ngFor="let item of orderOptions">
+          <span
+            (click)="showOrderList = !showOrderList; $event.stopPropagation()"
+            *ngIf="order === item.order" >
+            {{item.name}}
+            <fa-icon
+              [ngClass]="showOrderList ? 'active' : ''"
+              [icon]="faChevronDown"
+            >
+            </fa-icon>
+          </span>
+        </ng-container>
+      </p>
+
+      <nav #navOptionsRef [ngClass]="showOrderList ? 'active' : ''">
+        <ul>
+          <li
+            *ngFor="let item of orderOptions"
+            (click)="changeOrder(item.order)"
+            [ngClass]="order === item.order ? 'active' : ''"
+          >
+            {{item.name}}
+          </li>
+        </ul>
+      </nav>
+    </div>

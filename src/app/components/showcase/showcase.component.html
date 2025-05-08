@@ -13,34 +13,12 @@
         </h2>
       </div>
 
-      <div *ngIf="news.length > 1" class="showcase-wrapper-order">
-        <p>Ordernar por:
-          <ng-container *ngFor="let item of orderOptions">
-            <span
-              (click)="showOrderList = !showOrderList; $event.stopPropagation()"
-              *ngIf="order === item.order" >
-              {{item.name}}
-              <fa-icon
-                [ngClass]="showOrderList ? 'active' : ''"
-                [icon]="faChevronDown"
-              >
-              </fa-icon>
-            </span>
-          </ng-container>
-        </p>
-
-        <nav #navOptionsRef [ngClass]="showOrderList ? 'active' : ''">
-          <ul>
-            <li
-              *ngFor="let item of orderOptions"
-              (click)="order = item.order; getNewsService(); showOrderList = false"
-              [ngClass]="order === item.order ? 'active' : ''"
-            >
-              {{item.name}}
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <app-news-order
+        [news]="news"
+        [order]="order"
+        (orderChange)="order = $event">
+      >
+      </app-news-order>
 
       <div *ngIf="searchPage && searchResultCount === 0" class="showcase-wrapper-call">
         <h3>Deseja adicionar uma notícia sobre: "{{searchValue}}"?</h3>
