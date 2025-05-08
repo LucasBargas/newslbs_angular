@@ -18,10 +18,10 @@ export const routes: Routes = [
     path: 'noticias-favoritas', component: FavoritesNewsComponent,
   },
   {
-    path: 'cadastrar-noticias', component: RegisterNewsComponent,
+    path: 'cadastrar-noticia', component: RegisterNewsComponent,
   },
   {
-    path: 'editar-noticia/noticia/:id', component: EditNewsComponent,
+    path: 'editar-noticia/:id', component: EditNewsComponent,
   },
   {
     path: 'noticia/:id', component: NewsSingleComponent,

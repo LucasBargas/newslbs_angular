@@ -28,7 +28,7 @@ export class HeaderNavComponent {
   navList: INav[] = [
     { title: 'Home', path: '/home' },
     { title: 'Notícias favoritas', path: '/noticias-favoritas' },
-    { title: 'Cadastrar notícias', path: '/cadastrar-noticias' },
+    { title: 'Cadastrar notícias', path: '/cadastrar-noticia' },
   ];
 
   // Buscando no componente pai HeaderComponent o método onClickMobleButton
