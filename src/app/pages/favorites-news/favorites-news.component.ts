@@ -6,10 +6,7 @@ import { NewsService } from '../../services/news.service';
 import { INews } from '../../interfaces/INews';
 import { LoadingComponent } from "../../components/loading/loading.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faEye  } from '@fortawesome/free-solid-svg-icons';
-import { faPenToSquare  } from '@fortawesome/free-solid-svg-icons';
-import { faTrash  } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faPenToSquare, faTrash, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -21,8 +18,13 @@ import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
   providers: [DatePipe]
 })
 export class FavoritesNewsComponent implements OnInit {
-  news!: INews[];
+  allNews: INews[] = [];
+  displayedNews: INews[] = [];
   isLoading = false;
+  page = 1;
+  itemsPerPage = 9;
+  showLoadMoreButton = true;
+
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
@@ -35,34 +37,43 @@ export class FavoritesNewsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.newsService.isLoading$
-    .subscribe(loading => this.isLoading = loading);
+    this.newsService.isLoading$.subscribe(loading => this.isLoading = loading);
 
-    this.newsService.getFavoritesNews()
-    .subscribe((news) => this.news = news);
+    this.newsService.getFavoritesNews().subscribe((news) => {
+      this.allNews = news;
+      this.displayedNews = this.allNews.slice(0, this.itemsPerPage);
+      this.updateLoadMoreVisibility();
+    });
   }
 
-  handleWithDateAndHour(date: string) {
-    const formattedDate = this.datePipe.transform(date, 'dd/MM/yyyy', 'UTC');
-    return formattedDate;
+  loadMore(): void {
+    this.page++;
+    this.displayedNews = this.allNews.slice(0, this.page * this.itemsPerPage);
+    this.updateLoadMoreVisibility();
   }
 
-  onFavoriteButtonClick(item: INews) {
-    item.favorite = !item.favorite;
-    this.newsService.changeFavorite(item).subscribe();
-    this.handleWithCopyNews(item);
+  updateLoadMoreVisibility(): void {
+    this.showLoadMoreButton = this.displayedNews.length < this.allNews.length;
   }
 
-
-  onDeleteClick(item: INews) {
-    this.newsService.exclude(item.id).subscribe();
-    this.handleWithCopyNews(item);
+  formatDate(date: string): string | null {
+    return this.datePipe.transform(date, 'dd/MM/yyyy', 'UTC');
   }
 
-  handleWithCopyNews(item: INews) {
-    const newsCopy = Array.isArray(this.news) ? [...this.news] : [this.news];
-    const newsCopyFilter = newsCopy.filter(el => el.id !== item.id);
+  toggleFavorite(newsItem: INews): void {
+    newsItem.favorite = !newsItem.favorite;
+    this.newsService.changeFavorite(newsItem).subscribe();
+    this.removeFromListsIfNeeded(newsItem);
+  }
 
-    this.news = newsCopyFilter;
+  onDeleteClick(newsItem: INews): void {
+    this.newsService.exclude(newsItem.id).subscribe();
+    this.removeFromListsIfNeeded(newsItem);
+  }
+
+  removeFromListsIfNeeded(newsItem: INews): void {
+    this.allNews = this.allNews.filter(item => item.id !== newsItem.id);
+    this.displayedNews = this.displayedNews.filter(item => item.id !== newsItem.id);
+    this.updateLoadMoreVisibility();
   }
 }

@@ -5,7 +5,7 @@
     </app-container>
   </div>
 
-  <app-container>
+  <app-container *ngIf="!isLoading">
     <header class="favorites-news-header">
       <div>
         <h2>Minhas notícias favoritas</h2>
@@ -16,7 +16,7 @@
     </header>
 
     <div class="favorites-news-wrapper">
-      <div *ngFor="let item of news" class="favorites-news-wrapper-single">
+      <div *ngFor="let item of displayedNews" class="favorites-news-wrapper-single">
         <div>
           <a
             class="news-title"
@@ -42,13 +42,13 @@
           </span>
           <span>
             <strong>Postado em:</strong>
-            {{handleWithDateAndHour(item.createdAt)}}
+            {{formatDate(item.createdAt)}}
           </span>
         </div>
 
         <div>
           <div>
-            <button (click)="onFavoriteButtonClick(item)">
+            <button (click)="toggleFavorite(item)">
               <fa-icon *ngIf="item.favorite" [icon]="favorited"></fa-icon>
               <fa-icon *ngIf="!item.favorite" [icon]="notFavorited"></fa-icon>
             </button>
@@ -75,6 +75,12 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="load-more" *ngIf="showLoadMoreButton">
+      <button (click)="loadMore()">
+        Carregar mais
+      </button>
     </div>
   </app-container>
 </section>
