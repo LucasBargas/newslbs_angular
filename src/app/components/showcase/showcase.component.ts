@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
 import { ContainerComponent } from '../container/container.component';
 import { CommonModule } from '@angular/common';
 import { INews } from '../../interfaces/INews';
@@ -30,6 +30,24 @@ export class ShowcaseComponent implements OnInit {
   searchValue!: string;
   searchResultCount: number = 0;
   order: string = '';
+  showOrderList: boolean = false;
+
+  orderOptions = [
+    {
+      name: 'Aleatório',
+      order: ''
+    },
+    {
+      name: 'Mais recentes',
+      order: 'desc'
+    },
+    {
+      name: 'Mais antigas',
+      order: 'asc'
+    },
+  ]
+
+  @ViewChild('navOptionsRef') navOptionsRef!: ElementRef;
 
   faChevronDown = faChevronDown;
 
@@ -73,5 +91,15 @@ export class ShowcaseComponent implements OnInit {
       .subscribe((news) => {
         this.news = news;
       });
+  }
+
+  @HostListener('document:click', ['$event'])
+  outsideClick(event: MouseEvent) {
+    if (!this.showOrderList) return;
+
+    const clickedInside = this.navOptionsRef?.nativeElement.contains(event.target);
+    if (!clickedInside) {
+      this.showOrderList = false;
+    }
   }
 }

@@ -13,12 +13,12 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getNews(search: string | undefined, page: number, order?: string): Observable<INews[]> {
+  getNews(search: string | undefined, page: number | undefined, order?: string): Observable<INews[]> {
     this.isLoading$.next(true);
     const limit = 9;
 
     let params = new HttpParams()
-    .set("_page", page)
+    .set("_page", page!)
     .set('_limit', limit)
 
 

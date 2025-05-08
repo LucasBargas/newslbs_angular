@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, Optional, SkipSelf } from '@angular/core';
 import { INews } from '../../interfaces/INews';
 import { RouterLink } from '@angular/router';
 import { NewsService } from '../../services/news.service';
@@ -10,6 +10,7 @@ import { faTrash  } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 import { DatePipe } from '@angular/common';
+import { ShowcaseComponent } from '../showcase/showcase.component';
 
 @Component({
   selector: 'app-news-card',
@@ -23,13 +24,18 @@ export class NewsCardComponent {
   @Input() news!: INews[];
   @Input() favorites!: boolean;
   @Input() viewNews!: boolean;
+
   faEye = faEye;
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
   notFavorited = faHeartRegular;
   favorited = faHeart;
 
-  constructor(private newsService: NewsService, private datePipe: DatePipe) {}
+  constructor(
+    private newsService: NewsService,
+    private datePipe: DatePipe,
+    @Optional() @SkipSelf() private showcaseComponent: ShowcaseComponent
+  ) {}
 
   onDeleteClick(id: number) {
     const newsCopy = Array.isArray(this.news) ? [...this.news] : [this.news];
@@ -39,9 +45,7 @@ export class NewsCardComponent {
 
     this.newsService.exclude(id).subscribe();
 
-    if (!this.viewNews) {
-      window.location.reload();
-    }
+    this.showcaseComponent.getNewsService();
   }
 
   onFavoriteButtonClick(item: INews) {
