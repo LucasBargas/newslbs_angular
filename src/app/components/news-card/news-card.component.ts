@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Optional, Output, SkipSelf } from '@angular/core';
+import { Component, input, Optional, output, SkipSelf } from '@angular/core';
 import { INews } from '../../interfaces/INews';
 import { RouterLink } from '@angular/router';
 import { NewsService } from '../../services/news.service';
@@ -21,11 +21,11 @@ import { ShowcaseComponent } from '../showcase/showcase.component';
   providers: [DatePipe]
 })
 export class NewsCardComponent {
-  @Input() favorites!: boolean;
-  @Input() viewNews!: boolean;
-  @Input() news!: INews[];
+  favorites = input<boolean>();
+  viewNews = input<boolean>();
+  news = input<INews[]>();
 
-  @Output() newsChange = new EventEmitter<INews[]>();
+  newsChange = output<INews[]>();
 
   faEye = faEye;
   faPenToSquare = faPenToSquare;
@@ -40,7 +40,8 @@ export class NewsCardComponent {
   ) {}
 
   onDeleteClick(id: number) {
-    const newsCopy = Array.isArray(this.news) ? [...this.news] : [this.news];
+    const newsArr = this.news() ?? [];
+    const newsCopy = Array.isArray(newsArr) ? [...newsArr] : [newsArr];
     const newsCopyFilter = newsCopy.filter(el => el.id !== id);
 
     this.newsChange.emit(newsCopyFilter)
@@ -53,7 +54,7 @@ export class NewsCardComponent {
   onFavoriteButtonClick(item: INews) {
     item.favorite = !item.favorite;
     this.newsService.changeFavorite(item).subscribe();
-    if (this.favorites) window.location.reload();
+    if (this.favorites()) window.location.reload();
   }
 
   formatDate(date: string) {

@@ -1,19 +1,19 @@
 <div class="pagination-container">
   <a
-    *ngIf="currentPage > 1 && currentPage <= totalPages"
+    *ngIf="currentPage()! > 1 && currentPage <= totalPages"
     [routerLink]="[currentRoute]"
-    [queryParams]="{ q: searchValue, pagina: currentPage - 1  }"
+    [queryParams]="{ q: searchValue, pagina: currentPage()! - 1  }"
   >
     <fa-icon [icon]="faChevronLeft"></fa-icon>
     <span>Anterior</span>
   </a>
   <div>
-    <span>{{currentPage}}</span> de <span>{{totalPages}}</span>
+    <span>{{currentPage()}}</span> de <span>{{totalPages()}}</span>
   </div>
   <a
-    *ngIf="currentPage < totalPages"
+    *ngIf="currentPage()! < totalPages()!"
     [routerLink]="[currentRoute]"
-    [queryParams]="{ q: searchValue, pagina: currentPage + 1 }"
+    [queryParams]="{ q: searchValue, pagina: currentPage()! + 1 }"
   >
     <span>Próximo</span>
     <fa-icon [icon]="faChevronRight"></fa-icon>

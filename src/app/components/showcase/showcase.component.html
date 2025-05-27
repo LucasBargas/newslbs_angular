@@ -7,7 +7,7 @@
 
   <app-container *ngIf="!isLoading">
     <div class="showcase-wrapper">
-      <div *ngIf="searchPage" class="showcase-wrapper-count">
+      <div *ngIf="searchPage()" class="showcase-wrapper-count">
         <h2>
           {{searchResultCount}} {{searchResultCount !== 1 ? 'notícias' : 'notícia'}} encontradas com: "{{searchValue}}"
         </h2>
@@ -20,7 +20,7 @@
       >
       </app-news-order>
 
-      <div *ngIf="searchPage && searchResultCount === 0" class="showcase-wrapper-call">
+      <div *ngIf="searchPage() && searchResultCount === 0" class="showcase-wrapper-call">
         <h3>Deseja adicionar uma notícia sobre: "{{searchValue}}"?</h3>
         <a routerLink="/cadastrar-noticias">Basta clicar aqui</a>
       </div>
@@ -29,7 +29,7 @@
         class="showcase-wrapper-cards"
         [viewNews]="viewNews"
         [news]="news"
-        [favorites]="favorites"
+        [favorites]="favorites()"
         (newsChange)="news = $event">
       >
       </app-news-card>
@@ -37,7 +37,7 @@
       <app-pagination
         [currentPage]="currentPage"
         [totalPages]="totalPages"
-        [currentRoute] = "currentRoute"
+        [currentRoute] = "currentRoute()"
         [searchValue] = "searchValue"
       >
       </app-pagination>

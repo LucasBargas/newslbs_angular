@@ -1,6 +1,6 @@
 <div
   class="news-card"
-  *ngFor="let item of news"
+  *ngFor="let item of news()"
 >
   <h3 *ngIf="!viewNews">{{item.title}}</h3>
 

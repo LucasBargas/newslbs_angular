@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Optional, SkipSelf } from '@angular/core';
+import { Component, input, Optional, SkipSelf } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderComponent } from '../header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -21,7 +21,7 @@ interface INav {
   styleUrl: './header-nav.component.scss'
 })
 export class HeaderNavComponent {
-  @Input() mobile!: boolean;
+  mobile = input<boolean>();
   faSquareInstagram = faSquareInstagram;
   faSquareFacebook = faSquareFacebook ;
 
@@ -36,6 +36,6 @@ export class HeaderNavComponent {
   constructor(@Optional() @SkipSelf() private header: HeaderComponent) {}
 
   onClick() {
-    this.mobile && this.header.onClickMobileButton();
+    this.mobile() && this.header.onClickMobileButton();
   }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronRight  } from '@fortawesome/free-solid-svg-icons';
@@ -13,10 +13,10 @@ import { faChevronLeft  } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './pagination.component.scss'
 })
 export class PaginationComponent {
-  @Input() currentPage!: number;
-  @Input() totalPages!: number;
-  @Input() currentRoute!: string;
-  @Input() searchValue!: string;
+  currentPage = input<number>();
+  totalPages = input<number>();
+  currentRoute = input<string>();
+  searchValue = input<string>();
 
   faChevronRight = faChevronRight;
   faChevronLeft = faChevronLeft;

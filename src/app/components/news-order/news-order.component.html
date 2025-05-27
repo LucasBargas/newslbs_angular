@@ -1,9 +1,9 @@
-    <div *ngIf="news.length > 1" class="showcase-wrapper-order">
+    <div *ngIf="news().length > 1" class="showcase-wrapper-order">
       <p>Ordernar por:
         <ng-container *ngFor="let item of orderOptions">
           <span
             (click)="showOrderList = !showOrderList; $event.stopPropagation()"
-            *ngIf="order === item.order" >
+            *ngIf="order() === item.order" >
             {{item.name}}
             <fa-icon
               [ngClass]="showOrderList ? 'active' : ''"
@@ -19,7 +19,7 @@
           <li
             *ngFor="let item of orderOptions"
             (click)="changeOrder(item.order)"
-            [ngClass]="order === item.order ? 'active' : ''"
+            [ngClass]="order() === item.order ? 'active' : ''"
           >
             {{item.name}}
           </li>

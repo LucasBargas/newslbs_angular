@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { ContainerComponent } from '../container/container.component';
 import { CommonModule } from '@angular/common';
 import { INews } from '../../interfaces/INews';
@@ -19,9 +19,9 @@ import { NewsOrderComponent } from "../news-order/news-order.component";
   styleUrl: './showcase.component.scss'
 })
 export class ShowcaseComponent implements OnInit {
-  @Input() currentRoute!: string;
-  @Input() favorites!: boolean;
-  @Input() searchPage!: boolean;
+  currentRoute = input.required<string>();
+  favorites = input<boolean>();
+  searchPage = input<boolean>();
 
   isLoading = false;
   news!: INews[];
@@ -55,7 +55,7 @@ export class ShowcaseComponent implements OnInit {
       const search = params['q'];
       this.currentPage = page !== undefined ? Number(page) : 1;
 
-      if (this.searchPage && search) {
+      if (this.searchPage() && search) {
         this.searchValue = search;
         this.newsService.getNewsBySearch(this.searchValue)
         .subscribe((news) => {

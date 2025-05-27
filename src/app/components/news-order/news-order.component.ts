@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, SkipSelf, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, input, Optional, output, SkipSelf, ViewChild } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronDown  } from '@fortawesome/free-solid-svg-icons';
 import { INews } from '../../interfaces/INews';
@@ -14,9 +14,9 @@ import { ShowcaseComponent } from '../showcase/showcase.component';
 })
 export class NewsOrderComponent {
   @ViewChild('navOptionsRef') navOptionsRef!: ElementRef;
-  @Input() news!: INews[];
-  @Input() order: string = '';
-  @Output() orderChange = new EventEmitter<string>();
+  news = input.required<INews[]>();
+  order = input<string>('');
+  orderChange = output<string>();
 
   showOrderList: boolean = false;
 

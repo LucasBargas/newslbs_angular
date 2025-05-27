@@ -1,4 +1,4 @@
-<nav class="header-wrapper-nav" [ngClass]="mobile ? 'active' : ''">
+<nav class="header-wrapper-nav" [ngClass]="mobile() ? 'active' : ''">
   <ul>
     <li *ngFor="let item of navList">
       <a
@@ -11,7 +11,7 @@
       </a>
     </li>
 
-    <app-header-nav-search [mobile]="mobile"></app-header-nav-search>
+    <app-header-nav-search [mobile]="mobile()"></app-header-nav-search>
     <li class="header-wrapper-nav-social">
       <ul>
         <li>

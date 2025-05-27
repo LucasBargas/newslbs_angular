@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, Optional, SkipSelf, ViewChild } from '@angular/core';
+import { Component, ElementRef, input, Optional, SkipSelf, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ErrorMessageComponent } from '../../error-message/error-message.component';
@@ -18,7 +18,7 @@ import { HeaderNavSearchPreviewComponent } from "../header-nav-search-preview/he
 })
 export class HeaderNavSearchComponent {
   @ViewChild('input') inputRef!: ElementRef<HTMLInputElement>;
-  @Input() mobile!: boolean;
+  mobile = input<boolean>();
   error: boolean = false;
   value: string = '';
   faMagnifyingGlass = faMagnifyingGlass;
@@ -42,7 +42,7 @@ export class HeaderNavSearchComponent {
 
     this.value = '';
     this.error = false;
-    this.mobile && this.header.onClickMobileButton();
+    this.mobile() && this.header.onClickMobileButton();
   }
 
   onClickClearButton() {

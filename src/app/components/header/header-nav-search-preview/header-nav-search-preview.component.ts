@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, Input, OnChanges, Optional, SimpleChanges, SkipSelf, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, input, OnChanges, Optional, SimpleChanges, SkipSelf, ViewChild } from '@angular/core';
 import { NewsService } from '../../../services/news.service';
 import { INews } from '../../../interfaces/INews';
 import { RouterLink } from '@angular/router';
@@ -15,8 +15,8 @@ import { HeaderComponent } from '../header.component';
 })
 export class HeaderNavSearchPreviewComponent implements OnChanges {
   @ViewChild('previewRef') previewRef!: ElementRef;
-  @Input() value!: string;
-  @Input() error!: boolean;
+  value = input<string>();
+  error = input<boolean>();
   news!: INews[];
   isLoading = false;
 
