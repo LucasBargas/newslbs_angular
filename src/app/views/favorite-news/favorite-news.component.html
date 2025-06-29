@@ -1,0 +1,30 @@
+<app-loading *ngIf="categoriesLoading"></app-loading>
+
+<section *ngIf="!categoriesLoading" class="favorite-news">
+  <app-container>
+    <div class="favorite-news-content">
+      <div class="favorite-news-content-header">
+        <h2>Notícias favoritas</h2>
+        <div>
+          <a routerLink="/cadastrar-noticia">Cadastrar notícia</a>
+        </div>
+        <p>Veja as notícias favoritadas por você.</p>
+      </div>
+
+      <app-order-controller
+        [class.active]="newsList().length > 1"
+      ></app-order-controller>
+
+      <div class="favorite-news-content-display">
+        <app-aside-nav [path]="'noticias-favoritas'"></app-aside-nav>
+        <ng-container *ngIf="category(); else showDefault">
+          <router-outlet></router-outlet>
+        </ng-container>
+
+        <ng-template #showDefault>
+          <app-news-display></app-news-display>
+        </ng-template>
+      </div>
+    </div>
+  </app-container>
+</section>

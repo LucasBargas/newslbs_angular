@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: $strong-gray;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    transition: .3s;
+  }
+
+  &.active &-content {
+    height: 5.5rem;
+  }
+}

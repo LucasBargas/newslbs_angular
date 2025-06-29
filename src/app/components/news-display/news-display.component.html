@@ -1,0 +1,9 @@
+<app-loading *ngIf="newsLoading()"></app-loading>
+
+<div class="news-display">
+  <ul *ngIf="!newsLoading()" class="favorites-news-list">
+    <li *ngFor="let item of newsList()">
+      <app-suggestion-card [news]="item"></app-suggestion-card>
+    </li>
+  </ul>
+</div>

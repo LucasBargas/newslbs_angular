@@ -1,9 +1,10 @@
-@use 'app/styles/variables' as *;
+@use 'variables' as *;
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $primary-font;
 }
 
 html {
@@ -16,28 +17,30 @@ html {
   }
 
   body {
+    min-height: calc(100vh + 2rem);
     background: $light-gray;
-    font-family: $primary-font;
 
-    input, textarea, button {
+    input,
+    textarea,
+    button {
+      font-size: 1rem;
       outline: none;
       border: none;
-      font-family: $primary-font;
     }
 
-    input, textarea {
-      font-size: .875rem;
+    input,
+    textarea {
       background: $light-color;
     }
 
     button {
-      font-size: 1rem;
       font-weight: bold;
       color: $primary-color;
       cursor: pointer;
     }
 
-    ul, li {
+    ul,
+    li {
       list-style: none;
     }
 

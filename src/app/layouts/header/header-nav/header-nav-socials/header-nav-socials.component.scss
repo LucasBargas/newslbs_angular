@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+:host {
+  display: none;
+
+  @media (max-width: 834px) {
+    display: block;
+  }
+}
+
+.header-nav-socials {
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+
+      li {
+        cursor: pointer;
+
+        fa-icon {
+          color: $primary-color;
+          font-size: 1.875rem;
+        }
+      }
+    }
+  }
+}

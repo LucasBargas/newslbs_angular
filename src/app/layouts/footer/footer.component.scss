@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+footer {
+  padding: 5rem 2rem 2rem 2rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+
+    a {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}

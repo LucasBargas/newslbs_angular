@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+.header-logo {
+  a {
+    padding: .675rem .675rem .675rem 0;
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: $primary-color;
+  }
+}

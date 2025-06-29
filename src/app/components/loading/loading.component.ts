@@ -1,12 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ContainerComponent } from "../container/container.component";
+import { ContainerComponent } from '../container/container.component';
 
 @Component({
   selector: 'app-loading',
-  imports: [ContainerComponent],
+  standalone: true,
+  imports: [CommonModule, ContainerComponent],
   templateUrl: './loading.component.html',
-  styleUrl: './loading.component.scss'
+  styleUrl: './loading.component.scss',
 })
-export class LoadingComponent {
-
-}
+export class LoadingComponent {}

@@ -1,0 +1,27 @@
+<div class="order-controller">
+  <div class="order-controller-content">
+    <div>
+      <p>Ordernar notícias por:</p>
+      <span (click)="toggleOrder()" #toggleBtn>
+        {{orderName()}}
+        <fa-icon [class.active]="orderActive" [icon]="faChevronDown"></fa-icon>
+      </span>
+    </div>
+
+    <nav
+      class="order-controller-content-nav"
+      [class.active]="orderActive"
+      #order
+    >
+      <ul>
+        <li
+          [class.active]="orderName() === item.name"
+          (click)="defineOrder(item)"
+          *ngFor="let item of orderOptions"
+        >
+          {{item.name}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -1,70 +1,59 @@
-## Projeto NewsLBS com Angular
-O projeto **NewsLBS** foi desenvolvido por mim, Lucas Bargas, com base em um layout que encontrei na web. Este projeto tem como objetivo simular um portal de notícias, porém com um visual mais simples. Esta aplicação foi anteriormente feita com ReactJS e NodeJS, porém, a fins de estudo, refiz a aplicação com Angular 19 e JSON Server para simular um Backend.
+# NewsLbsAngular
 
-### Principais recursos do App
-* Registro, edição e exclusão de Notícia;
-* Filtro de notícia;
-* Pesquisa por notícia.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
 
-### Tecnologias utilizadas
-<table>
-  <tr>
-    <td>Angular</td>
-    <td>Angular Font Awesome</td>
-    <td>JSON Server</td>
-  </tr>
-  <tr>
-    <td>19.2</td>
-    <td>1.0</td>
-    <td>0.17.4</td>
-  <tr>
-</table>
+## Development server
 
-### Outros recursos utilizados
-* SCSS.
+To start a local development server, run:
 
-### Como executar este Frontend
-
-#### Pré-requisitos
-* Possuir o Nodejs instalado;
-* Estar com o backend em execução.
-
-#### Clone o repositório
 ```bash
-git clone https://github.com/LucasBargas/newslbs_angular.git
+ng serve
 ```
 
-#### Entre na pasta
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
 ```bash
-cd newslbs_angular
+ng generate component component-name
 ```
 
-#### Instale as dependências do Frontend
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
 ```bash
-npm install
+ng generate --help
 ```
 
-#### Instale as dependências do Backend
+## Building
+
+To build the project run:
+
 ```bash
-cd backend ; npm install
+ng build
 ```
 
-#### Execute o Backend
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
 ```bash
-cd backend ; npm start
+ng test
 ```
 
-#### Execute o Frontend
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
 ```bash
-ng serve --o
+ng e2e
 ```
 
-# Autor
-Lucas Bargas da Silva
-</br>
-<https://projetoslucasbargas.vercel.app/>
-</br>
-<https://www.linkedin.com/in/lucas-bargas/>
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-Gostaria de ver o repositório deste app na versão com Reactjs?
-[Clique aqui](https://github.com/LucasBargas/newslbs_frontend)
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

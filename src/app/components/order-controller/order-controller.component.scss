@@ -1,0 +1,80 @@
+@use 'variables' as *;
+
+.order-controller {
+  display: flex;
+  justify-content: flex-end;
+
+  &-content {
+    position: relative;
+
+    p,
+    span,
+    li {
+      font-size: .9325rem;
+    }
+
+    div {
+      display: flex;
+      align-items: flex-end;
+      gap: .5rem;
+      position: relative;
+
+      span {
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+
+        fa-icon {
+          display: inline-block;
+          transition: .3s;
+
+          &.active {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    span,
+    li {
+      user-select: none;
+      font-family: 'Open Sans';
+    }
+
+    nav {
+      opacity: 0;
+      pointer-events: none;
+      padding-top: .5rem;
+      position: absolute;
+      right: 0;
+      z-index: 999;
+      min-width: 150px;
+      transition: .2s;
+
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      ul {
+        background: $light-color;
+        border-radius: .25rem;
+
+        li {
+          cursor: pointer;
+          padding: .75rem .75rem;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $light-gray;
+          }
+
+          &.active {
+            pointer-events: none;
+            font-family: 'Open Sans';
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

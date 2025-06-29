@@ -1,0 +1,67 @@
+<div class="suggestion-card">
+  <div class="suggestion-card-content">
+    <h3>
+      <a [routerLink]="'/noticia/' + news().id">{{news().title}}</a>
+    </h3>
+
+    <ul class="suggestion-card-content-details">
+      <li>
+        <span>
+          <strong>Categoria:</strong>
+          <a routerLink="/search" [queryParams]="{ q: news().category}">
+            {{news().category}}
+          </a>
+        </span>
+      </li>
+
+      <li>
+        <span>
+          <strong>Autoria:</strong>
+          <a routerLink="/search" [queryParams]="{ q: news().author}">
+            {{news().author}}
+          </a>
+        </span>
+      </li>
+      <li>
+        <span>
+          <strong>Postado em:</strong>
+          {{news().created_at | date:'dd/MM/yyyy'}}
+        </span>
+      </li>
+    </ul>
+
+    <nav class="suggestion-card-content-controllers">
+      <ul>
+        <li>
+          <a [routerLink]="'/noticia/' + news().id">
+            <button type="button" title="Editar">
+              <fa-icon [icon]="faEye"></fa-icon>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="'/editar-noticia/' + news().id">
+            <button type="button" title="Editar">
+              <fa-icon [icon]="faPen"></fa-icon>
+            </button>
+          </a>
+        </li>
+        <li>
+          <button (click)="onDelete()" type="button" title="Deletar">
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <button
+        (click)="onFavorite()"
+        [title]="news().isFavorite ? 'Favoritado' : 'Não favoritado'"
+      >
+        <fa-icon *ngIf="news().isFavorite" [icon]="favorited"></fa-icon>
+        <fa-icon *ngIf="!news().isFavorite" [icon]="notFavorited"></fa-icon>
+      </button>
+    </div>
+  </div>
+</div>

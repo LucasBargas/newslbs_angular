@@ -1,0 +1,18 @@
+<aside>
+  <h3>Navegue por categoria:</h3>
+
+  <nav>
+    <ul>
+      <li *ngFor="let item of categoriesList()">
+        <a
+          [routerLink]="'/' + path() + '/' + item.categoryRoute"
+          (click)="onClick(item)"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: false }"
+        >
+          {{item.name}}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>

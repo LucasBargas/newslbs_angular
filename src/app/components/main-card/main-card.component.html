@@ -1,0 +1,65 @@
+<div class="main-card">
+  <div class="main-card-content">
+    <h2>{{news()?.title}}</h2>
+    <p>{{news()?.description}}</p>
+
+    <div class="main-card-content-details">
+      <nav class="main-card-content-details-nav">
+        <ul>
+          <li>
+            <span>
+              <strong>Categoria:</strong>
+              <a routerLink="/search" [queryParams]="{ q: news()?.category}">
+                {{news()?.category}}
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span>
+              <strong>Autoria:</strong>
+              <a routerLink="/search" [queryParams]="{ q: news()?.author}">
+                {{news()?.author}}
+              </a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Postado em:</strong>
+              {{news()?.created_at | date:'dd/MM/yyyy'}}
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-card-controllers">
+    <ul>
+      <li>
+        <button (click)="onDelete()" type="button" title="Deletar">
+          <fa-icon [icon]="faTrash"></fa-icon>
+        </button>
+      </li>
+      <li>
+        <a [routerLink]="'/editar-noticia/' + news()?.id">
+          <button type="button" title="Editar">
+            <fa-icon [icon]="faPen"></fa-icon>
+          </button>
+        </a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <button
+          (click)="onFavorite()"
+          [title]="news()?.isFavorite ? 'Favoritado' : 'Não favoritado'"
+        >
+          <fa-icon *ngIf="news()?.isFavorite" [icon]="favorited"></fa-icon>
+          <fa-icon *ngIf="!news()?.isFavorite" [icon]="notFavorited"></fa-icon>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>

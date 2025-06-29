@@ -1,0 +1,9 @@
+<header [class.active]="isScrolled" class="header">
+  <app-container>
+    <div class="header-content">
+      <app-header-logo (mobileChange)="mobile = $event"></app-header-logo>
+      <app-header-nav [(mobile)]="mobile"></app-header-nav>
+      <app-header-mobile-button [(mobile)]="mobile"></app-header-mobile-button>
+    </div>
+  </app-container>
+</header>

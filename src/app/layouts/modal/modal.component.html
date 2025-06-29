@@ -1,0 +1,49 @@
+<section
+  (click)="outsideClick($event)"
+  [class.active]="isModalActive()"
+  class="modal"
+>
+  <div class="modal-content">
+    <div class="modal-content-header">
+      <button (click)="closeModal()">
+        <fa-icon [icon]="faXmark" (click)="outsideClick($event)"></fa-icon>
+      </button>
+    </div>
+
+    <div class="modal-content-body">
+      <ng-container *ngIf="type() === 'delete' && !isNews">
+        <h1>
+          Você tem certeza que deseja deletar esta categoria: "{{category}}"?
+        </h1>
+        <p>A categoria deletada não poderá ser recuperada.</p>
+      </ng-container>
+
+      <ng-container *ngIf="type() === 'edit' && !isNews">
+        <h1>Você tem certeza que deseja editar esta categoria?</h1>
+        <input
+          type="text"
+          name="category"
+          placeholder="Digite uma categoria"
+          (input)="category.trim() && error = false"
+          (blur)="error = false"
+          [(ngModel)]="category"
+          (keydown.enter)="confirmModal()"
+        />
+        <app-error-message
+          *ngIf="error"
+          message="Digite uma categoria com pelo menos 5 caracteres."
+        ></app-error-message>
+      </ng-container>
+
+      <ng-container *ngIf="type() === 'delete' && isNews">
+        <h1>Você tem certeza que deseja deletar esta notícia?</h1>
+        <p>A notícia deletada não poderá ser recuperada.</p>
+      </ng-container>
+
+      <div class="modal-content-body-action">
+        <button (click)="confirmModal()" type="button">Confirmar</button>
+        <button (click)="closeModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</section>

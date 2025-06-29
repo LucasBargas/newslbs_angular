@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "news-lbs-angular": {
+    "dtmoney_angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/news-lbs-angular",
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            },
+            "outputPath": "dist/dtmoney_angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "news-lbs-angular:build:production"
+              "buildTarget": "dtmoney_angular:build:production"
             },
             "development": {
-              "buildTarget": "news-lbs-angular:build:development"
+              "buildTarget": "dtmoney_angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "d12e1341-48c8-4f4e-9c97-0e9f5b15f230"
+    "analytics": "a6aa543b-7376-4775-a523-02149da2196d"
   }
 }

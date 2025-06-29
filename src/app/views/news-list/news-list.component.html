@@ -1,0 +1,27 @@
+<app-loading *ngIf="categoriesLoading"></app-loading>
+
+<section *ngIf="!categoriesLoading" class="news-list">
+  <app-container>
+    <div class="news-list-content">
+      <div class="news-list-content-header">
+        <h2>Todas as notícias</h2>
+        <p>As melhores notícias estão disponíveis aqui!</p>
+      </div>
+
+      <app-order-controller
+        [class.active]="newsList().length > 1"
+      ></app-order-controller>
+
+      <div class="news-list-content-display">
+        <app-aside-nav [path]="'home'"></app-aside-nav>
+        <ng-container *ngIf="category(); else showDefault">
+          <router-outlet></router-outlet>
+        </ng-container>
+
+        <ng-template #showDefault>
+          <app-news-display></app-news-display>
+        </ng-template>
+      </div>
+    </div>
+  </app-container>
+</section>

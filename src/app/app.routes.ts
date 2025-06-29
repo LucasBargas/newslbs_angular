@@ -1,39 +1,55 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { FavoritesNewsComponent } from './pages/favorites-news/favorites-news.component';
-import { RegisterNewsComponent } from './pages/register-news/register-news.component';
-import { SearchComponent } from './pages/search/search.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { EditNewsComponent } from './pages/edit-news/edit-news.component';
-import { NewsSingleComponent } from './pages/news-single/news-single.component';
+import { NewsListComponent } from './views/news-list/news-list.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
+import { FavoriteNewsComponent } from './views/favorite-news/favorite-news.component';
+import { CreateNewsComponent } from './views/create-news/create-news.component';
+import { EditNewsComponent } from './views/edit-news/edit-news.component';
+import { NewsDetailsComponent } from './views/news-details/news-details.component';
+import { SearchComponent } from './views/search/search.component';
 
 export const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: "full",
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent,
-    title: 'NewsLBS'
+    component: NewsListComponent,
+    children: [
+      {
+        path: ':category',
+        loadComponent: () =>
+          import('./components/news-display/news-display.component').then(
+            (m) => m.NewsDisplayComponent,
+          ),
+      },
+    ],
   },
   {
     path: 'noticias-favoritas',
-    component: FavoritesNewsComponent,
-    title: 'NewsLBS - Notícias favoritas'
+    component: FavoriteNewsComponent,
+    children: [
+      {
+        path: ':category',
+        loadComponent: () =>
+          import('./components/news-display/news-display.component').then(
+            (m) => m.NewsDisplayComponent,
+          ),
+      },
+    ],
   },
   {
     path: 'cadastrar-noticia',
-    component: RegisterNewsComponent,
-    title: 'NewsLBS - Cadastrar notícia'
+    component: CreateNewsComponent,
   },
   {
     path: 'editar-noticia/:id',
     component: EditNewsComponent,
-    title: 'NewsLBS - Editar notícia'
   },
   {
     path: 'noticia/:id',
-    component: NewsSingleComponent,
+    component: NewsDetailsComponent,
   },
   {
     path: 'search',
@@ -41,6 +57,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    component: PageNotFoundComponent,
-  }
+    component: NotFoundComponent,
+  },
 ];

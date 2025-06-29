@@ -1,0 +1,134 @@
+<app-loading *ngIf="isLoading"></app-loading>
+
+<section *ngIf="!isLoading" class="form">
+  <app-container [maxWidth]="650">
+    <div class="form-content">
+      <h2>
+        {{formType() === 'create' ? 'Cadastre uma notícia' : 'Editar notícia'}}
+      </h2>
+      <p *ngIf="formType() === 'create'">
+        Após o cadastro, a notícia estará disponível para outras pessoas verem.
+      </p>
+
+      <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <div class="form-content-input-single">
+          <label for="title">Título:</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Defina o título da notícia"
+            formControlName="title"
+          />
+          <app-error-message
+            *ngIf="hasError('title', 'required')"
+            message="O Título deve ser preenchido."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('title', 'pattern')"
+            message="O Título não pode conter apenas espaços."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('title', 'minlength')"
+            message="O Título deve conter pelo menos 5 caracteres."
+          ></app-error-message>
+        </div>
+
+        <div class="form-content-input-single">
+          <label for="description">Descrição:</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Defina o texto da notícia"
+            formControlName="description"
+          ></textarea>
+          <app-error-message
+            *ngIf="hasError('description', 'required')"
+            message="A Notícia deve ser preenchida."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('description', 'pattern')"
+            message="A Notícia não pode conter apenas espaços ou quebra de linha."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('description', 'minlength')"
+            message="A Notícia deve conter pelo menos 100 caracteres."
+          ></app-error-message>
+          <small
+            *ngIf="hasError('description', 'minlength')"
+            class="desctiption-counter"
+          >
+            Caracteres: {{ form.get('description')?.value.length }}
+          </small>
+        </div>
+
+        <div class="form-content-input-single category">
+          <label for="category">Categoria:</label>
+          <div>
+            <input
+              type="text"
+              name="category"
+              placeholder="Digite uma categoria ou escolha uma das existentes"
+              formControlName="category"
+            />
+            <app-form-categories
+              *ngIf="showCategoriesList && categoriesList.length > 0"
+              (showCategoriesListChange)="
+                  showCategoriesList = $event"
+              [form]="form"
+            ></app-form-categories>
+
+            <i
+              [class.active]="showCategoriesList"
+              *ngIf="categoriesList.length > 0"
+              (click)="showCategoriesList = !showCategoriesList"
+            >
+              <fa-icon [icon]="faChevronDown"></fa-icon>
+            </i>
+          </div>
+          <app-error-message
+            *ngIf="hasError('category', 'required')"
+            message="A Categoria deve ser escolhida ou criada."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('category', 'pattern')"
+            message="A Categoria não pode conter apenas espaços."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('category', 'minlength')"
+            message="A Categoria deve conter pelo menos 5 caracteres."
+          ></app-error-message>
+        </div>
+
+        <div class="form-content-input-single">
+          <label for="author">Autor:</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Defina o autor da notícia"
+            formControlName="author"
+          />
+          <app-error-message
+            *ngIf="hasError('author', 'required')"
+            message="O Autor deve ser preenchido."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('author', 'pattern')"
+            message="O Autor não pode conter apenas espaços."
+          ></app-error-message>
+          <app-error-message
+            *ngIf="hasError('author', 'minlength')"
+            message="O Autor deve conter pelo menos 5 caracteres."
+          ></app-error-message>
+        </div>
+
+        <div class="form-content-button">
+          <button type="submit">
+            {{formType() === 'create' ? 'Cadastrar' : 'Editar'}}
+          </button>
+        </div>
+      </form>
+    </div>
+  </app-container>
+</section>

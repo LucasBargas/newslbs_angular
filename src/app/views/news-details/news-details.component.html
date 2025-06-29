@@ -1,0 +1,7 @@
+<app-loading *ngIf="isLoading"></app-loading>
+
+<section *ngIf="!isLoading" class="news-details">
+  <app-container [maxWidth]="420">
+    <app-main-card [news]="news"></app-main-card>
+  </app-container>
+</section>

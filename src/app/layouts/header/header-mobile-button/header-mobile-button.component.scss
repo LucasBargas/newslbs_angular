@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+:host {
+  display: none;
+
+  @media (max-width: 834px) {
+    display: block;
+  }
+}
+
+
+.header-mobile-button {
+  button {
+    padding: .625rem 0 .625rem .625rem;
+    background: transparent;
+
+    span {
+      color: $primary-color;
+      display: block;
+      border-top: 2px solid;
+      width: 20px;
+
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+      }
+    }
+
+    &.active {
+      span {
+        border-top-color: transparent;
+
+        &::before {
+          transform: rotate(135deg);
+        }
+
+        &::after {
+          transform: rotate(-135deg);
+          top: -7px;
+        }
+      }
+    }
+  }
+}

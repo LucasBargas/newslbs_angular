@@ -1,97 +1,120 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, finalize, Observable } from 'rxjs';
-import { INews } from '../interfaces/INews';
+import { BehaviorSubject, finalize, map, Observable } from 'rxjs';
+import { News } from '../models/news.model';
+import { environment } from '../../environments/environment.prod';
+import { SupabaseConfigService } from './supabase-config.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NewsService {
-  private apiUrl = 'http://localhost:3000/news';
-  public isLoading$ = new BehaviorSubject<boolean>(false);
-  public searchLoading$ = new BehaviorSubject<boolean>(false);
+  private _API_URL = `${environment.supabaseUrl}/rest/v1/news`;
+  public searchLoading$ = new BehaviorSubject<boolean>(true);
+  public loading$ = new BehaviorSubject<boolean>(false);
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private supabaseConfig: SupabaseConfigService,
+  ) {}
 
-  getNews(search: string | undefined, page: number | undefined, order?: string): Observable<INews[]> {
-    this.isLoading$.next(true);
-    const limit = 9;
-
-    let params = new HttpParams()
-    .set("_page", page!)
-    .set('_limit', limit)
-
-
-    if (search!) {
-      params = params.set('q', search!);
-    }
-
-    if (order) {
-      params = params.set('_sort', 'createdAt').set('_order', order)
-    }
-
-    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
-      finalize(() => this.isLoading$.next(false))
-    );
+  or(term: string): string {
+    const likeQuery = `*${term}*`;
+    const or = `(title.ilike.${likeQuery},description.ilike.${likeQuery},category.ilike.${likeQuery},author.ilike.${likeQuery})`;
+    return or;
   }
 
-  getFavoritesNews(): Observable<INews[]> {
-    this.isLoading$.next(true);
-
-    let params = new HttpParams().set("favorite", true)
-
-    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
-      finalize(() => this.isLoading$.next(false))
-    );
-  }
-
-  getAllNews(search?: string | undefined): Observable<INews[]> {
-    let params = new HttpParams();
-
-    if (search!) {
-      params = params.set('q', search!);
-    }
-
-    return this.http.get<INews[]>(this.apiUrl, { params });
-  }
-
-  getNewsById(id: number): Observable<INews> {
-    this.isLoading$.next(true);
-
-    const url = `${this.apiUrl}/${id}`;
-
-    return this.http.get<INews>(url).pipe(
-      finalize(() => this.isLoading$.next(false))
-    );
-  }
-
-  getNewsBySearch(search: string) {
+  searchNews(term: string): Observable<News[]> {
+    const params = new HttpParams().set('or', this.or(term));
     this.searchLoading$.next(true);
 
-    let params = new HttpParams()
-    .set("q", search.replace(/^\s+/, ''));
-
-    return this.http.get<INews[]>(this.apiUrl, { params }).pipe(
-      finalize(() => this.searchLoading$.next(false))
-    );;
+    return this.http
+      .get<News[]>(this._API_URL, {
+        headers: this.supabaseConfig.headers(),
+        params,
+      })
+      .pipe(
+        finalize(() => {
+          setTimeout(() => {
+            this.searchLoading$.next(false);
+          }, 400);
+        }),
+      );
   }
 
-  changeFavorite(news: INews): Observable<INews> {
-    const url = `${this.apiUrl}/${news.id}`;
-    return this.http.put<INews>(url, news);
+  getAllNews(
+    search: string,
+    order: 'aleat' | 'asc' | 'desc',
+    isFavorite?: boolean,
+  ): Observable<News[]> {
+    this.loading$.next(true);
+
+    let params = new HttpParams();
+
+    if (search) {
+      params = params.set('or', this.or(search));
+    }
+
+    if (order && order !== 'aleat') {
+      params = params.set('order', `created_at.${order}`);
+    }
+
+    if (isFavorite) {
+      params = params.set('isFavorite', 'eq.true');
+    }
+
+    return this.http
+      .get<News[]>(this._API_URL, {
+        params,
+        headers: this.supabaseConfig.headers(),
+      })
+      .pipe(
+        finalize(() => {
+          setTimeout(() => {
+            this.loading$.next(false);
+          }, 600);
+        }),
+      );
   }
 
-  register(news: INews): Observable<INews> {
-    return this.http.post<INews>(this.apiUrl, news);
+  getNewsById(id: string): Observable<News> {
+    this.loading$.next(true);
+
+    const params = new HttpParams()
+      .set('id', `eq.${id}`)
+      .set('select', '*')
+      .set('limit', 1);
+
+    return this.http
+      .get<News[]>(this._API_URL, {
+        headers: this.supabaseConfig.headers(),
+        params,
+      })
+      .pipe(
+        map((result) => result[0]),
+        finalize(() => {
+          setTimeout(() => {
+            this.loading$.next(false);
+          }, 600);
+        }),
+      );
   }
 
-  edit(news: INews): Observable<INews> {
-    const url = `${this.apiUrl}/${news.id}`;
-    return this.http.put<INews>(url, news);
+  postNews(news: News): Observable<News> {
+    return this.http
+      .post<News[]>(this._API_URL, news, {
+        headers: this.supabaseConfig.headers(),
+      })
+      .pipe(map((result) => result[0]));
   }
 
-  exclude(id: number) {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.delete(url);
+  updateNews(id: string, data: Partial<News>): Observable<News> {
+    const url = `${this._API_URL}?id=eq.${id}`;
+
+    return this.http
+      .patch<News[]>(url, data, {
+        headers: this.supabaseConfig.headers(),
+      })
+      .pipe(map((result) => result[0]));
   }
 }

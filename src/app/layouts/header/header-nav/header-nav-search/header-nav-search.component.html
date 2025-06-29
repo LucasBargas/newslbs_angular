@@ -1,0 +1,36 @@
+<form class="header-nav-search" (ngSubmit)="onSubmit()">
+  <input
+    #input
+    [(ngModel)]="search"
+    (input)="search().trim() && error = false"
+    (blur)="error = false"
+    type="text"
+    name="search"
+    placeholder="Pesquise por uma notícia"
+  />
+
+  <button
+    type="button"
+    class="search-clear"
+    *ngIf="isSearching"
+    (click)="clear(); input.focus()"
+  >
+    <fa-icon [icon]="faXmark"></fa-icon>
+  </button>
+
+  <button type="button" (click)="input.focus()">
+    <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+  </button>
+
+  <app-error-message
+    *ngIf="error"
+    message="O campo de pesquisa não pode ficar vazio."
+  ></app-error-message>
+
+  <div #previewRef *ngIf="isSearching">
+    <app-header-nav-search-preview
+      [newsList]="newsList"
+      [search]="search()"
+    ></app-header-nav-search-preview>
+  </div>
+</form>
