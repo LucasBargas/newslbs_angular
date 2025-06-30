@@ -1,4 +1,11 @@
-import { Component, computed, effect, inject, input } from '@angular/core';
+import {
+  Component,
+  computed,
+  effect,
+  HostListener,
+  inject,
+  input,
+} from '@angular/core';
 import { NewsSignalService } from '../../services/news-signal.service';
 import { CommonModule } from '@angular/common';
 import { SuggestionCardComponent } from '../suggestion-card/suggestion-card.component';
@@ -26,12 +33,28 @@ export class NewsDisplayComponent {
   hasNews = this._newsSignal.hasNews;
   newsLoading = this._newsSignal.isLoading;
   query = input<string>();
+  visibleCount!: number;
 
   constructor() {
     effect(() => {
       this._newsSignal.loadNews(this.toggleParam());
     });
+
+    this.onResize();
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.visibleCount = window.innerWidth <= 1024 ? 4 : 5;
   }
 
   toggleParam = computed(() => this.query() ?? this.category());
+
+  loadMore(): void {
+    this.visibleCount += 4;
+  }
+
+  canLoadMore(): boolean {
+    return this.newsList().length > this.visibleCount;
+  }
 }

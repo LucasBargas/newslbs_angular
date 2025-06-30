@@ -21,6 +21,12 @@
     &-display {
       display: flex;
       padding-top: 2rem;
+
+      @media (max-width: 1024px) {
+        display: block;
+        max-width: 680px;
+        margin: 0 auto;
+      }
     }
   }
 }

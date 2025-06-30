@@ -2,6 +2,10 @@
 
 :host {
   width: 22%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 aside {
@@ -10,6 +14,15 @@ aside {
   border-right: 1px solid $primary-color;
   margin-right: 1.5rem;
 
+  @media (max-width: 1024px) {
+    height: auto;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 1rem;
+    margin: 0 0 2rem 0;
+  }
+
   h3 {
     font-size: 1.125rem;
   }
@@ -17,7 +30,16 @@ aside {
   nav {
     padding-top: .75rem;
 
+    @media (max-width: 480px) {
+      padding-top: .5rem;
+    }
+
     ul {
+      @media (max-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
       li {
         a {
           display: block;

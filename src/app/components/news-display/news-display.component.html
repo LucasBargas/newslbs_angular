@@ -6,11 +6,13 @@
   <div class="news-display">
     <ng-container *ngIf="hasNews(); else noNews">
       <ul class="favorites-news-list">
-        <li *ngFor="let item of newsList()">
+        <li *ngFor="let item of newsList().slice(0, visibleCount)">
           <app-suggestion-card [news]="item"></app-suggestion-card>
         </li>
       </ul>
     </ng-container>
+
+    <button *ngIf="canLoadMore()" (click)="loadMore()">Carregar mais</button>
   </div>
 </ng-template>
 

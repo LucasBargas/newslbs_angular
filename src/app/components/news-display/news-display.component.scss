@@ -2,10 +2,19 @@
 
 :host {
   width: 78%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 
 .news-display {
+  @media (max-width: 1024px) {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -17,6 +26,25 @@
       &:not(:last-of-type) {
         border-bottom: 1px solid $primary-color;
       }
+    }
+  }
+
+  button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    background: $primary-color;
+    color: $light-color;
+    border-radius: 8px;
+    padding: .75rem;
+    margin-top: 1rem;
+    opacity: .8;
+    font-weight: 600;
+    transition: .3s;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

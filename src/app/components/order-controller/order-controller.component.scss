@@ -4,6 +4,12 @@
   display: flex;
   justify-content: flex-end;
 
+  @media (max-width: 1024px) {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
   &-content {
     position: relative;
 
@@ -11,6 +17,10 @@
     span,
     li {
       font-size: .9325rem;
+
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
     }
 
     div {
@@ -51,6 +61,14 @@
       min-width: 150px;
       transition: .2s;
 
+      @media (max-width: 480px) {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        min-width: auto;
+      }
+
       &.active {
         opacity: 1;
         pointer-events: all;
@@ -62,7 +80,12 @@
 
         li {
           cursor: pointer;
-          padding: .75rem .75rem;
+          padding: .75rem;
+
+          @media (max-width: 480px) {
+            padding: 1.25rem 1rem;
+            font-size: 1.125rem;
+          }
 
           &:not(:last-of-type) {
             border-bottom: 1px solid $light-gray;
