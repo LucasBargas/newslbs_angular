@@ -21,6 +21,8 @@ export class NewsSignalService {
   readonly isFavoriteNews = this._isFavoriteNews;
   private _isLoading = signal<boolean>(true);
   readonly isLoading = this._isLoading;
+  private _hasNews = signal<boolean>(true);
+  readonly hasNews = this._hasNews;
 
   constructor(
     private newsService: NewsService,
@@ -32,10 +34,13 @@ export class NewsSignalService {
       .getAllNews(search, this._orderCode(), this._isFavoriteNews())
       .subscribe({
         next: (news) => {
+          this._hasNews.set(true);
           this._newsList.set(news);
+          if (news.length === 0) this._hasNews.set(false);
         },
         error: (error) => {
           console.error('Erro ao carregar as notícias:', error);
+          this._hasNews.set(false);
         },
       });
 
@@ -55,7 +60,7 @@ export class NewsSignalService {
           return;
 
         if (currentUrl.includes('/noticia/')) {
-          this._router.navigate(['/']);
+          this._router.navigate(['/home']);
         }
       },
       error: (error) => {

@@ -1,9 +1,19 @@
-<app-loading *ngIf="newsLoading()"></app-loading>
+<ng-container *ngIf="newsLoading(); else content">
+  <app-loading></app-loading>
+</ng-container>
 
-<div class="news-display">
-  <ul *ngIf="!newsLoading()" class="favorites-news-list">
-    <li *ngFor="let item of newsList()">
-      <app-suggestion-card [news]="item"></app-suggestion-card>
-    </li>
-  </ul>
-</div>
+<ng-template #content>
+  <div class="news-display">
+    <ng-container *ngIf="hasNews(); else noNews">
+      <ul class="favorites-news-list">
+        <li *ngFor="let item of newsList()">
+          <app-suggestion-card [news]="item"></app-suggestion-card>
+        </li>
+      </ul>
+    </ng-container>
+  </div>
+</ng-template>
+
+<ng-template #noNews>
+  <app-error></app-error>
+</ng-template>

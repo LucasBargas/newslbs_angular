@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.error {
+  text-align: center;
+  padding-top: 3rem;
+
+  h1,
+  p {
+    color: $primary-color;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    margin: .5rem;
+  }
+
+  p {
+    margin-top: .5rem;
+  }
+
+  a {
+    display: inline-block;
+    background: $primary-color;
+    color: $light-color;
+    border-radius: 8px;
+    padding: .75rem;
+    margin-top: 1rem;
+    opacity: .8;
+    font-weight: 600;
+    transition: .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -83,10 +83,6 @@ export class ModalComponent implements OnInit, OnDestroy {
     } else {
       const news = item as News;
       this._newsSignal.deleteNews(news.id, this.currentUrl);
-
-      if (!news.isFavorite) {
-        this._router.navigate(['/']);
-      }
     }
   }
 

@@ -1,0 +1,17 @@
+<div class="error">
+  <h1>404 :(</h1>
+
+  <ng-container *ngIf="!aPage()">
+    <h3>Oops! Não há notícias cadastradas!</h3>
+
+    <p [innerHTML]="messageText"></p>
+
+    <a *ngIf="!hasNews()" routerLink="/cadastrar-noticia">Cadastrar</a>
+  </ng-container>
+
+  <div *ngIf="aPage()">
+    <h3>Oops! Esta página não pôde ser encontrada!</h3>
+    <p>Deseja voltar para home?</p>
+    <a routerLink="/">Home</a>
+  </div>
+</div>
