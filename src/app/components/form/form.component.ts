@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import {
   Component,
   effect,
+  inject,
   input,
   OnDestroy,
   OnInit,
@@ -42,6 +43,9 @@ import { CategoriesSignalService } from '../../services/categories-signal.servic
   styleUrl: './form.component.scss',
 })
 export class FormComponent implements OnInit, OnDestroy {
+  private _categoriesService = inject(CategoriesService);
+  private _categoriesSignal = inject(CategoriesSignalService);
+  private _formBuilder = inject(FormBuilder);
   formType = input.required<Form>();
   form!: FormGroup;
   getNewsById = output<FormGroup>();
@@ -52,25 +56,21 @@ export class FormComponent implements OnInit, OnDestroy {
   private _loadingSub?: Subscription;
   faChevronDown = faChevronDown;
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private categoriesService: CategoriesService,
-    private categoriesSignal: CategoriesSignalService,
-  ) {
+  constructor() {
     effect(() => {
       this.form = this._handleFormBuilder();
       if (this.formType() === 'edit') this.getNewsById.emit(this.form);
 
-      this.categoriesSignal.loadCategories();
+      this._categoriesSignal.loadCategories();
     });
   }
 
   get categoriesList(): Category[] {
-    return this.categoriesSignal.categoriesList();
+    return this._categoriesSignal.categoriesList();
   }
 
   ngOnInit(): void {
-    this._loadingSub = this.categoriesService.loading$.subscribe(
+    this._loadingSub = this._categoriesService.loading$.subscribe(
       (loading) => (this.isLoading = loading),
     );
   }
@@ -80,7 +80,7 @@ export class FormComponent implements OnInit, OnDestroy {
   }
 
   private _handleFormBuilder(): FormGroup {
-    return this.formBuilder.group({
+    return this._formBuilder.group({
       title: ['', this._requiredMinLengthValidator(5)],
       description: ['', this._requiredMinLengthValidator(100)],
       category: ['', this._requiredMinLengthValidator(5)],
@@ -111,7 +111,7 @@ export class FormComponent implements OnInit, OnDestroy {
     );
 
     if (!isCategoryExists) {
-      this.categoriesService
+      this._categoriesService
         .postCategory({ name: categoryValue, categoryRoute: categoryRoute })
         .subscribe();
     }

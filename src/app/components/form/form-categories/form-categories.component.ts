@@ -25,6 +25,7 @@ import { ModalService } from '../../../services/modal.service';
 })
 export class FormCategoriesComponent {
   @ViewChild('formCategories') formCategoriesRef!: ElementRef;
+  private _modalService = inject(ModalService);
   categoriesList = inject(CategoriesSignalService).categoriesList;
   categoryChange = output<string>();
   showCategoriesListChange = output<boolean>();
@@ -32,7 +33,7 @@ export class FormCategoriesComponent {
   faTrash = faTrash;
   faPen = faPen;
 
-  constructor(private modalService: ModalService) {}
+  constructor() {}
 
   get categorySelected(): string {
     return this.form().get('category')?.value || '';
@@ -45,11 +46,11 @@ export class FormCategoriesComponent {
   }
 
   onDelete(item: Category): void {
-    this.modalService.openModal('delete', item);
+    this._modalService.openModal('delete', item);
   }
 
   onEdit(item: Category): void {
-    this.modalService.openModal('edit', item);
+    this._modalService.openModal('edit', item);
   }
 
   onClick(category: string): void {
