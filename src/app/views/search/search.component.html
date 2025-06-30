@@ -1,10 +1,14 @@
 <section class="search">
-  <div class="heade">
-    <app-container>
-      <p>Olá</p>
-    </app-container>
-  </div>
   <app-container [maxWidth]="900">
-    <app-news-display [query]="query"></app-news-display>
+    <div class="search-content">
+      <div
+        class="search-content-order-controller"
+        [class.active]="newsList().length > 1"
+      >
+        <app-order-controller></app-order-controller>
+      </div>
+
+      <app-news-display [query]="query"></app-news-display>
+    </div>
   </app-container>
 </section>
