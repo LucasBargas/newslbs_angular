@@ -7,7 +7,7 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      line-height: 1.375rem;
+      line-height: 2.25rem;
       padding-left: 1rem;
       opacity: .8;
       transition: .3s;
@@ -23,17 +23,17 @@
       }
     }
 
-      &-actions {
-        display: flex;
+    &-actions {
+      display: flex;
 
-        li {
-          button {
-            background: transparent;
-            width: 2.1875rem;
-            height: 2.1875rem;
-          }
+      li {
+        button {
+          background: transparent;
+          width: 2.1875rem;
+          height: 2.1875rem;
         }
       }
+    }
 
   }
 }
