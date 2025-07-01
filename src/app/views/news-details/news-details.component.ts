@@ -7,6 +7,7 @@ import { ContainerComponent } from '../../components/container/container.compone
 import { MainCardComponent } from '../../components/main-card/main-card.component';
 import { Subscription } from 'rxjs';
 import { LoadingComponent } from '../../components/loading/loading.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-news-details',
@@ -27,11 +28,13 @@ export class NewsDetailsComponent implements OnInit, OnDestroy {
   news: News | null = null;
   _routeSub?: Subscription;
   isLoading: boolean = true;
+  private _title = inject(Title);
 
   ngOnInit(): void {
     this._routeSub = this._route.paramMap.subscribe((params) => {
       const id = params.get('id');
       if (id) {
+        this._title.setTitle(`NewsLBS | Notícia | ${id}`);
         this._fetchNewsById(id);
       }
     });
