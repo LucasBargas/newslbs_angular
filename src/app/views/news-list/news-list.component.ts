@@ -34,6 +34,8 @@ export class NewsListComponent {
   private _title = inject(Title);
 
   constructor() {
+    this._newsSignal.setIsFavoriteNews(false);
+
     effect(() => {
       if (this.category()) {
         this._title.setTitle(`NewsLBS | Home | ${this.category()}`);
@@ -47,7 +49,5 @@ export class NewsListComponent {
     setTimeout(() => {
       this.categoriesLoading = false;
     }, 600);
-
-    this._newsSignal.setIsFavoriteNews(false);
   }
 }

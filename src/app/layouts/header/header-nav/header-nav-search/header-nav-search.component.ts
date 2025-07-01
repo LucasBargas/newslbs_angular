@@ -20,6 +20,7 @@ import { NewsService } from '../../../../services/news.service';
 import { HeaderNavSearchPreviewComponent } from './header-nav-search-preview/header-nav-search-preview.component';
 import { News } from '../../../../models/news.model';
 import { NormalizeHelper } from '../../../../helpers/normalize.helper';
+import { NewsSignalService } from '../../../../services/news-signal.service';
 
 @Component({
   selector: 'app-header-nav-search',
@@ -37,6 +38,7 @@ import { NormalizeHelper } from '../../../../helpers/normalize.helper';
 export class HeaderNavSearchComponent {
   @ViewChild('previewRef') previewRef!: ElementRef;
   @ViewChild('input') inputRef!: ElementRef;
+  private _newsSignal = inject(NewsSignalService);
   private _router = inject(Router);
   private _newsService = inject(NewsService);
   search = signal('');
@@ -78,6 +80,8 @@ export class HeaderNavSearchComponent {
 
     this.error = false;
     this.headerNav.onClick();
+    this._newsSignal.setOrderCode('aleat');
+    this._newsSignal.setOrderName('Aleatórias');
     this._router.navigate(['/search'], {
       queryParams: { q: this.search().trim() },
     });

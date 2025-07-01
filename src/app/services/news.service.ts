@@ -25,8 +25,8 @@ export class NewsService {
   }
 
   searchNews(term: string): Observable<News[]> {
-    const params = new HttpParams().set('or', this.or(term));
     this.searchLoading$.next(true);
+    const params = new HttpParams().set('or', this.or(term));
 
     return this._http
       .get<News[]>(this._API_URL, {

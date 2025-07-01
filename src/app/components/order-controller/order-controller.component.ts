@@ -4,7 +4,6 @@ import {
   ElementRef,
   HostListener,
   inject,
-  OnDestroy,
   ViewChild,
 } from '@angular/core';
 import { NewsSignalService } from '../../services/news-signal.service';
@@ -21,7 +20,7 @@ import { CategoriesSignalService } from '../../services/categories-signal.servic
   templateUrl: './order-controller.component.html',
   styleUrl: './order-controller.component.scss',
 })
-export class OrderControllerComponent implements OnDestroy {
+export class OrderControllerComponent {
   @ViewChild('order') orderRef!: ElementRef;
   @ViewChild('toggleBtn') toggleBtnRef!: ElementRef;
   private _categoriesSignal = inject(CategoriesSignalService);
@@ -44,11 +43,6 @@ export class OrderControllerComponent implements OnDestroy {
 
   toggleOrder(): void {
     this.orderActive = !this.orderActive;
-  }
-
-  ngOnDestroy(): void {
-    this._newsSignal.setOrderCode('aleat');
-    this._newsSignal.setOrderName('Aleatórias');
   }
 
   @HostListener('document:click', ['$event'])

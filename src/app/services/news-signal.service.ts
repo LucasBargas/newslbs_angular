@@ -27,7 +27,11 @@ export class NewsSignalService {
   constructor(
     private newsService: NewsService,
     private deleteService: DeleteService,
-  ) {}
+  ) {
+    this.newsService.loading$.subscribe((loading) =>
+      this._isLoading.set(loading),
+    );
+  }
 
   loadNews(search: string): void {
     this.newsService
@@ -43,10 +47,6 @@ export class NewsSignalService {
           this._hasNews.set(false);
         },
       });
-
-    this.newsService.loading$.subscribe((loading) =>
-      this._isLoading.set(loading),
-    );
   }
 
   deleteNews(id: number, currentUrl: string): void {

@@ -35,6 +35,8 @@ export class FavoriteNewsComponent implements OnInit {
   private _title = inject(Title);
 
   constructor() {
+    this._newsSignal.setIsFavoriteNews(true);
+
     effect(() => {
       if (this.category()) {
         this._title.setTitle(
@@ -50,7 +52,5 @@ export class FavoriteNewsComponent implements OnInit {
     setTimeout(() => {
       this.categoriesLoading = false;
     }, 600);
-
-    this._newsSignal.setIsFavoriteNews(true);
   }
 }

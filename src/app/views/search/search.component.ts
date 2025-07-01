@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { NewsDisplayComponent } from '../../components/news-display/news-display.component';
 import { NewsSignalService } from '../../services/news-signal.service';
 import { ActivatedRoute } from '@angular/router';
@@ -21,10 +21,11 @@ import { OrderControllerComponent } from '../../components/order-controller/orde
 export class SearchComponent {
   private _newsSignal = inject(NewsSignalService);
   newsList = this._newsSignal.newsList;
+  hasNews = this._newsSignal.hasNews;
   private route = inject(ActivatedRoute);
   query: string = '';
 
-  ngOnInit(): void {
+  constructor() {
     this._newsSignal.setIsFavoriteNews(false);
 
     this.route.queryParams.subscribe((params) => {
