@@ -30,9 +30,17 @@ export class NewsDisplayComponent {
 
   constructor() {
     effect(() => {
-      this._newsSignal.loadNews(this.category() ?? this.query());
+      if (this.category()) {
+        this._newsSignal.setQueryValue('');
+        this._newsSignal.loadNews(this.category());
+      } else {
+        this._categoriesSignal.setCategory('');
+        this._newsSignal.loadNews(this.query());
+      }
     });
   }
+
+  toggleParam = computed(() => this.query() ?? this.category());
 
   loadMore(): void {
     this.visibleCount += 4;
