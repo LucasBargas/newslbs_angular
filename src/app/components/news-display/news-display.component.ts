@@ -30,11 +30,9 @@ export class NewsDisplayComponent {
 
   constructor() {
     effect(() => {
-      this._newsSignal.loadNews(this.toggleParam());
+      this._newsSignal.loadNews(this.category() ?? this.query());
     });
   }
-
-  toggleParam = computed(() => this.query() ?? this.category());
 
   loadMore(): void {
     this.visibleCount += 4;
