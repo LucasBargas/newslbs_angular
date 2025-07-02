@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, input } from '@angular/core';
+import { Component, computed, effect, inject } from '@angular/core';
 import { NewsSignalService } from '../../services/news-signal.service';
 import { CommonModule } from '@angular/common';
 import { SuggestionCardComponent } from '../suggestion-card/suggestion-card.component';
