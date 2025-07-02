@@ -48,7 +48,7 @@
     span,
     li {
       user-select: none;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif !important;
     }
 
     nav {
@@ -94,7 +94,6 @@
 
           &.active {
             pointer-events: none;
-            font-family: 'Open Sans';
             font-weight: 600;
           }
         }

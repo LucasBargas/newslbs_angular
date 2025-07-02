@@ -35,6 +35,7 @@ export class NewsListComponent {
 
   constructor() {
     this._newsSignal.setIsFavoriteNews(false);
+    this._newsSignal.setQueryValue('');
 
     effect(() => {
       if (this.category()) {

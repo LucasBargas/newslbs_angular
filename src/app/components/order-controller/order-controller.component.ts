@@ -28,6 +28,7 @@ export class OrderControllerComponent {
   private _newsSignal = inject(NewsSignalService);
   orderCode = this._newsSignal.orderCode;
   orderName = this._newsSignal.orderName;
+  query = this._newsSignal.queryValue;
   orderActive = false;
   faChevronDown = faChevronDown;
   faChevronUp = faChevronUp;
@@ -37,7 +38,13 @@ export class OrderControllerComponent {
   defineOrder(item: Order): void {
     this._newsSignal.setOrderCode(item.code);
     this._newsSignal.setOrderName(item.name);
-    this._newsSignal.loadNews(this.category());
+
+    if (this.category()) {
+      this._newsSignal.loadNews(this.category());
+    } else {
+      this._newsSignal.loadNews(this.query());
+    }
+
     this.toggleOrder();
   }
 

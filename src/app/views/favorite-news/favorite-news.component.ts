@@ -36,6 +36,7 @@ export class FavoriteNewsComponent implements OnInit {
 
   constructor() {
     this._newsSignal.setIsFavoriteNews(true);
+    this._newsSignal.setQueryValue('');
 
     effect(() => {
       if (this.category()) {

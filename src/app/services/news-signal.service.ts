@@ -23,6 +23,8 @@ export class NewsSignalService {
   readonly isLoading = this._isLoading;
   private _hasNews = signal<boolean>(true);
   readonly hasNews = this._hasNews;
+  private _queryValue = signal<string>('');
+  readonly queryValue = this._queryValue;
 
   constructor(
     private newsService: NewsService,
@@ -79,5 +81,9 @@ export class NewsSignalService {
 
   setOrderName(orderName: string): void {
     this._orderName.set(orderName);
+  }
+
+  setQueryValue(query: string): void {
+    this._queryValue.set(query);
   }
 }

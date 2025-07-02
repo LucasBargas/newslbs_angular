@@ -25,7 +25,7 @@ export class NewsDisplayComponent {
   newsList = this._newsSignal.newsList;
   hasNews = this._newsSignal.hasNews;
   newsLoading = this._newsSignal.isLoading;
-  query = input<string>();
+  query = this._newsSignal.queryValue;
   visibleCount: number = 4;
 
   constructor() {
