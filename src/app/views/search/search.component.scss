@@ -1,5 +1,11 @@
+@use 'variables' as *;
+
 .search {
   &-content {
+    h3 {
+      color: $primary-color;
+    }
+
     &-order-controller {
       opacity: 0;
       pointer-events: none;

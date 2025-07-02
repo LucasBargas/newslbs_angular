@@ -1,6 +1,7 @@
 <section class="search">
   <app-container [maxWidth]="900">
     <div class="search-content">
+      <h3 *ngIf="query.length > 0">Notícias encontradas com: {{query}}</h3>
       <div
         class="search-content-order-controller"
         [class.active]="newsList().length > 1"
