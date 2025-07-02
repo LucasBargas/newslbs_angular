@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, effect, inject, OnInit } from '@angular/core';
 import { ContainerComponent } from '../../components/container/container.component';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { LoadingComponent } from '../../components/loading/loading.component';
 import { NewsSignalService } from '../../services/news-signal.service';
 import { OrderControllerComponent } from '../../components/order-controller/order-controller.component';
@@ -27,6 +27,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './favorite-news.component.scss',
 })
 export class FavoriteNewsComponent implements OnInit {
+  private _router = inject(Router);
   private _newsSignal = inject(NewsSignalService);
   newsList = this._newsSignal.newsList;
   private _categoriesSignal = inject(CategoriesSignalService);
@@ -53,5 +54,13 @@ export class FavoriteNewsComponent implements OnInit {
     setTimeout(() => {
       this.categoriesLoading = false;
     }, 600);
+
+    const navEntries = performance.getEntriesByType(
+      'navigation',
+    ) as PerformanceNavigationTiming[];
+
+    if (navEntries.length > 0 && navEntries[0].type === 'reload') {
+      this._router.navigate(['/noticias-favoritas']);
+    }
   }
 }

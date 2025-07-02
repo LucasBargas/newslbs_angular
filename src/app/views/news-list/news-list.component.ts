@@ -3,7 +3,7 @@ import { Component, effect, inject } from '@angular/core';
 import { ContainerComponent } from '../../components/container/container.component';
 import { NewsSignalService } from '../../services/news-signal.service';
 import { CategoriesSignalService } from '../../services/categories-signal.service';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { LoadingComponent } from '../../components/loading/loading.component';
 import { OrderControllerComponent } from '../../components/order-controller/order-controller.component';
 import { AsideNavComponent } from '../../components/aside-nav/aside-nav.component';
@@ -26,6 +26,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './news-list.component.scss',
 })
 export class NewsListComponent {
+  private _router = inject(Router);
   private _newsSignal = inject(NewsSignalService);
   newsList = this._newsSignal.newsList;
   private _categoriesSignal = inject(CategoriesSignalService);
@@ -50,5 +51,13 @@ export class NewsListComponent {
     setTimeout(() => {
       this.categoriesLoading = false;
     }, 600);
+
+    const navEntries = performance.getEntriesByType(
+      'navigation',
+    ) as PerformanceNavigationTiming[];
+
+    if (navEntries.length > 0 && navEntries[0].type === 'reload') {
+      this._router.navigate(['/home']);
+    }
   }
 }
