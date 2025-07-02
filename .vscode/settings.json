@@ -9,7 +9,6 @@
     "package.json": true,
     "angular.json": true,
     ".gitignore": true,
-    "README.md": true,
     "favicon.ico": true,
     ".browserslistrc": true,
     "karma.conf.js": true,

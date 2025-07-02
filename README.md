@@ -1,59 +1,71 @@
-# NewsLbsAngular
+## NewsLBS Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+**NewsLBSversão Angular** é uma re-leitura feita com o framework mencionado,
+anteriormente desenvolvido com a biblioteca React JS, mas com algumas
+alterações, incluindo o uso, nesta versão, do Supabase como base de dados.
 
-## Development server
+### Link para visualizar o projeto
 
-To start a local development server, run:
+<https://news-lbs-angular.vercel.app/>
 
-```bash
-ng serve
-```
+### Principais recursos do App
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Cadastro de notícias;
+- Filtro de notícias por categoria;
+- Ordenação de notícias por: Aleatórias, Mais Recentes e Mais Antigas;
+- Edição ou exclusão de uma notícia específica;
+- Favoritar e desfavoritar uma notícia específica.
 
-## Code scaffolding
+### Tecnologias utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<table>
+  <tr>
+    <td>Angular</td>
+    <td>Angular Font Awesome</td>
+  </tr>
+  <tr>
+    <td>19.2</td>
+    <td>1.0</td>
+  <tr>
+</table>
 
-```bash
-ng generate component component-name
-```
+### Como executar este Front End
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+#### Pré-requisitos
 
-```bash
-ng generate --help
-```
+- Possuir o Nodejs instalado;
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+#### Clone o repositório
 
 ```bash
-ng test
+git clone https://github.com/LucasBargas/newslbs_angular.git
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+#### Entre na pasta
 
 ```bash
-ng e2e
+cd newslbs_angular
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+#### Instale as dependências
 
-## Additional Resources
+```bash
+npm install
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### Execute o App
+
+```bash
+npm run dev
+```
+
+Gostaria de ver o repositório do frontend deste app com ReactJS?
+[Clique aqui](https://github.com/LucasBargas/newslbs_frontend)
+
+Gostaria de ver o repositório do backend deste app com Nodejs e MongoDB?
+[Clique aqui](https://github.com/LucasBargas/newslbs_backend)
+
+# Autor
+
+Lucas Bargas da Silva </br> <https://projetoslucasbargas.vercel.app/> </br>
+<https://www.linkedin.com/in/lucas-bargas/>
